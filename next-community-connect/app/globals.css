@@ -1,0 +1,289 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* ── Core Color Palette ── */
+  --sky-50: #EBF7FF;
+  --sky-100: #C6EBFF;
+  --sky-200: #90D4F7;
+  --sky-300: #56BBF0;
+  --sky-400: #2499D6;
+  --sky-500: #0D7BB5;
+  --sky-600: #085D8A;
+  --sky-700: #044069;
+  --sky-800: #022747;
+  --sky-900: #011629;
+  --cloud-white: #EEF8FF;
+  --deep-blue: #1A4B6E;
+  --accent-coral: #FF6B55;
+  --accent-warm: #FF8C42;
+  --white: #ffffff;
+  --text-dark: #022747;
+  --text-body: #044069;
+  --text-muted: #085D8A;
+  --section-bg: linear-gradient(160deg, #B8E0F7 0%, #7CC3EE 30%, #4DA8DC 60%, #2680B8 100%);
+  --card-shadow: 0 4px 24px rgba(4,64,105,0.12);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+  --transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+  
+  /* ── Glass - HIGH CONTRAST ── */
+  --glass-bg: rgba(255,255,255,0.5);
+  --glass-bg-md: rgba(255,255,255,0.6);
+  --glass-bg-dark: rgba(20,60,90,0.45);
+  --glass-border: rgba(255,255,255,0.85);
+  --glass-border-md: rgba(255,255,255,0.95);
+  --glass-blur: blur(20px);
+  --glass-blur-sm: blur(12px);
+  --glass-shadow: 0 20px 60px rgba(4,64,105,0.4), inset 0 1px 0 rgba(255,255,255,0.8);
+  --glass-shadow-lg: 0 32px 80px rgba(4,64,105,0.5), inset 0 1px 0 rgba(255,255,255,0.9);
+}
+
+[data-theme="dark"] {
+  --white: #011629;
+  --text-dark: #C6EBFF;
+  --text-body: #90D4F7;
+  --text-muted: #56BBF0;
+  --section-bg: #022747;
+  --cloud-white: #044069;
+  --glass-bg: rgba(50,90,120,0.55);
+  --glass-bg-md: rgba(70,110,140,0.65);
+  --glass-shadow: 0 20px 60px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.4);
+--card-shadow: 0 8px 32px rgba(0,0,0,0.7);
+}
+
+[data-high-contrast] {
+  --glass-bg: rgba(255,255,255,1);
+  --glass-bg-md: rgba(0,0,0,1);
+  --glass-border: #000;
+  --glass-border-md: #000;
+  --glass-blur: none;
+  --glass-shadow: 0 0 0 #000;
+  filter: contrast(2) !important;
+}
+
+[data-high-contrast] * {
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #000 !important;
+  border-color: #000 !important;
+  box-shadow: 0 0 0 2px #000 !important;
+  backdrop-filter: none !important;
+}
+
+[data-color-blind] {
+  --sky-300: #ff8c00;
+  --sky-400: #ff6b35;
+  --sky-500: #cc5500;
+  --accent-coral: #ff4444;
+  --accent-warm: #ffaa00;
+  filter: saturate(2) hue-rotate(20deg);
+}
+
+[data-reduced-motion] *,
+[data-reduced-motion] *::before,
+[data-reduced-motion] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  transition-delay: 0s !important;
+  scroll-behavior: auto !important;
+}
+
+[data-reading-guide]::before {
+  content: '';
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(255,255,0,0.8);
+  box-shadow: 0 0 10px rgba(255,255,0,0.5);
+  z-index: 9999;
+  pointer-events: none;
+  transform: translateY(-50%);
+  border-radius: 1px;
+}
+
+[data-font-size="small"] {
+  font-size: 0.8rem !important;
+}
+
+[data-font-size="large"] {
+  font-size: 1.15rem !important;
+}
+
+[data-font-size="xlarge"] {
+  font-size: 1.3rem !important;
+}
+
+[data-large-cursor] {
+  cursor: zoom-in !important;
+}
+
+[data-large-cursor] button,
+[data-large-cursor] [role="button"] {
+  cursor: pointer !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--section-bg);
+  color: var(--text-dark);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sky-50);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--sky-500), var(--sky-400));
+  border-radius: 4px;
+  border: 2px solid var(--sky-50);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, var(--sky-600), var(--sky-500));
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--sky-500) var(--sky-50);
+}
+
+/* Glass sections */
+.section {
+  padding: 96px 0;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  margin: 0;
+}
+
+.section-sm {
+  padding: 64px 0;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--sky-600);
+  margin-bottom: 12px;
+}
+
+.section-heading {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.section-subtext {
+  font-size: 17px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 560px;
+  font-weight: 300;
+}
+
+/* Reveal animation base */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Typography enhancements - keep serifs for testimonials */
+.testimonial-text {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 17px !important;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--text-body);
+}
+
+/* Button styles - Sky Glass */
+.btn-primary {
+  background: var(--sky-800);
+  color: white;
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: var(--glass-blur-sm);
+  border: 1px solid var(--glass-border-md);
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 48px rgba(4,64,105,0.4);
+}
+
+.btn-glass {
+  background: var(--glass-bg-md);
+  backdrop-filter: var(--glass-blur-sm);
+  border: 1px solid var(--glass-border-md);
+  color: var(--text-dark);
+}
+
+.btn-coral {
+  background: var(--accent-coral);
+  color: white;
+  box-shadow: 0 4px 16px rgba(255,107,85,0.4);
+}
+
+/* Card styles */
+.card {
+  background: var(--glass-bg-md);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--glass-shadow);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--glass-shadow-lg);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .section {
+    padding: 64px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 48px 0;
+  }
+}
+
