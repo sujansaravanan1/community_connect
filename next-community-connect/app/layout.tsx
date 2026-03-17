@@ -1,31 +1,31 @@
 import type { Metadata } from "next"
-import { Syne, DM_Sans, Space_Grotesk } from "next/font/google"
+import { Plus_Jakarta_Sans, Nunito, DM_Sans } from "next/font/google"
 import "./globals.css"
 import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
+import { Providers } from "@/components/Providers"
 
-const syne = Syne({
+const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-syne",
   weight: ["400", "500", "600", "700", "800"],
   display: "swap",
 })
 
-const dmSans = DM_Sans({
+const nunito = Nunito({
   subsets: ["latin"],
   variable: "--font-dm-sans",
-  weight: ["300", "400", "500"],
+  weight: ["300", "400", "500", "600"],
   style: ["normal", "italic"],
   display: "swap",
 })
 
-const spaceGrotesk = Space_Grotesk({
+const dmSans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-space",
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
 })
-
-
 
 export const metadata: Metadata = {
   title: "Community Connect – Bothell, WA Resource Hub",
@@ -38,11 +38,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${syne.variable} ${dmSans.variable} ${spaceGrotesk.variable}`}>
+    <html lang="en" className={`${plusJakarta.variable} ${nunito.variable} ${dmSans.variable}`}>
       <body className="font-dm-sans antialiased">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <Providers>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   )

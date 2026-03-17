@@ -4,6 +4,7 @@ import { useSettings } from '@/context/SettingsContext'
 import { motion } from 'framer-motion'
 import { Eye, EyeOff, Maximize2, Minimize2, Hash, Volume2, VolumeX, Droplets, Palette, MousePointer2, Ruler, ZoomIn, ZoomOut, Sun, Moon, Contrast, ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { HeroDemo } from '@/components/ui/animated-hero-demo'
 
 // Font size options
 const fontSizes = [
@@ -28,24 +29,18 @@ export default function SettingsPage() {
   }
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      className="min-h-screen py-24 px-4 max-w-4xl mx-auto"
-    >
+    <>
+      <HeroDemo
+        badge="Inclusive Design"
+        staticTitle="Accessibility Settings"
+        subtitle="Customize your experience for comfort and clarity. All changes save automatically and apply site-wide."
+        backgroundImage="/img/page-5.jpg"
+      />
       <motion.div
-        initial={{ opacity: 0, y: 10 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.1 }}
-        className="glass-bg-md rounded-3xl p-12 mb-12 text-center"
+        className="min-h-screen py-24 px-4 max-w-4xl mx-auto"
       >
-        <h1 className="font-syne text-5xl font-bold bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text text-transparent mb-6">
-          Accessibility
-        </h1>
-        <p className="font-dm-sans text-xl text-sky-700 max-w-2xl mx-auto leading-relaxed">
-          Customize your experience for comfort and clarity. Changes save automatically and apply site-wide.
-        </p>
-      </motion.div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Display & Theme */}
@@ -234,6 +229,7 @@ export default function SettingsPage() {
         </p>
       </motion.div>
     </motion.div>
+    </>
   )
 }
 

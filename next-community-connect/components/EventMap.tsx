@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { EventType } from '@/app/events/page'
+import 'leaflet/dist/leaflet.css'
 
 export default function EventMap({ events }: { events: EventType[] }) {
   const [mounted, setMounted] = useState(false)

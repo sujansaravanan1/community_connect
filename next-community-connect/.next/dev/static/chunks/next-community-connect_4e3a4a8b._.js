@@ -125,7 +125,7 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
         value: '48',
         label: 'Partner Orgs'
     }
-] }) {
+], backgroundImage }) {
     _s();
     const [titleNumber, setTitleNumber] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
@@ -150,54 +150,62 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "w-full min-h-screen flex items-center justify-center relative overflow-hidden",
         style: {
-            backgroundImage: "url('/img/avess-berge-ua2IF9HNaXs-unsplash.png')",
+            backgroundColor: '#022747',
+            backgroundImage: `url('${backgroundImage ?? '/img/avess-berge-ua2IF9HNaXs-unsplash.png'}')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute inset-0 bg-sky-950/60"
+            }, void 0, false, {
+                fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
+                lineNumber: 63,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 opacity-30",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,rgba(145,176,138,0.6)_0%,transparent_50%),radial-gradient(ellipse_at_80%_80%,rgba(45,74,40,0.8)_0%,transparent_50%),radial-gradient(ellipse_at_60%_10%,rgba(217,229,212,0.3)_0%,transparent_40%)]"
+                    className: "absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,rgba(36,153,214,0.4)_0%,transparent_50%),radial-gradient(ellipse_at_80%_80%,rgba(4,64,105,0.5)_0%,transparent_50%),radial-gradient(ellipse_at_60%_10%,rgba(198,235,255,0.2)_0%,transparent_40%)]"
                 }, void 0, false, {
                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                    lineNumber: 61,
+                    lineNumber: 66,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                lineNumber: 60,
+                lineNumber: 65,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 pointer-events-none",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute top-[-100px] right-[-100px] w-[400px] h-[400px] rounded-full bg-green-pale/25 blur-[60px] animate-pulse"
+                        className: "absolute top-[-100px] right-[-100px] w-[400px] h-[400px] rounded-full bg-sky-400/15 blur-[60px] animate-pulse"
                     }, void 0, false, {
                         fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                        lineNumber: 66,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute bottom-[-50px] left-[-50px] w-[300px] h-[300px] rounded-full bg-green-mid/40 blur-[60px] animate-pulse"
+                        className: "absolute bottom-[-50px] left-[-50px] w-[300px] h-[300px] rounded-full bg-sky-600/25 blur-[60px] animate-pulse"
                     }, void 0, false, {
                         fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                        lineNumber: 67,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute top-1/2 left-[20%] w-[200px] h-[200px] rounded-full bg-green-mist/20 blur-[60px] animate-pulse"
+                        className: "absolute top-1/2 left-[20%] w-[200px] h-[200px] rounded-full bg-sky-200/10 blur-[60px] animate-pulse"
                     }, void 0, false, {
                         fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                        lineNumber: 68,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                lineNumber: 65,
+                lineNumber: 70,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -217,13 +225,13 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                             transition: {
                                 duration: 0.6
                             },
-                            className: "inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2",
+                            className: "inline-flex items-center gap-2 bg-sky-800/80 border border-sky-400/50 rounded-full px-4 py-2",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "w-1.5 h-1.5 rounded-full bg-green-pale animate-pulse"
+                                    className: "w-1.5 h-1.5 rounded-full bg-sky-300 animate-pulse"
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                    lineNumber: 79,
+                                    lineNumber: 84,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -231,13 +239,13 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                     children: badge
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                    lineNumber: 80,
+                                    lineNumber: 85,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                            lineNumber: 73,
+                            lineNumber: 78,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -245,10 +253,12 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                             children: [
                                 staticTitle ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                     className: "text-5xl md:text-7xl lg:text-8xl max-w-4xl tracking-tighter text-center font-bold font-space text-white",
-                                    children: staticTitle
+                                    dangerouslySetInnerHTML: {
+                                        __html: staticTitle
+                                    }
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                    lineNumber: 85,
+                                    lineNumber: 90,
                                     columnNumber: 15
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                     className: "text-5xl md:text-7xl lg:text-8xl max-w-4xl tracking-tighter text-center font-bold font-space text-white",
@@ -258,7 +268,7 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                             children: "Your Community is"
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                            lineNumber: 90,
+                                            lineNumber: 96,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -286,19 +296,19 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                                         children: title
                                                     }, index, false, {
                                                         fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                                        lineNumber: 94,
+                                                        lineNumber: 100,
                                                         columnNumber: 19
                                                     }, this))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                            lineNumber: 91,
+                                            lineNumber: 97,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                    lineNumber: 89,
+                                    lineNumber: 95,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -318,13 +328,13 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                     children: subtitle
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                    lineNumber: 112,
+                                    lineNumber: 118,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                            lineNumber: 83,
+                            lineNumber: 88,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -354,18 +364,18 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                                 className: "w-4 h-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                                lineNumber: 130,
+                                                lineNumber: 136,
                                                 columnNumber: 31
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                        lineNumber: 129,
+                                        lineNumber: 135,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                    lineNumber: 128,
+                                    lineNumber: 134,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -386,24 +396,24 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                                 className: "w-4 h-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                                lineNumber: 135,
+                                                lineNumber: 141,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                        lineNumber: 134,
+                                        lineNumber: 140,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                    lineNumber: 133,
+                                    lineNumber: 139,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                            lineNumber: 122,
+                            lineNumber: 128,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -428,37 +438,37 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                             children: stat.value
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                            lineNumber: 148,
+                                            lineNumber: 154,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "font-outfit text-xs font-medium text-white/60 uppercase tracking-wider",
+                                            className: "font-outfit text-xs font-medium text-white/85 uppercase tracking-wider",
                                             children: stat.label
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                            lineNumber: 149,
+                                            lineNumber: 155,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, i, true, {
                                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                    lineNumber: 147,
+                                    lineNumber: 153,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                            lineNumber: 140,
+                            lineNumber: 146,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                    lineNumber: 72,
+                    lineNumber: 77,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                lineNumber: 71,
+                lineNumber: 76,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -487,17 +497,17 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                 d: "M19 14l-7 7m0 0l-7-7m7 7V3"
                             }, void 0, false, {
                                 fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                lineNumber: 164,
+                                lineNumber: 170,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                            lineNumber: 163,
+                            lineNumber: 169,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                        lineNumber: 162,
+                        lineNumber: 168,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -505,19 +515,19 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                         children: "Scroll"
                     }, void 0, false, {
                         fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                        lineNumber: 167,
+                        lineNumber: 173,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                lineNumber: 156,
+                lineNumber: 162,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-        lineNumber: 50,
+        lineNumber: 52,
         columnNumber: 5
     }, this);
 }
@@ -589,7 +599,7 @@ const timeline = [
     {
         year: '2019',
         title: 'The Idea Takes Root',
-        description: 'Aisha and Marcus meet at a Bothell hackathon and sketch out the first version of Community Connect on a napkin. The goal is simple: one searchable list of every resource in town.',
+        description: 'Two Bothell residents meet at a local hackathon and sketch out the first version of Community Connect. The goal is simple: one searchable list of every resource in town.',
         icon: 'lightbulb'
     },
     {
@@ -600,14 +610,14 @@ const timeline = [
     },
     {
         year: '2021',
-        title: 'Lucia & Theo Join the Team',
-        description: 'Lucia lands our first formal nonprofit partnerships. Theo begins representing Community Connect at community meetings and city events.',
+        title: 'First Nonprofit Partnerships',
+        description: 'The first formal nonprofit partnerships are established. Community Connect begins representing Bothell residents at community meetings and city events.',
         icon: 'handshake'
     },
     {
         year: '2022',
         title: '100+ Resources & First Events',
-        description: 'The directory grows past 100 verified resources. We host our first Community Resource Fair, bringing together 30+ organizations and 800+ attendees.',
+        description: 'The directory grows past 100 verified resources. The first Community Resource Fair brings together 30+ organizations and 800+ attendees.',
         icon: 'star'
     },
     {
@@ -676,7 +686,7 @@ function AnimatedCounter({ target }) {
         ]
     }, void 0, true, {
         fileName: "[project]/next-community-connect/app/about/page.tsx",
-        lineNumber: 88,
+        lineNumber: 40,
         columnNumber: 10
     }, this);
 }
@@ -690,16 +700,12 @@ function AboutPage() {
         "AboutPage.useEffect": ()=>{
             const observer = new IntersectionObserver({
                 "AboutPage.useEffect": ([entry])=>{
-                    if (entry.isIntersecting) {
-                        setIsVisible(true);
-                    }
+                    if (entry.isIntersecting) setIsVisible(true);
                 }
             }["AboutPage.useEffect"], {
                 threshold: 0.3
             });
-            if (sectionRef.current) {
-                observer.observe(sectionRef.current);
-            }
+            if (sectionRef.current) observer.observe(sectionRef.current);
             return ({
                 "AboutPage.useEffect": ()=>observer.disconnect()
             })["AboutPage.useEffect"];
@@ -724,10 +730,11 @@ function AboutPage() {
                         value: '48',
                         label: 'Partners'
                     }
-                ]
+                ],
+                backgroundImage: "/img/page-2.jpg"
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                lineNumber: 112,
+                lineNumber: 58,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -755,43 +762,43 @@ function AboutPage() {
                                 className: "relative",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "aspect-[4/3] rounded-[var(--radius-lg)] bg-gradient-to-br from-green-deep to-green-light flex items-center justify-center text-[100px] text-white/15 relative overflow-hidden",
+                                        className: "aspect-[4/3] rounded-[var(--radius-lg)] bg-gradient-to-br from-sky-800 to-sky-500 flex items-center justify-center text-[100px] text-white/15 relative overflow-hidden",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                children: "🌿"
+                                                children: "🌊"
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                lineNumber: 136,
+                                                lineNumber: 81,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "absolute inset-0 bg-gradient-to-t from-green-deep/50 to-transparent"
+                                                className: "absolute inset-0 bg-gradient-to-t from-sky-900/50 to-transparent"
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                lineNumber: 137,
+                                                lineNumber: 82,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                        lineNumber: 135,
+                                        lineNumber: 80,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "absolute bottom-7 right-[-20px] bg-white rounded-[var(--radius-md)] p-4 shadow-lg flex items-center gap-3 z-10",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "w-10 h-10 rounded-full bg-gradient-to-br from-green-mid to-green-pale flex items-center justify-center text-white",
+                                                className: "w-10 h-10 rounded-full bg-gradient-to-br from-sky-500 to-sky-300 flex items-center justify-center text-white",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: "👥"
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                    lineNumber: 142,
+                                                    lineNumber: 86,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                lineNumber: 141,
+                                                lineNumber: 85,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -801,7 +808,7 @@ function AboutPage() {
                                                         children: "1,200+"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                        lineNumber: 145,
+                                                        lineNumber: 89,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -809,36 +816,36 @@ function AboutPage() {
                                                         children: "Bothell Volunteers"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                        lineNumber: 146,
+                                                        lineNumber: 90,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                lineNumber: 144,
+                                                lineNumber: 88,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                        lineNumber: 140,
+                                        lineNumber: 84,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "absolute top-7 left-[-20px] bg-white rounded-[var(--radius-md)] p-4 shadow-lg flex items-center gap-3 z-10",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "w-10 h-10 rounded-full bg-gradient-to-br from-accent-gold to-accent-gold-light flex items-center justify-center text-white",
+                                                className: "w-10 h-10 rounded-full bg-gradient-to-br from-amber-500 to-amber-400 flex items-center justify-center text-white",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: "🛡️"
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                    lineNumber: 151,
+                                                    lineNumber: 95,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                lineNumber: 150,
+                                                lineNumber: 94,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -848,7 +855,7 @@ function AboutPage() {
                                                         children: "Bothell, WA"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                        lineNumber: 154,
+                                                        lineNumber: 98,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -856,25 +863,25 @@ function AboutPage() {
                                                         children: "Est. 2019"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                        lineNumber: 155,
+                                                        lineNumber: 99,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                lineNumber: 153,
+                                                lineNumber: 97,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 93,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                lineNumber: 128,
+                                lineNumber: 75,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -898,7 +905,7 @@ function AboutPage() {
                                         children: "Our Mission"
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                        lineNumber: 167,
+                                        lineNumber: 109,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -906,7 +913,7 @@ function AboutPage() {
                                         children: "Connecting people to the help they need"
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                        lineNumber: 168,
+                                        lineNumber: 110,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -914,7 +921,7 @@ function AboutPage() {
                                         children: "Community Connect is a free, volunteer-powered platform that makes it easy to find, share, and promote local services, programs, and organizations that uplift residents of all backgrounds."
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                        lineNumber: 170,
+                                        lineNumber: 111,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -922,22 +929,22 @@ function AboutPage() {
                                         children: "We saw firsthand how many people didn't know about the resources right here in Bothell — food banks, free tutoring, mental health support, and volunteer programs — simply because there was no single place to look. We built that place."
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                        lineNumber: 174,
+                                        lineNumber: 114,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "border-l-4 border-green-pale bg-green-mist rounded-r-[var(--radius-md)] p-5 mb-6",
+                                        className: "border-l-4 border-sky-400 bg-sky-50 rounded-r-[var(--radius-md)] p-5 mb-6",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "mission-quote-text m-0",
+                                            className: "font-dm-sans text-base text-sky-800 leading-relaxed italic m-0",
                                             children: "\"No one should fall through the cracks just because they didn't know where to look. That's why Community Connect exists.\""
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                            lineNumber: 179,
+                                            lineNumber: 118,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                        lineNumber: 178,
+                                        lineNumber: 117,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -978,14 +985,14 @@ function AboutPage() {
                                                 transition: {
                                                     delay: i * 0.1
                                                 },
-                                                className: "flex items-start gap-3 p-4 bg-green-mist border border-green-wash rounded-[var(--radius-md)] hover:border-green-light transition-colors",
+                                                className: "flex items-start gap-3 p-4 bg-sky-50 border border-sky-100 rounded-[var(--radius-md)] hover:border-sky-300 transition-colors",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text-xl",
                                                         children: item.icon
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                        lineNumber: 198,
+                                                        lineNumber: 135,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -995,7 +1002,7 @@ function AboutPage() {
                                                                 children: item.title
                                                             }, void 0, false, {
                                                                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                                lineNumber: 200,
+                                                                lineNumber: 137,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1003,64 +1010,64 @@ function AboutPage() {
                                                                 children: item.desc
                                                             }, void 0, false, {
                                                                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                                lineNumber: 201,
+                                                                lineNumber: 138,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                        lineNumber: 199,
+                                                        lineNumber: 136,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, i, true, {
                                                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                lineNumber: 190,
+                                                lineNumber: 129,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                        lineNumber: 183,
+                                        lineNumber: 122,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                lineNumber: 161,
+                                lineNumber: 105,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                        lineNumber: 126,
+                        lineNumber: 73,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/next-community-connect/app/about/page.tsx",
-                    lineNumber: 125,
+                    lineNumber: 72,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                lineNumber: 124,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 ref: sectionRef,
-                className: "py-24 bg-gradient-to-br from-green-deep via-green-mid to-accent-teal relative overflow-hidden",
+                className: "py-24 bg-gradient-to-br from-sky-900 via-sky-700 to-sky-400 relative overflow-hidden",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(145,176,138,0.15)_0%,transparent_55%),radial-gradient(ellipse_at_80%_50%,rgba(45,74,40,0.4)_0%,transparent_50%)]"
+                            className: "absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(36,153,214,0.2)_0%,transparent_55%),radial-gradient(ellipse_at_80%_50%,rgba(4,64,105,0.4)_0%,transparent_50%)]"
                         }, void 0, false, {
                             fileName: "[project]/next-community-connect/app/about/page.tsx",
-                            lineNumber: 214,
+                            lineNumber: 151,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                        lineNumber: 213,
+                        lineNumber: 150,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1102,47 +1109,47 @@ function AboutPage() {
                                     className: "text-center py-12 px-6",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "font-space text-4xl lg:text-5xl font-bold text-white mb-2 golden-stat",
+                                            className: "font-space text-4xl lg:text-5xl font-bold text-white mb-2",
                                             children: isVisible && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AnimatedCounter, {
                                                 target: item.value
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                lineNumber: 233,
+                                                lineNumber: 168,
                                                 columnNumber: 33
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                            lineNumber: 232,
+                                            lineNumber: 167,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "font-outfit text-sm font-medium text-white/65",
+                                            className: "font-outfit text-sm font-medium text-white/90",
                                             children: item.label
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                            lineNumber: 235,
+                                            lineNumber: 170,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, i, true, {
                                     fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                    lineNumber: 224,
+                                    lineNumber: 161,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/next-community-connect/app/about/page.tsx",
-                            lineNumber: 217,
+                            lineNumber: 154,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                        lineNumber: 216,
+                        lineNumber: 153,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                lineNumber: 212,
+                lineNumber: 149,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1170,7 +1177,7 @@ function AboutPage() {
                                     children: "Our Journey"
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                    lineNumber: 251,
+                                    lineNumber: 184,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1178,7 +1185,7 @@ function AboutPage() {
                                     children: "How We Got Here"
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                    lineNumber: 252,
+                                    lineNumber: 185,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1186,23 +1193,23 @@ function AboutPage() {
                                     children: "From a weekend project to a Bothell institution — here's the story of Community Connect."
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                    lineNumber: 253,
+                                    lineNumber: 186,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/next-community-connect/app/about/page.tsx",
-                            lineNumber: 245,
+                            lineNumber: 180,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "relative",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-green-wash via-green-pale to-green-wash -translate-x-1/2 hidden lg:block"
+                                    className: "absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-sky-200 via-sky-400 to-sky-200 -translate-x-1/2 hidden lg:block"
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                    lineNumber: 258,
+                                    lineNumber: 189,
                                     columnNumber: 13
                                 }, this),
                                 timeline.map((item, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1225,14 +1232,14 @@ function AboutPage() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: `${i % 2 === 0 ? 'lg:text-right' : 'lg:order-2'} lg:direction-ltr`,
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "bg-white border border-green-wash rounded-[var(--radius-md)] p-5 hover:border-green-light hover:shadow-card transition-all",
+                                                    className: "bg-white border border-sky-100 rounded-[var(--radius-md)] p-5 hover:border-sky-200 hover:shadow-card transition-all",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                             className: "font-space font-bold text-base text-[var(--text-dark)] mb-2",
                                                             children: item.title
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                            lineNumber: 271,
+                                                            lineNumber: 199,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1240,66 +1247,66 @@ function AboutPage() {
                                                             children: item.description
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                            lineNumber: 272,
+                                                            lineNumber: 200,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                    lineNumber: 270,
+                                                    lineNumber: 198,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                lineNumber: 269,
+                                                lineNumber: 197,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "hidden lg:flex lg:flex-col lg:items-center lg:direction-ltr",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-12 h-12 rounded-full bg-gradient-to-br from-green-mid to-accent-teal border-4 border-white shadow-md flex items-center justify-center text-xl mb-2",
+                                                        className: "w-12 h-12 rounded-full bg-gradient-to-br from-sky-600 to-sky-400 border-4 border-white shadow-md flex items-center justify-center text-xl mb-2",
                                                         children: iconMap[item.icon]
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                        lineNumber: 276,
+                                                        lineNumber: 204,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "font-space text-sm font-bold text-accent-gold",
+                                                        className: "font-space text-sm font-bold text-amber-500",
                                                         children: item.year
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                        lineNumber: 279,
+                                                        lineNumber: 207,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                lineNumber: 275,
+                                                lineNumber: 203,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, i, true, {
                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                        lineNumber: 261,
+                                        lineNumber: 191,
                                         columnNumber: 15
                                     }, this))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/next-community-connect/app/about/page.tsx",
-                            lineNumber: 256,
+                            lineNumber: 188,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/next-community-connect/app/about/page.tsx",
-                    lineNumber: 244,
+                    lineNumber: 179,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                lineNumber: 243,
+                lineNumber: 178,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1327,7 +1334,7 @@ function AboutPage() {
                                     children: "Our Partners"
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                    lineNumber: 296,
+                                    lineNumber: 222,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1335,7 +1342,7 @@ function AboutPage() {
                                     children: "Organizations We Work With"
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                    lineNumber: 297,
+                                    lineNumber: 223,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1343,13 +1350,13 @@ function AboutPage() {
                                     children: "Community Connect is proud to partner with these local organizations who share our commitment to accessible, equitable community support."
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                    lineNumber: 298,
+                                    lineNumber: 224,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/next-community-connect/app/about/page.tsx",
-                            lineNumber: 290,
+                            lineNumber: 218,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1369,36 +1376,36 @@ function AboutPage() {
                             },
                             className: "flex flex-wrap justify-center gap-3",
                             children: partners.map((partner, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "flex items-center gap-2 bg-white border border-green-wash rounded-full px-5 py-3 font-outfit text-sm font-medium text-[var(--text-body)] hover:border-green-light hover:text-green-mid hover:-translate-y-1 hover:shadow-card transition-all cursor-pointer",
+                                    className: "flex items-center gap-2 bg-white border border-sky-100 rounded-full px-5 py-3 font-outfit text-sm font-medium text-[var(--text-body)] hover:border-sky-300 hover:text-sky-600 hover:-translate-y-1 hover:shadow-card transition-all cursor-pointer",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "w-2 h-2 rounded-full bg-green-light"
+                                            className: "w-2 h-2 rounded-full bg-sky-400"
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                            lineNumber: 313,
+                                            lineNumber: 236,
                                             columnNumber: 17
                                         }, this),
                                         partner
                                     ]
                                 }, i, true, {
                                     fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                    lineNumber: 309,
+                                    lineNumber: 232,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/next-community-connect/app/about/page.tsx",
-                            lineNumber: 301,
+                            lineNumber: 226,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/next-community-connect/app/about/page.tsx",
-                    lineNumber: 289,
+                    lineNumber: 217,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                lineNumber: 288,
+                lineNumber: 216,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1417,13 +1424,13 @@ function AboutPage() {
                         viewport: {
                             once: true
                         },
-                        className: "bg-gradient-to-br from-green-deep to-green-mid rounded-[var(--radius-lg)] p-12 text-center relative overflow-hidden",
+                        className: "bg-gradient-to-br from-sky-900 to-sky-700 rounded-[var(--radius-lg)] p-12 text-center relative overflow-hidden",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute inset-0 bg-[radial-gradient(ellipse_at_30%_50%,rgba(145,176,138,0.2)_0%,transparent_60%)]"
+                                className: "absolute inset-0 bg-[radial-gradient(ellipse_at_30%_50%,rgba(36,153,214,0.2)_0%,transparent_60%)]"
                             }, void 0, false, {
                                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                lineNumber: 330,
+                                lineNumber: 252,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1434,15 +1441,15 @@ function AboutPage() {
                                         children: "Ready to Get Involved?"
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                        lineNumber: 332,
+                                        lineNumber: 254,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "font-outfit text-base text-white/75 max-w-md mx-auto mb-8",
+                                        className: "font-outfit text-base text-white/80 max-w-md mx-auto mb-8",
                                         children: "Browse our full directory of community resources, submit a resource you know about, or come to an upcoming event."
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                        lineNumber: 333,
+                                        lineNumber: 255,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1454,44 +1461,44 @@ function AboutPage() {
                                                 children: "Browse Resources"
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                lineNumber: 337,
+                                                lineNumber: 259,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                 href: "/events",
-                                                className: "btn-outline px-6 py-3 rounded-xl font-outfit font-semibold flex items-center gap-2",
+                                                className: "px-6 py-3 rounded-xl font-outfit font-semibold border-2 border-white/40 text-white hover:bg-white/10 transition-all flex items-center gap-2",
                                                 children: "Upcoming Events"
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                                lineNumber: 340,
+                                                lineNumber: 262,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                        lineNumber: 336,
+                                        lineNumber: 258,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                                lineNumber: 331,
+                                lineNumber: 253,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/next-community-connect/app/about/page.tsx",
-                        lineNumber: 324,
+                        lineNumber: 247,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/next-community-connect/app/about/page.tsx",
-                    lineNumber: 323,
+                    lineNumber: 246,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/app/about/page.tsx",
-                lineNumber: 322,
+                lineNumber: 245,
                 columnNumber: 7
             }, this)
         ]

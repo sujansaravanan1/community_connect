@@ -1,8 +1,8 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { Search, ChevronDown, ArrowUp, MapPin, Phone, Clock, Mail, ExternalLink } from 'lucide-react'
+import { BookOpen, GraduationCap, Users, Briefcase, Heart, Building2, Search, Leaf, Flame, ChevronDown, ArrowUp, MapPin, Phone, Clock, Mail, ExternalLink, HeartHandshake, Home, Stethoscope, Dumbbell, PhoneCall, TreePine, Award, HelpCircle, Bus, Shield } from 'lucide-react'
 import { HeroDemo } from '@/components/ui/animated-hero-demo'
 import { ZoomParallax } from '@/components/ZoomParallax'
 
@@ -17,21 +17,21 @@ const communityImages = [
 ]
 
 const resources = [
-  { title: 'Scholarship Discovery Program', category: 'Education', icon: 'fa-graduation-cap', description: 'Find and apply for local and national scholarships. Free guidance on application essays, financial aid, and deadline tracking for college-bound students.', phone: '(555) 234-5678', email: 'scholarships@communityconnect.org', hours: 'Mon–Fri 9AM–6PM, Sat 10AM–2PM', location: 'Bothell Community Center, 9919 NE 180th St' },
-  { title: 'After-School Tutoring Network', category: 'Education', icon: 'fa-book-reader', description: 'Free K–12 tutoring in math, science, reading, and writing. Volunteer tutors available weekdays 3–6PM at multiple community centers.', phone: '(555) 234-5679', email: 'tutoring@communityconnect.org', hours: 'Mon–Fri 3PM–6PM', location: 'Various Bothell sites — call for location' },
-  { title: 'Youth Career Internship Portal', category: 'Career', icon: 'fa-briefcase', description: 'Connect high school and college students with paid internships at local businesses. Earn real-world experience and college credit while building your resume.', phone: '(555) 345-6789', email: 'internships@communityconnect.org', hours: 'Mon–Fri 9AM–5PM', location: 'Bothell Workforce Dev. Center, 18411 NE Woodinville-Duvall Rd' },
-  { title: 'Job Search Workshop Series', category: 'Career', icon: 'fa-search-dollar', description: 'Monthly workshops covering resume building, interview techniques, LinkedIn, and networking. Free and open to all community members.', phone: '(555) 345-6790', email: 'workshops@communityconnect.org', hours: '2nd & 4th Tuesday 6PM–8PM', location: 'Bothell Regional Library, 18215 98th Ave NE' },
-  { title: 'Community Health Clinic', category: 'Health', icon: 'fa-medkit', description: 'Affordable medical and dental services with sliding-scale fees. Walk-in hours Monday–Friday 9AM–5PM. No insurance required, multilingual staff.', phone: '(555) 456-7890', email: 'clinic@healthcenter.org', hours: 'Mon–Fri 9AM–5PM, Walk-ins welcome', location: 'EvergreenHealth Bothell, 10010 NE 195th St' },
-  { title: 'Mental Wellness Support Line', category: 'Health', icon: 'fa-phone-volume', description: '24/7 confidential crisis support and counseling. Connect with trained professionals for mental health support, stress management, and emotional guidance.', phone: '(555) 911-HELP', email: 'support@mentalhealthline.org', hours: '24/7 — Call anytime', location: 'Confidential — phone & online support' },
-  { title: 'Neighborhood Cleanup Initiative', category: 'Volunteering', icon: 'fa-hands-helping', description: 'Join monthly community cleanups in local parks. Tools and supplies provided. Volunteers of all ages welcome to help beautify our community.', phone: '(555) 567-8901', email: 'cleanup@communityconnect.org', hours: '1st Saturday monthly 9AM–12PM', location: 'Bothell Landing Park, 9919 NE 180th St' },
-  { title: 'Senior Companion Program', category: 'Volunteering', icon: 'fa-user-friends', description: 'Match with local seniors for weekly visits, companionship, and light assistance. Training provided. Make a meaningful difference through friendship.', phone: '(555) 567-8902', email: 'companions@seniorcare.org', hours: 'Flexible — match your schedule', location: 'Training at Senior Center, 234 Elder St' },
-  { title: 'Community Garden Collective', category: 'Community Projects', icon: 'fa-seedling', description: 'Rent a plot and grow your own vegetables. Workshops on sustainable gardening, composting, and organic growing. Tools shared, water included.', phone: '(555) 678-9012', email: 'garden@greengrow.org', hours: 'Open daily dawn to dusk', location: 'Community Garden, Corner of 5th & Maple' },
-  { title: 'Little Free Library Network', category: 'Community Projects', icon: 'fa-book', description: 'Build and maintain Little Free Libraries in neighborhoods. Free books for all ages, woodworking workshops, and library setup support.', phone: '(555) 678-9013', email: 'books@littlefreelibrary.org', hours: 'Workshop 2nd Sat 10AM–2PM', location: 'Bothell Makerspace, 10810 NE 195th St' },
-  { title: 'Monthly Town Hall Meetings', category: 'Events', icon: 'fa-comments', description: 'Monthly forums to discuss community issues, meet local leaders, and voice your concerns. First Thursday of every month, 7PM at City Hall.', phone: '(555) 789-0123', email: 'townhall@citygovernment.gov', hours: '1st Thursday monthly 7PM–9PM', location: 'City Hall Council Chambers, 100 Civic Plaza' },
-  { title: 'Community Resource Fair', category: 'Events', icon: 'fa-calendar-alt', description: 'Annual event connecting residents with local services, nonprofits, health providers, and educational resources. Free health screenings, food, and kids activities.', phone: '(555) 789-0124', email: 'fair@communityconnect.org', hours: 'Annual — 3rd Sat in Sept 10AM–4PM', location: 'Central Park Main Field' },
-  { title: 'Financial Literacy Workshops', category: 'Career', icon: 'fa-dollar-sign', description: 'Learn budgeting, saving, investing, and credit management. Free evening workshops in English and Spanish. Materials provided.', phone: '(555) 890-1234', email: 'finance@moneywise.org', hours: 'Wednesdays 6PM–8PM', location: 'Credit Union Community Room, 890 Bank St' },
-  { title: 'Youth Mentorship Network', category: 'Education', icon: 'fa-child', description: 'Pair young people ages 12–18 with vetted adult mentors for guidance, academic support, and personal development. Background checks required. Open year-round.', phone: '(555) 901-2345', email: 'mentors@youthprogram.org', hours: 'Match meetings flexible', location: 'Youth Services Office, 345 Hope Blvd' },
-  { title: 'Fitness in the Park', category: 'Health', icon: 'fa-heartbeat', description: 'Free outdoor fitness classes every weekend! Yoga, Zumba, bootcamp, and tai chi for all fitness levels. Bring a mat and water bottle.', phone: '(555) 012-3456', email: 'fitness@parksprogram.org', hours: 'Sat–Sun 8AM, 10AM, 4PM', location: 'Riverside Park Pavilion' },
+  { title: 'Bothell Regional Library (KCLS)', category: 'Education', resourceIcon: BookOpen, description: 'Free access to books, digital resources, study rooms, homework help, and community programs for all ages. Library cards are free for all King County residents.', phone: '(425) 486-7811', email: 'askus@kcls.org', hours: 'Mon–Thu 10AM–8PM, Fri–Sat 10AM–6PM, Sun 1–5PM', location: 'Bothell Regional Library, 18215 98th Ave NE, Bothell WA 98011' },
+  { title: 'Northshore School District', category: 'Education', resourceIcon: GraduationCap, description: 'Serving over 22,000 students across Bothell, Kenmore, and Woodinville. Family engagement programs, multilingual support, special education services, and community partnerships.', phone: '(425) 408-7600', email: 'info@nsd.org', hours: 'Mon–Fri 7:30AM–4:30PM', location: 'Northshore School District, 3330 Monte Villa Pkwy, Bothell WA 98021' },
+  { title: 'Northshore Volunteer Services', category: 'Volunteering', resourceIcon: HeartHandshake, description: 'Connecting Bothell-area volunteers with meaningful community opportunities. Place volunteers with nonprofits, schools, and city programs. Free training and orientation.', phone: '(425) 485-1112', email: 'office@nvskc.org', hours: 'Mon–Fri 9AM–5PM', location: 'Northshore Volunteer Services, 6809 228th St SW, Mountlake Terrace WA 98043' },
+  { title: 'WorkSource Seattle-King County', category: 'Career', resourceIcon: Briefcase, description: 'Free career services including job search assistance, resume workshops, interview prep, and employer connections. Serves all job seekers in King County.', phone: '(206) 296-5051', email: 'worksourceskc@esd.wa.gov', hours: 'Mon–Fri 8AM–5PM', location: 'WorkSource Seattle, 2nd Ave Extension S, Seattle WA 98104 (online services available)' },
+  { title: 'Hopelink Bothell', category: 'Community Projects', resourceIcon: Home, description: 'Hopelink provides food, financial assistance, housing, and transportation services to families and individuals in need across the Eastside and North King County.', phone: '(425) 943-6700', email: 'info@hope-link.org', hours: 'Mon–Fri 9AM–4PM', location: 'Hopelink Bothell, 23640 Bothell Everett Hwy, Bothell WA 98021' },
+  { title: 'EvergreenHealth Medical Center', category: 'Health', resourceIcon: Stethoscope, description: 'Full-service hospital and medical center providing emergency care, primary care, and specialty services. Serving the Northshore community with compassionate, high-quality care.', phone: '(425) 899-5200', email: 'info@evergreenhealth.com', hours: 'Emergency: 24/7 | Clinics: Mon–Fri 8AM–5PM', location: 'EvergreenHealth, 12040 NE 128th St, Kirkland WA 98034' },
+  { title: 'Northshore Senior Center', category: 'Health', resourceIcon: Users, description: 'Social, educational, and wellness programs for adults 50+. Fitness classes, lunch program, day trips, arts and crafts, and social events. No membership required.', phone: '(425) 488-1785', email: 'info@northshoresenior.org', hours: 'Mon–Fri 8:30AM–4:30PM', location: 'Northshore Senior Center, 10201 E Riverside Dr, Bothell WA 98011' },
+  { title: 'YMCA Northshore', category: 'Health', resourceIcon: Dumbbell, description: 'Programs for all ages including fitness, aquatics, youth sports, summer camps, and childcare. Financial assistance available to ensure everyone can participate regardless of income.', phone: '(425) 485-9797', email: 'northshoreymca@seattleymca.org', hours: 'Mon–Fri 5AM–10PM, Sat–Sun 7AM–8PM', location: 'YMCA Northshore, 23401 Lakeview Dr, Mountlake Terrace WA 98043' },
+  { title: 'Crisis Connections Washington', category: 'Health', resourceIcon: PhoneCall, description: '24/7 confidential crisis support line. Call or text anytime for mental health crisis support, suicide prevention, emotional support, and connection to local resources.', phone: '(866) 427-4747', email: 'info@crisisconnections.org', hours: '24/7 — Call or text anytime', location: 'Phone & online support — confidential' },
+  { title: 'City of Bothell Parks & Recreation', category: 'Community Projects', resourceIcon: TreePine, description: 'Year-round recreational programs, park rentals, community events, sports leagues, and senior activities. Bothell Landing, Canyon Park, and more are managed by Parks & Rec.', phone: '(425) 806-6700', email: 'parks@bothellwa.gov', hours: 'Mon–Fri 8AM–5PM', location: 'Bothell City Hall, 18415 101st Ave NE, Bothell WA 98011' },
+  { title: 'Northshore Schools Foundation', category: 'Education', resourceIcon: Award, description: 'Grants and resources that directly support Northshore School District students and teachers. Funds classroom innovation, student enrichment, and financial assistance for activities.', phone: '(425) 408-6014', email: 'info@northshorefoundation.org', hours: 'Mon–Fri 8AM–4PM', location: 'Northshore Schools Foundation, 3330 Monte Villa Pkwy, Bothell WA 98021' },
+  { title: '211 King County', category: 'Career', resourceIcon: HelpCircle, description: 'Dial 2-1-1 to connect with a specialist who can help find local health, human services, and social service programs. Free, confidential, available in multiple languages.', phone: 'Dial 2-1-1', email: 'info@211kingcounty.org', hours: '24/7 — Call or visit online', location: 'Phone & online — serves all of King County' },
+  { title: 'Imagine Housing', category: 'Community Projects', resourceIcon: Building2, description: 'Nonprofit providing affordable rental housing and resident services to low-income individuals and families in Eastside King County, including Bothell and Kenmore.', phone: '(425) 576-7000', email: 'info@imaginehousing.org', hours: 'Mon–Fri 9AM–5PM', location: 'Imagine Housing, 1901 Lind Ave SW, Renton WA 98057' },
+  { title: 'Kenmore-Bothell Volunteer Fire Dept.', category: 'Volunteering', resourceIcon: Flame, description: 'The Northshore Fire Department welcomes community volunteers for auxiliary support, fire safety education, neighborhood emergency preparedness, and CERT training.', phone: '(425) 354-2700', email: 'info@northshorefire.com', hours: 'Administrative Mon–Fri 8AM–5PM', location: 'Northshore Fire, 6604 228th St SW, Mountlake Terrace WA 98043' },
+  { title: 'Sound Generations (Senior Services)', category: 'Health', resourceIcon: Bus, description: 'Transportation, Meals on Wheels, caregiver support, and connection programs for older adults. Hyde Shuttle provides free or low-cost rides to medical appointments and grocery stores.', phone: '(206) 448-3110', email: 'info@soundgenerations.org', hours: 'Mon–Fri 8AM–5PM', location: 'Sound Generations, 2208 2nd Ave, Seattle WA 98121 (serves Northshore area)' },
 ]
 
 const categories = [
@@ -43,6 +43,15 @@ const categories = [
   { id: 'Community Projects', label: 'Community' },
   { id: 'Events', label: 'Events' },
 ]
+
+const categoryIcons: Record<string, React.ElementType> = {
+  Education: GraduationCap,
+  Career: Briefcase,
+  Health: Heart,
+  Volunteering: Users,
+  'Community Projects': Building2,
+  Events: Building2,
+}
 
 const categoryColors: Record<string, string> = {
   Education: 'from-sky-500 to-sky-400',
@@ -83,11 +92,12 @@ export default function ResourcesPage() {
 
   return (
     <>
-      <HeroDemo 
+      <HeroDemo
         badge="500+ Resources Listed"
         staticTitle="Community Resource Hub"
         subtitle="Find non-profits, support services, health programs, and opportunities — all verified, all free to access."
-      /> 
+        backgroundImage="/img/page-4.jpg"
+      />
 
       <ZoomParallax images={communityImages} />
 
@@ -167,15 +177,29 @@ export default function ResourcesPage() {
                   <div className="h-2 bg-gradient-to-r from-sky-400 to-sky-500 group-hover:opacity-100 opacity-80 transition-opacity" />
                   
                   {/* Header */}
-                  <div className="h-48 bg-gradient-to-br from-sky-50 to-sky-100 flex items-center justify-center relative p-6">
-                    <span className="text-sky-300/30 text-8xl">●</span>
-                    <span className="absolute top-4 left-4 bg-sky-500/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-xl backdrop-blur-sm shadow-lg">
+                  <div className="h-40 bg-gradient-to-br from-sky-700 to-sky-500 flex items-center justify-center relative p-6">
+                    {(() => {
+                      const Icon = categoryIcons[resource.category] ?? Building2
+                      return <Icon className="w-16 h-16 text-white/30" strokeWidth={1} />
+                    })()}
+                    <span className="absolute top-4 left-4 bg-white/20 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-xl border border-white/30 backdrop-blur-sm">
                       {resource.category}
                     </span>
+                    {(() => {
+                      const Icon = categoryIcons[resource.category] ?? Building2
+                      return (
+                        <div className="absolute bottom-4 right-4 w-10 h-10 rounded-xl bg-white/20 border border-white/30 flex items-center justify-center">
+                          <Icon className="w-5 h-5 text-white" strokeWidth={1.5} />
+                        </div>
+                      )
+                    })()}
                   </div>
 
                   {/* Body */}
                   <div className="p-8">
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-sky-500 to-sky-400 flex items-center justify-center shadow-lg mb-5 -mt-7 border-2 border-white">
+                      <resource.resourceIcon className="w-7 h-7 text-white" strokeWidth={1.5} />
+                    </div>
                     <h3 className="font-syne text-2xl font-bold text-sky-900 mb-3 leading-tight group-hover:text-sky-800 transition-colors">{resource.title}</h3>
                     <p className="font-dm-sans text-base text-sky-700 leading-relaxed mb-6 line-clamp-3">{resource.description}</p>
 
@@ -187,14 +211,14 @@ export default function ResourcesPage() {
                             <MapPin size={16} className="text-sky-500 mt-1 flex-shrink-0" />
                             <div>
                               <div className="font-semibold text-sky-800 mb-1">Location</div>
-                              <div className="text-sky-700">{resource.location}</div>
+                              <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(resource.location)}`} target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:text-sky-800 hover:underline transition-colors">{resource.location}</a>
                             </div>
                           </div>
                           <div className="flex items-start gap-3">
                             <Phone size={16} className="text-sky-500 mt-1 flex-shrink-0" />
                             <div>
                               <div className="font-semibold text-sky-800 mb-1">Phone</div>
-                              <div className="text-sky-700">{resource.phone}</div>
+                              <a href={`tel:${resource.phone.replace(/\D/g, '')}`} className="text-sky-600 hover:text-sky-800 hover:underline transition-colors">{resource.phone}</a>
                             </div>
                           </div>
                           <div className="flex items-start gap-3">
@@ -208,7 +232,7 @@ export default function ResourcesPage() {
                             <Mail size={16} className="text-sky-500 flex-shrink-0" />
                             <div>
                               <div className="font-semibold text-sky-800 mb-1">Email</div>
-                              <div className="text-sky-700 break-all">{resource.email}</div>
+                              <a href={`mailto:${resource.email}`} className="text-sky-600 hover:text-sky-800 hover:underline transition-colors break-all">{resource.email}</a>
                             </div>
                           </div>
                         </div>

@@ -37,12 +37,11 @@ const config: Config = {
         }
       },
       fontFamily: {
-        syne: ['Syne', 'sans-serif'],
-        'dm-sans': ['DM Sans', 'sans-serif'],
-        space: ['Space Grotesk', 'sans-serif'],
-        outfit: ['Outfit', 'sans-serif'],
+        syne: ['Plus Jakarta Sans', 'sans-serif'],
+        'dm-sans': ['Nunito', 'sans-serif'],
+        space: ['DM Sans', 'sans-serif'],
+        outfit: ['DM Sans', 'sans-serif'],
       },
-      // Removed unused fonts for consistency (Playfair/Cormorant/Crimson)
       borderRadius: {
         sm: '8px',
         md: '14px',

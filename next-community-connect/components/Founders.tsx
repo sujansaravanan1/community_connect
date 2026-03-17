@@ -15,27 +15,27 @@ type Testimonial = {
 const founders: Testimonial[] = [
   {
     quote: "Our founding team came together with one shared belief: every resident deserves easy access to the resources around them. We built this platform to bridge the gap between community members and the services they need.",
-    name: "Ronit Agarwal",
+    name: "Alex Chen*",
     designation: "Co-Founder & Executive Director",
-    src: "RA", // Using initials as placeholder
+    src: "AC",
   },
   {
     quote: "As a software engineer turned civic tech advocate, I'm passionate about making public services more accessible. Technology should empower communities, not complicate them.",
-    name: "Tyler Riches",
+    name: "Jordan Kim*",
     designation: "Co-Founder & Tech Lead",
-    src: "TR",
+    src: "JK",
   },
   {
     quote: "With experience growing our network to 48 organizations and counting, I believe in the power of partnerships to amplify our impact and reach more people who need our help.",
-    name: "Satwik Mannepalli",
+    name: "Priya Patel*",
     designation: "Director of Partnerships",
-    src: "SM",
+    src: "PP",
   },
   {
     quote: "As a youth advocate and former city council aide, I know that grassroots solutions are the most effective. This platform was built from the community, for the community.",
-    name: "Sujan Saravanan",
+    name: "Marcus Thompson*",
     designation: "Community Outreach Lead",
-    src: "SS",
+    src: "MT",
   },
 ];
 
@@ -193,6 +193,9 @@ const getRotate = (index: number): number => {
           </div>
         </div>
       </div>
+      <p className="text-center font-dm-sans text-xs text-sky-400 mt-10 px-4">
+        *Names are fictional and used for competition purposes only. Any resemblance to real persons is coincidental.
+      </p>
     </section>
   );
 }

@@ -280,6 +280,60 @@ function Navbar() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex items-center gap-2.5 flex-shrink-0",
                             children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                    whileHover: {
+                                        scale: 1.1
+                                    },
+                                    whileTap: {
+                                        scale: 0.95
+                                    },
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "/settings",
+                                        className: "w-9 h-9 rounded-full bg-white/10 border border-white/20 text-white flex items-center justify-center hover:bg-white/20 transition-all",
+                                        "aria-label": "Accessibility settings",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                            xmlns: "http://www.w3.org/2000/svg",
+                                            className: "w-4 h-4",
+                                            fill: "none",
+                                            viewBox: "0 0 24 24",
+                                            stroke: "currentColor",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                    strokeLinecap: "round",
+                                                    strokeLinejoin: "round",
+                                                    strokeWidth: 2,
+                                                    d: "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/next-community-connect/components/Navbar.tsx",
+                                                    lineNumber: 119,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                    strokeLinecap: "round",
+                                                    strokeLinejoin: "round",
+                                                    strokeWidth: 2,
+                                                    d: "M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/next-community-connect/components/Navbar.tsx",
+                                                    lineNumber: 120,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/next-community-connect/components/Navbar.tsx",
+                                            lineNumber: 118,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/next-community-connect/components/Navbar.tsx",
+                                        lineNumber: 113,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/next-community-connect/components/Navbar.tsx",
+                                    lineNumber: 112,
+                                    columnNumber: 13
+                                }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
                                     whileHover: {
                                         scale: 1.1
@@ -303,12 +357,12 @@ function Navbar() {
                                             d: "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10A5 5 0 0012 7z"
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                            lineNumber: 121,
+                                            lineNumber: 135,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                        lineNumber: 120,
+                                        lineNumber: 134,
                                         columnNumber: 17
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                         xmlns: "http://www.w3.org/2000/svg",
@@ -323,17 +377,17 @@ function Navbar() {
                                             d: "M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                            lineNumber: 125,
+                                            lineNumber: 139,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                        lineNumber: 124,
+                                        lineNumber: 138,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                    lineNumber: 112,
+                                    lineNumber: 126,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -351,19 +405,19 @@ function Navbar() {
                                                 children: "+"
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                                lineNumber: 136,
+                                                lineNumber: 150,
                                                 columnNumber: 17
                                             }, this),
                                             " Add Resource"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                        lineNumber: 132,
+                                        lineNumber: 146,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                    lineNumber: 131,
+                                    lineNumber: 145,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -378,27 +432,27 @@ function Navbar() {
                                             className: `w-5 h-0.5 bg-white rounded-full transition-all duration-300 origin-center block ${isMobileOpen ? 'rotate-45 translate-y-1.5' : ''}`
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                            lineNumber: 147,
+                                            lineNumber: 161,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: `w-5 h-0.5 bg-white rounded-full transition-all duration-300 block ${isMobileOpen ? 'opacity-0' : ''}`
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                            lineNumber: 148,
+                                            lineNumber: 162,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: `w-5 h-0.5 bg-white rounded-full transition-all duration-300 origin-center block ${isMobileOpen ? '-rotate-45 -translate-y-1.5' : ''}`
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                            lineNumber: 149,
+                                            lineNumber: 163,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                    lineNumber: 141,
+                                    lineNumber: 155,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -438,7 +492,7 @@ function Navbar() {
                                         children: link.label
                                     }, link.href, false, {
                                         fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                        lineNumber: 165,
+                                        lineNumber: 179,
                                         columnNumber: 19
                                     }, this)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -450,30 +504,30 @@ function Navbar() {
                                             children: "+"
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                            lineNumber: 181,
+                                            lineNumber: 195,
                                             columnNumber: 19
                                         }, this),
                                         " Add Resource"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                    lineNumber: 176,
+                                    lineNumber: 190,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                            lineNumber: 163,
+                            lineNumber: 177,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                        lineNumber: 157,
+                        lineNumber: 171,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                    lineNumber: 155,
+                    lineNumber: 169,
                     columnNumber: 9
                 }, this)
             ]
@@ -538,6 +592,14 @@ const footerLinks = {
         {
             href: '/about',
             label: 'About Us'
+        },
+        {
+            href: '/copyright',
+            label: 'Copyright Checklist'
+        },
+        {
+            href: '/work-log',
+            label: 'Work Log'
         }
     ],
     categories: [
@@ -619,17 +681,17 @@ function Footer() {
                         fill: "#011629"
                     }, void 0, false, {
                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                        lineNumber: 43,
+                        lineNumber: 45,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/next-community-connect/components/Footer.tsx",
-                    lineNumber: 42,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                lineNumber: 41,
+                lineNumber: 43,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -659,7 +721,7 @@ function Footer() {
                                                         strokeWidth: "1.5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                        lineNumber: 52,
+                                                        lineNumber: 54,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -669,7 +731,7 @@ function Footer() {
                                                         fill: "#2499D6"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                        lineNumber: 53,
+                                                        lineNumber: 55,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -679,7 +741,7 @@ function Footer() {
                                                         fill: "#56BBF0"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                        lineNumber: 54,
+                                                        lineNumber: 56,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -689,7 +751,7 @@ function Footer() {
                                                         fill: "#56BBF0"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                        lineNumber: 55,
+                                                        lineNumber: 57,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -699,7 +761,7 @@ function Footer() {
                                                         fill: "#56BBF0"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                        lineNumber: 56,
+                                                        lineNumber: 58,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -712,7 +774,7 @@ function Footer() {
                                                         strokeLinecap: "round"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                        lineNumber: 57,
+                                                        lineNumber: 59,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -725,7 +787,7 @@ function Footer() {
                                                         strokeLinecap: "round"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                        lineNumber: 58,
+                                                        lineNumber: 60,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -738,13 +800,13 @@ function Footer() {
                                                         strokeLinecap: "round"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                        lineNumber: 59,
+                                                        lineNumber: 61,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                lineNumber: 51,
+                                                lineNumber: 53,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -756,19 +818,19 @@ function Footer() {
                                                         children: "Connect"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                        lineNumber: 62,
+                                                        lineNumber: 64,
                                                         columnNumber: 26
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                lineNumber: 61,
+                                                lineNumber: 63,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                        lineNumber: 50,
+                                        lineNumber: 52,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -776,7 +838,7 @@ function Footer() {
                                         children: "Building stronger communities through collaboration, service, and shared resources."
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                        lineNumber: 65,
+                                        lineNumber: 67,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -788,18 +850,18 @@ function Footer() {
                                                 children: social.icon
                                             }, i, false, {
                                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                lineNumber: 70,
+                                                lineNumber: 72,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                        lineNumber: 68,
+                                        lineNumber: 70,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                lineNumber: 49,
+                                lineNumber: 51,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -809,7 +871,7 @@ function Footer() {
                                         children: "Explore"
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                        lineNumber: 78,
+                                        lineNumber: 80,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -824,30 +886,30 @@ function Footer() {
                                                             children: "›"
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                            lineNumber: 83,
+                                                            lineNumber: 85,
                                                             columnNumber: 21
                                                         }, this),
                                                         link.label
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                    lineNumber: 82,
+                                                    lineNumber: 84,
                                                     columnNumber: 19
                                                 }, this)
                                             }, link.href + link.label, false, {
                                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                lineNumber: 81,
+                                                lineNumber: 83,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                        lineNumber: 79,
+                                        lineNumber: 81,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                lineNumber: 77,
+                                lineNumber: 79,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -857,7 +919,7 @@ function Footer() {
                                         children: "Categories"
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                        lineNumber: 92,
+                                        lineNumber: 94,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -872,30 +934,30 @@ function Footer() {
                                                             children: "›"
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                            lineNumber: 97,
+                                                            lineNumber: 99,
                                                             columnNumber: 21
                                                         }, this),
                                                         link.label
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                    lineNumber: 96,
+                                                    lineNumber: 98,
                                                     columnNumber: 19
                                                 }, this)
                                             }, link.href + link.label, false, {
                                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                lineNumber: 95,
+                                                lineNumber: 97,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                        lineNumber: 93,
+                                        lineNumber: 95,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                lineNumber: 91,
+                                lineNumber: 93,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -905,7 +967,7 @@ function Footer() {
                                         children: "Contact Us"
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                        lineNumber: 106,
+                                        lineNumber: 108,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -920,12 +982,12 @@ function Footer() {
                                                             size: 14
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                            lineNumber: 110,
+                                                            lineNumber: 112,
                                                             columnNumber: 19
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                        lineNumber: 109,
+                                                        lineNumber: 111,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -935,7 +997,7 @@ function Footer() {
                                                                 children: "Email"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                                lineNumber: 113,
+                                                                lineNumber: 115,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -944,19 +1006,19 @@ function Footer() {
                                                                 children: "communityconnect@gmail.com"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                                lineNumber: 114,
+                                                                lineNumber: 116,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                        lineNumber: 112,
+                                                        lineNumber: 114,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                lineNumber: 108,
+                                                lineNumber: 110,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -968,12 +1030,12 @@ function Footer() {
                                                             size: 14
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                            lineNumber: 119,
+                                                            lineNumber: 121,
                                                             columnNumber: 19
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                        lineNumber: 118,
+                                                        lineNumber: 120,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -983,7 +1045,7 @@ function Footer() {
                                                                 children: "Phone"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                                lineNumber: 122,
+                                                                lineNumber: 124,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -992,19 +1054,19 @@ function Footer() {
                                                                 children: "(123) 456 7890"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                                lineNumber: 123,
+                                                                lineNumber: 125,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                        lineNumber: 121,
+                                                        lineNumber: 123,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                lineNumber: 117,
+                                                lineNumber: 119,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1016,12 +1078,12 @@ function Footer() {
                                                             size: 14
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                            lineNumber: 128,
+                                                            lineNumber: 130,
                                                             columnNumber: 19
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                        lineNumber: 127,
+                                                        lineNumber: 129,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1031,7 +1093,7 @@ function Footer() {
                                                                 children: "Location"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                                lineNumber: 131,
+                                                                lineNumber: 133,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1039,19 +1101,19 @@ function Footer() {
                                                                 children: "Bothell, Washington 98011"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                                lineNumber: 132,
+                                                                lineNumber: 134,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                        lineNumber: 130,
+                                                        lineNumber: 132,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                lineNumber: 126,
+                                                lineNumber: 128,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1063,12 +1125,12 @@ function Footer() {
                                                             size: 14
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                            lineNumber: 137,
+                                                            lineNumber: 139,
                                                             columnNumber: 19
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                        lineNumber: 136,
+                                                        lineNumber: 138,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1078,7 +1140,7 @@ function Footer() {
                                                                 children: "Hours"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                                lineNumber: 140,
+                                                                lineNumber: 142,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1086,37 +1148,37 @@ function Footer() {
                                                                 children: "Mon–Fri, 9am – 5pm"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                                lineNumber: 141,
+                                                                lineNumber: 143,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                        lineNumber: 139,
+                                                        lineNumber: 141,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                lineNumber: 135,
+                                                lineNumber: 137,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                        lineNumber: 107,
+                                        lineNumber: 109,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                lineNumber: 105,
+                                lineNumber: 107,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                        lineNumber: 48,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1127,7 +1189,7 @@ function Footer() {
                                 children: "Trusted Community Partners"
                             }, void 0, false, {
                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                lineNumber: 149,
+                                lineNumber: 151,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1139,25 +1201,25 @@ function Footer() {
                                                 children: partner.icon
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                                lineNumber: 153,
+                                                lineNumber: 155,
                                                 columnNumber: 17
                                             }, this),
                                             partner.label
                                         ]
                                     }, i, true, {
                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                        lineNumber: 152,
+                                        lineNumber: 154,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                lineNumber: 150,
+                                lineNumber: 152,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                        lineNumber: 148,
+                        lineNumber: 150,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1172,7 +1234,7 @@ function Footer() {
                                         children: "♥"
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                        lineNumber: 162,
+                                        lineNumber: 164,
                                         columnNumber: 50
                                     }, this),
                                     " for TSA Webmaster  |  ",
@@ -1182,13 +1244,13 @@ function Footer() {
                                         children: "Reference Page"
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                        lineNumber: 163,
+                                        lineNumber: 165,
                                         columnNumber: 27
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                lineNumber: 161,
+                                lineNumber: 163,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1196,25 +1258,25 @@ function Footer() {
                                 children: "This website was created for educational purposes as part of the TSA Webmaster competition."
                             }, void 0, false, {
                                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                                lineNumber: 165,
+                                lineNumber: 167,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/next-community-connect/components/Footer.tsx",
-                        lineNumber: 160,
+                        lineNumber: 162,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/next-community-connect/components/Footer.tsx",
-                lineNumber: 47,
+                lineNumber: 49,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/next-community-connect/components/Footer.tsx",
-        lineNumber: 40,
+        lineNumber: 42,
         columnNumber: 5
     }, this);
 }

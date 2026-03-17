@@ -16,9 +16,10 @@ interface HeroProps {
   secondaryHref?: string;
   secondaryText?: string;
   stats?: Array<{value: string; label: string}>;
+  backgroundImage?: string;
 }
 
-function Hero({ 
+function Hero({
   badge = 'Serving Our Community Since 2020',
   staticTitle,
   rotatingTitles = ["amazing", "wonderful", "strong", "united", "connected"],
@@ -31,7 +32,8 @@ function Hero({
     {value: '500+', label: 'Resources Listed'},
     {value: '1,200+', label: 'Volunteers'},
     {value: '48', label: 'Partner Orgs'}
-  ]
+  ],
+  backgroundImage,
 }: HeroProps) {
   const [titleNumber, setTitleNumber] = useState(0)
 
@@ -50,22 +52,25 @@ function Hero({
     <div
       className="w-full min-h-screen flex items-center justify-center relative overflow-hidden"
       style={{
-        backgroundImage: "url('/img/avess-berge-ua2IF9HNaXs-unsplash.png')",
+        backgroundColor: '#022747',
+        backgroundImage: `url('${backgroundImage ?? '/img/avess-berge-ua2IF9HNaXs-unsplash.png'}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
       }}
     >
+      {/* Dark overlay for readability */}
+      <div className="absolute inset-0 bg-sky-950/60" />
       {/* Background Effects */}
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,rgba(145,176,138,0.6)_0%,transparent_50%),radial-gradient(ellipse_at_80%_80%,rgba(45,74,40,0.8)_0%,transparent_50%),radial-gradient(ellipse_at_60%_10%,rgba(217,229,212,0.3)_0%,transparent_40%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,rgba(36,153,214,0.4)_0%,transparent_50%),radial-gradient(ellipse_at_80%_80%,rgba(4,64,105,0.5)_0%,transparent_50%),radial-gradient(ellipse_at_60%_10%,rgba(198,235,255,0.2)_0%,transparent_40%)]" />
       </div>
 
       {/* Floating Orbs */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-[-100px] right-[-100px] w-[400px] h-[400px] rounded-full bg-green-pale/25 blur-[60px] animate-pulse" />
-        <div className="absolute bottom-[-50px] left-[-50px] w-[300px] h-[300px] rounded-full bg-green-mid/40 blur-[60px] animate-pulse" />
-        <div className="absolute top-1/2 left-[20%] w-[200px] h-[200px] rounded-full bg-green-mist/20 blur-[60px] animate-pulse" />
+        <div className="absolute top-[-100px] right-[-100px] w-[400px] h-[400px] rounded-full bg-sky-400/15 blur-[60px] animate-pulse" />
+        <div className="absolute bottom-[-50px] left-[-50px] w-[300px] h-[300px] rounded-full bg-sky-600/25 blur-[60px] animate-pulse" />
+        <div className="absolute top-1/2 left-[20%] w-[200px] h-[200px] rounded-full bg-sky-200/10 blur-[60px] animate-pulse" />
       </div>
 
       <div className="container mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
@@ -74,17 +79,18 @@ function Hero({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2"
+              className="inline-flex items-center gap-2 bg-sky-800/80 border border-sky-400/50 rounded-full px-4 py-2"
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-green-pale animate-pulse" />
+              <span className="w-1.5 h-1.5 rounded-full bg-sky-300 animate-pulse" />
               <span className="text-xs font-semibold text-white/90 tracking-widest uppercase">{badge}</span>
             </motion.div>
 
           <div className="flex gap-4 flex-col">
             {staticTitle ? (
-              <h1 className="text-5xl md:text-7xl lg:text-8xl max-w-4xl tracking-tighter text-center font-bold font-space text-white">
-                {staticTitle}
-              </h1>
+              <h1
+                className="text-5xl md:text-7xl lg:text-8xl max-w-4xl tracking-tighter text-center font-bold font-space text-white"
+                dangerouslySetInnerHTML={{ __html: staticTitle }}
+              />
             ) : (
               <h1 className="text-5xl md:text-7xl lg:text-8xl max-w-4xl tracking-tighter text-center font-bold font-space text-white">
                 <span className="text-white">Your Community is</span>
@@ -93,7 +99,7 @@ function Hero({
                 {rotatingTitles.map((title: string, index: number) => (
                   <motion.span
                     key={index}
-                    className="absolute font-bold text-green-pale"
+                    className="absolute font-bold text-sky-200"
                     initial={{ opacity: 0, y: "-100%" }}
                     transition={{ type: "spring", stiffness: 50, damping: 20 }}
                     animate={
@@ -126,14 +132,20 @@ function Hero({
             className="flex flex-row gap-4 mt-4"
           >
             <Link href={primaryHref}>
-              <Button size="lg" className="gap-4 bg-white text-green-mid hover:bg-white/90">
+              <button
+                className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-syne font-bold text-base transition-all hover:-translate-y-0.5 hover:shadow-lg"
+                style={{ backgroundColor: 'rgba(255,255,255,0.18)', color: 'white', border: '2px solid rgba(255,255,255,0.45)' }}
+              >
                 {primaryText} <MoveRight className="w-4 h-4" />
-              </Button>
+              </button>
             </Link>
             <Link href={secondaryHref}>
-              <Button size="lg" className="gap-4" variant="outline" style={{ background: "rgba(255,255,255,0.1)", borderColor: "rgba(255,255,255,0.3)", color: "white" }}>
-                {secondaryText} <PhoneCall className="w-4 h-4" />
-              </Button>
+              <button
+                className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-syne font-bold text-base transition-all hover:-translate-y-0.5 hover:shadow-lg"
+                style={{ backgroundColor: 'rgba(255,255,255,0.08)', color: 'white', border: '2px solid rgba(255,255,255,0.25)' }}
+              >
+                {secondaryText} <MoveRight className="w-4 h-4" />
+              </button>
             </Link>
           </motion.div>
 
@@ -146,7 +158,7 @@ function Hero({
               {stats.map((stat, i) => (
                 <div key={i} className="text-center px-8">
                   <span className="font-space text-3xl font-bold text-white block">{stat.value}</span>
-                  <span className="font-outfit text-xs font-medium text-white/60 uppercase tracking-wider">{stat.label}</span>
+                  <span className="font-outfit text-xs font-medium text-white/85 uppercase tracking-wider">{stat.label}</span>
                 </div>
               ))}
             </motion.div>

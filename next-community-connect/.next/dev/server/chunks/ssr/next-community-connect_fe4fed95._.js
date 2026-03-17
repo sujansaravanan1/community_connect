@@ -132,6 +132,7 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "w-full min-h-screen flex items-center justify-center relative overflow-hidden",
         style: {
+            backgroundColor: '#022747',
             backgroundImage: "url('/img/avess-berge-ua2IF9HNaXs-unsplash.png')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -139,17 +140,24 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute inset-0 bg-sky-950/60"
+            }, void 0, false, {
+                fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
+                lineNumber: 61,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 opacity-30",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,rgba(145,176,138,0.6)_0%,transparent_50%),radial-gradient(ellipse_at_80%_80%,rgba(45,74,40,0.8)_0%,transparent_50%),radial-gradient(ellipse_at_60%_10%,rgba(217,229,212,0.3)_0%,transparent_40%)]"
                 }, void 0, false, {
                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                    lineNumber: 61,
+                    lineNumber: 64,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                lineNumber: 60,
+                lineNumber: 63,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -159,27 +167,27 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                         className: "absolute top-[-100px] right-[-100px] w-[400px] h-[400px] rounded-full bg-green-pale/25 blur-[60px] animate-pulse"
                     }, void 0, false, {
                         fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                        lineNumber: 66,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute bottom-[-50px] left-[-50px] w-[300px] h-[300px] rounded-full bg-green-mid/40 blur-[60px] animate-pulse"
                     }, void 0, false, {
                         fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                        lineNumber: 67,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute top-1/2 left-[20%] w-[200px] h-[200px] rounded-full bg-green-mist/20 blur-[60px] animate-pulse"
                     }, void 0, false, {
                         fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                        lineNumber: 68,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                lineNumber: 65,
+                lineNumber: 68,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -199,13 +207,13 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                             transition: {
                                 duration: 0.6
                             },
-                            className: "inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2",
+                            className: "inline-flex items-center gap-2 bg-sky-800/80 border border-sky-400/50 rounded-full px-4 py-2",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "w-1.5 h-1.5 rounded-full bg-green-pale animate-pulse"
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                    lineNumber: 79,
+                                    lineNumber: 82,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -213,13 +221,13 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                     children: badge
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                    lineNumber: 80,
+                                    lineNumber: 83,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                            lineNumber: 73,
+                            lineNumber: 76,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -230,7 +238,7 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                     children: staticTitle
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                    lineNumber: 85,
+                                    lineNumber: 88,
                                     columnNumber: 15
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                     className: "text-5xl md:text-7xl lg:text-8xl max-w-4xl tracking-tighter text-center font-bold font-space text-white",
@@ -240,7 +248,7 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                             children: "Your Community is"
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                            lineNumber: 90,
+                                            lineNumber: 93,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -268,19 +276,19 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                                         children: title
                                                     }, index, false, {
                                                         fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                                        lineNumber: 94,
+                                                        lineNumber: 97,
                                                         columnNumber: 19
                                                     }, this))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                            lineNumber: 91,
+                                            lineNumber: 94,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                    lineNumber: 89,
+                                    lineNumber: 92,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -300,13 +308,13 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                     children: subtitle
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                    lineNumber: 112,
+                                    lineNumber: 115,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                            lineNumber: 83,
+                            lineNumber: 86,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -336,18 +344,18 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                                 className: "w-4 h-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                                lineNumber: 130,
+                                                lineNumber: 133,
                                                 columnNumber: 31
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                        lineNumber: 129,
+                                        lineNumber: 132,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                    lineNumber: 128,
+                                    lineNumber: 131,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -368,24 +376,24 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                                 className: "w-4 h-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                                lineNumber: 135,
+                                                lineNumber: 138,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                        lineNumber: 134,
+                                        lineNumber: 137,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                    lineNumber: 133,
+                                    lineNumber: 136,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                            lineNumber: 122,
+                            lineNumber: 125,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -410,37 +418,37 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                             children: stat.value
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                            lineNumber: 148,
+                                            lineNumber: 151,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "font-outfit text-xs font-medium text-white/60 uppercase tracking-wider",
+                                            className: "font-outfit text-xs font-medium text-white/85 uppercase tracking-wider",
                                             children: stat.label
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                            lineNumber: 149,
+                                            lineNumber: 152,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, i, true, {
                                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                    lineNumber: 147,
+                                    lineNumber: 150,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                            lineNumber: 140,
+                            lineNumber: 143,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                    lineNumber: 72,
+                    lineNumber: 75,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                lineNumber: 71,
+                lineNumber: 74,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -469,17 +477,17 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                 d: "M19 14l-7 7m0 0l-7-7m7 7V3"
                             }, void 0, false, {
                                 fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                                lineNumber: 164,
+                                lineNumber: 167,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                            lineNumber: 163,
+                            lineNumber: 166,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                        lineNumber: 162,
+                        lineNumber: 165,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -487,13 +495,13 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                         children: "Scroll"
                     }, void 0, false, {
                         fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                        lineNumber: 167,
+                        lineNumber: 170,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
-                lineNumber: 156,
+                lineNumber: 159,
                 columnNumber: 7
             }, this)
         ]
@@ -708,154 +716,154 @@ const communityImages = [
 ];
 const resources = [
     {
-        title: 'Scholarship Discovery Program',
+        title: 'Bothell Regional Library (KCLS)',
+        category: 'Education',
+        icon: 'fa-book',
+        description: 'Free access to books, digital resources, study rooms, homework help, and community programs for all ages. Library cards are free for all King County residents.',
+        phone: '(425) 486-7811',
+        email: 'askus@kcls.org',
+        hours: 'Mon–Thu 10AM–8PM, Fri–Sat 10AM–6PM, Sun 1–5PM',
+        location: 'Bothell Regional Library, 18215 98th Ave NE, Bothell WA 98011'
+    },
+    {
+        title: 'Northshore School District',
         category: 'Education',
         icon: 'fa-graduation-cap',
-        description: 'Find and apply for local and national scholarships. Free guidance on application essays, financial aid, and deadline tracking for college-bound students.',
-        phone: '(555) 234-5678',
-        email: 'scholarships@communityconnect.org',
-        hours: 'Mon–Fri 9AM–6PM, Sat 10AM–2PM',
-        location: 'Bothell Community Center, 9919 NE 180th St'
+        description: 'Serving over 22,000 students across Bothell, Kenmore, and Woodinville. Family engagement programs, multilingual support, special education services, and community partnerships.',
+        phone: '(425) 408-7600',
+        email: 'info@nsd.org',
+        hours: 'Mon–Fri 7:30AM–4:30PM',
+        location: 'Northshore School District, 3330 Monte Villa Pkwy, Bothell WA 98021'
     },
     {
-        title: 'After-School Tutoring Network',
-        category: 'Education',
-        icon: 'fa-book-reader',
-        description: 'Free K–12 tutoring in math, science, reading, and writing. Volunteer tutors available weekdays 3–6PM at multiple community centers.',
-        phone: '(555) 234-5679',
-        email: 'tutoring@communityconnect.org',
-        hours: 'Mon–Fri 3PM–6PM',
-        location: 'Various Bothell sites — call for location'
-    },
-    {
-        title: 'Youth Career Internship Portal',
-        category: 'Career',
-        icon: 'fa-briefcase',
-        description: 'Connect high school and college students with paid internships at local businesses. Earn real-world experience and college credit while building your resume.',
-        phone: '(555) 345-6789',
-        email: 'internships@communityconnect.org',
-        hours: 'Mon–Fri 9AM–5PM',
-        location: 'Bothell Workforce Dev. Center, 18411 NE Woodinville-Duvall Rd'
-    },
-    {
-        title: 'Job Search Workshop Series',
-        category: 'Career',
-        icon: 'fa-search-dollar',
-        description: 'Monthly workshops covering resume building, interview techniques, LinkedIn, and networking. Free and open to all community members.',
-        phone: '(555) 345-6790',
-        email: 'workshops@communityconnect.org',
-        hours: '2nd & 4th Tuesday 6PM–8PM',
-        location: 'Bothell Regional Library, 18215 98th Ave NE'
-    },
-    {
-        title: 'Community Health Clinic',
-        category: 'Health',
-        icon: 'fa-medkit',
-        description: 'Affordable medical and dental services with sliding-scale fees. Walk-in hours Monday–Friday 9AM–5PM. No insurance required, multilingual staff.',
-        phone: '(555) 456-7890',
-        email: 'clinic@healthcenter.org',
-        hours: 'Mon–Fri 9AM–5PM, Walk-ins welcome',
-        location: 'EvergreenHealth Bothell, 10010 NE 195th St'
-    },
-    {
-        title: 'Mental Wellness Support Line',
-        category: 'Health',
-        icon: 'fa-phone-volume',
-        description: '24/7 confidential crisis support and counseling. Connect with trained professionals for mental health support, stress management, and emotional guidance.',
-        phone: '(555) 911-HELP',
-        email: 'support@mentalhealthline.org',
-        hours: '24/7 — Call anytime',
-        location: 'Confidential — phone & online support'
-    },
-    {
-        title: 'Neighborhood Cleanup Initiative',
+        title: 'Northshore Volunteer Services',
         category: 'Volunteering',
         icon: 'fa-hands-helping',
-        description: 'Join monthly community cleanups in local parks. Tools and supplies provided. Volunteers of all ages welcome to help beautify our community.',
-        phone: '(555) 567-8901',
-        email: 'cleanup@communityconnect.org',
-        hours: '1st Saturday monthly 9AM–12PM',
-        location: 'Bothell Landing Park, 9919 NE 180th St'
+        description: 'Connecting Bothell-area volunteers with meaningful community opportunities. Place volunteers with nonprofits, schools, and city programs. Free training and orientation.',
+        phone: '(425) 485-1112',
+        email: 'office@nvskc.org',
+        hours: 'Mon–Fri 9AM–5PM',
+        location: 'Northshore Volunteer Services, 6809 228th St SW, Mountlake Terrace WA 98043'
     },
     {
-        title: 'Senior Companion Program',
-        category: 'Volunteering',
-        icon: 'fa-user-friends',
-        description: 'Match with local seniors for weekly visits, companionship, and light assistance. Training provided. Make a meaningful difference through friendship.',
-        phone: '(555) 567-8902',
-        email: 'companions@seniorcare.org',
-        hours: 'Flexible — match your schedule',
-        location: 'Training at Senior Center, 234 Elder St'
+        title: 'WorkSource Seattle-King County',
+        category: 'Career',
+        icon: 'fa-briefcase',
+        description: 'Free career services including job search assistance, resume workshops, interview prep, and employer connections. Serves all job seekers in King County.',
+        phone: '(206) 296-5051',
+        email: 'worksourceskc@esd.wa.gov',
+        hours: 'Mon–Fri 8AM–5PM',
+        location: 'WorkSource Seattle, 2nd Ave Extension S, Seattle WA 98104 (online services available)'
     },
     {
-        title: 'Community Garden Collective',
+        title: 'Hopelink Bothell',
         category: 'Community Projects',
         icon: 'fa-seedling',
-        description: 'Rent a plot and grow your own vegetables. Workshops on sustainable gardening, composting, and organic growing. Tools shared, water included.',
-        phone: '(555) 678-9012',
-        email: 'garden@greengrow.org',
-        hours: 'Open daily dawn to dusk',
-        location: 'Community Garden, Corner of 5th & Maple'
+        description: 'Hopelink provides food, financial assistance, housing, and transportation services to families and individuals in need across the Eastside and North King County.',
+        phone: '(425) 943-6700',
+        email: 'info@hope-link.org',
+        hours: 'Mon–Fri 9AM–4PM',
+        location: 'Hopelink Bothell, 23640 Bothell Everett Hwy, Bothell WA 98021'
     },
     {
-        title: 'Little Free Library Network',
-        category: 'Community Projects',
-        icon: 'fa-book',
-        description: 'Build and maintain Little Free Libraries in neighborhoods. Free books for all ages, woodworking workshops, and library setup support.',
-        phone: '(555) 678-9013',
-        email: 'books@littlefreelibrary.org',
-        hours: 'Workshop 2nd Sat 10AM–2PM',
-        location: 'Bothell Makerspace, 10810 NE 195th St'
+        title: 'EvergreenHealth Medical Center',
+        category: 'Health',
+        icon: 'fa-medkit',
+        description: 'Full-service hospital and medical center providing emergency care, primary care, and specialty services. Serving the Northshore community with compassionate, high-quality care.',
+        phone: '(425) 899-5200',
+        email: 'info@evergreenhealth.com',
+        hours: 'Emergency: 24/7 | Clinics: Mon–Fri 8AM–5PM',
+        location: 'EvergreenHealth, 12040 NE 128th St, Kirkland WA 98034'
     },
     {
-        title: 'Monthly Town Hall Meetings',
-        category: 'Events',
-        icon: 'fa-comments',
-        description: 'Monthly forums to discuss community issues, meet local leaders, and voice your concerns. First Thursday of every month, 7PM at City Hall.',
-        phone: '(555) 789-0123',
-        email: 'townhall@citygovernment.gov',
-        hours: '1st Thursday monthly 7PM–9PM',
-        location: 'City Hall Council Chambers, 100 Civic Plaza'
+        title: 'Northshore Senior Center',
+        category: 'Health',
+        icon: 'fa-user-friends',
+        description: 'Social, educational, and wellness programs for adults 50+. Fitness classes, lunch program, day trips, arts and crafts, and social events. No membership required.',
+        phone: '(425) 488-1785',
+        email: 'info@northshoresenior.org',
+        hours: 'Mon–Fri 8:30AM–4:30PM',
+        location: 'Northshore Senior Center, 10201 E Riverside Dr, Bothell WA 98011'
     },
     {
-        title: 'Community Resource Fair',
-        category: 'Events',
-        icon: 'fa-calendar-alt',
-        description: 'Annual event connecting residents with local services, nonprofits, health providers, and educational resources. Free health screenings, food, and kids activities.',
-        phone: '(555) 789-0124',
-        email: 'fair@communityconnect.org',
-        hours: 'Annual — 3rd Sat in Sept 10AM–4PM',
-        location: 'Central Park Main Field'
-    },
-    {
-        title: 'Financial Literacy Workshops',
-        category: 'Career',
-        icon: 'fa-dollar-sign',
-        description: 'Learn budgeting, saving, investing, and credit management. Free evening workshops in English and Spanish. Materials provided.',
-        phone: '(555) 890-1234',
-        email: 'finance@moneywise.org',
-        hours: 'Wednesdays 6PM–8PM',
-        location: 'Credit Union Community Room, 890 Bank St'
-    },
-    {
-        title: 'Youth Mentorship Network',
-        category: 'Education',
-        icon: 'fa-child',
-        description: 'Pair young people ages 12–18 with vetted adult mentors for guidance, academic support, and personal development. Background checks required. Open year-round.',
-        phone: '(555) 901-2345',
-        email: 'mentors@youthprogram.org',
-        hours: 'Match meetings flexible',
-        location: 'Youth Services Office, 345 Hope Blvd'
-    },
-    {
-        title: 'Fitness in the Park',
+        title: 'YMCA Northshore',
         category: 'Health',
         icon: 'fa-heartbeat',
-        description: 'Free outdoor fitness classes every weekend! Yoga, Zumba, bootcamp, and tai chi for all fitness levels. Bring a mat and water bottle.',
-        phone: '(555) 012-3456',
-        email: 'fitness@parksprogram.org',
-        hours: 'Sat–Sun 8AM, 10AM, 4PM',
-        location: 'Riverside Park Pavilion'
+        description: 'Programs for all ages including fitness, aquatics, youth sports, summer camps, and childcare. Financial assistance available to ensure everyone can participate regardless of income.',
+        phone: '(425) 485-9797',
+        email: 'northshoreymca@seattleymca.org',
+        hours: 'Mon–Fri 5AM–10PM, Sat–Sun 7AM–8PM',
+        location: 'YMCA Northshore, 23401 Lakeview Dr, Mountlake Terrace WA 98043'
+    },
+    {
+        title: 'Crisis Connections Washington',
+        category: 'Health',
+        icon: 'fa-phone-volume',
+        description: '24/7 confidential crisis support line. Call or text anytime for mental health crisis support, suicide prevention, emotional support, and connection to local resources.',
+        phone: '(866) 427-4747',
+        email: 'info@crisisconnections.org',
+        hours: '24/7 — Call or text anytime',
+        location: 'Phone & online support — confidential'
+    },
+    {
+        title: 'City of Bothell Parks & Recreation',
+        category: 'Community Projects',
+        icon: 'fa-leaf',
+        description: 'Year-round recreational programs, park rentals, community events, sports leagues, and senior activities. Bothell Landing, Canyon Park, and more are managed by Parks & Rec.',
+        phone: '(425) 806-6700',
+        email: 'parks@bothellwa.gov',
+        hours: 'Mon–Fri 8AM–5PM',
+        location: 'Bothell City Hall, 18415 101st Ave NE, Bothell WA 98011'
+    },
+    {
+        title: 'Northshore Schools Foundation',
+        category: 'Education',
+        icon: 'fa-child',
+        description: 'Grants and resources that directly support Northshore School District students and teachers. Funds classroom innovation, student enrichment, and financial assistance for activities.',
+        phone: '(425) 408-6014',
+        email: 'info@northshorefoundation.org',
+        hours: 'Mon–Fri 8AM–4PM',
+        location: 'Northshore Schools Foundation, 3330 Monte Villa Pkwy, Bothell WA 98021'
+    },
+    {
+        title: '211 King County',
+        category: 'Career',
+        icon: 'fa-search',
+        description: 'Dial 2-1-1 to connect with a specialist who can help find local health, human services, and social service programs. Free, confidential, available in multiple languages.',
+        phone: 'Dial 2-1-1',
+        email: 'info@211kingcounty.org',
+        hours: '24/7 — Call or visit online',
+        location: 'Phone & online — serves all of King County'
+    },
+    {
+        title: 'Imagine Housing',
+        category: 'Community Projects',
+        icon: 'fa-home',
+        description: 'Nonprofit providing affordable rental housing and resident services to low-income individuals and families in Eastside King County, including Bothell and Kenmore.',
+        phone: '(425) 576-7000',
+        email: 'info@imaginehousing.org',
+        hours: 'Mon–Fri 9AM–5PM',
+        location: 'Imagine Housing, 1901 Lind Ave SW, Renton WA 98057'
+    },
+    {
+        title: 'Kenmore-Bothell Volunteer Fire Dept.',
+        category: 'Volunteering',
+        icon: 'fa-fire-extinguisher',
+        description: 'The Northshore Fire Department welcomes community volunteers for auxiliary support, fire safety education, neighborhood emergency preparedness, and CERT training.',
+        phone: '(425) 354-2700',
+        email: 'info@northshorefire.com',
+        hours: 'Administrative Mon–Fri 8AM–5PM',
+        location: 'Northshore Fire, 6604 228th St SW, Mountlake Terrace WA 98043'
+    },
+    {
+        title: 'Sound Generations (Senior Services)',
+        category: 'Health',
+        icon: 'fa-shuttle-van',
+        description: 'Transportation, Meals on Wheels, caregiver support, and connection programs for older adults. Hyde Shuttle provides free or low-cost rides to medical appointments and grocery stores.',
+        phone: '(206) 448-3110',
+        email: 'info@soundgenerations.org',
+        hours: 'Mon–Fri 8AM–5PM',
+        location: 'Sound Generations, 2208 2nd Ave, Seattle WA 98121 (serves Northshore area)'
     }
 ];
 const categories = [
@@ -1241,8 +1249,11 @@ function ResourcesPage() {
                                                                                     lineNumber: 189,
                                                                                     columnNumber: 31
                                                                                 }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                    className: "text-sky-700",
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                                    href: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(resource.location)}`,
+                                                                                    target: "_blank",
+                                                                                    rel: "noopener noreferrer",
+                                                                                    className: "text-sky-600 hover:text-sky-800 hover:underline transition-colors",
                                                                                     children: resource.location
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
@@ -1282,8 +1293,9 @@ function ResourcesPage() {
                                                                                     lineNumber: 196,
                                                                                     columnNumber: 31
                                                                                 }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                    className: "text-sky-700",
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                                    href: `tel:${resource.phone.replace(/\D/g, '')}`,
+                                                                                    className: "text-sky-600 hover:text-sky-800 hover:underline transition-colors",
                                                                                     children: resource.phone
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
@@ -1364,8 +1376,9 @@ function ResourcesPage() {
                                                                                     lineNumber: 210,
                                                                                     columnNumber: 31
                                                                                 }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                    className: "text-sky-700 break-all",
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                                    href: `mailto:${resource.email}`,
+                                                                                    className: "text-sky-600 hover:text-sky-800 hover:underline transition-colors break-all",
                                                                                     children: resource.email
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",

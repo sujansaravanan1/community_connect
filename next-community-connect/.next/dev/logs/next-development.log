@@ -1,27 +1,59 @@
-[00:00:16.802] Server  LOG     ✓ Ready in 14.7s
-[00:00:49.642] Server  LOG     ○ Compiling / ...
-[00:01:05.035] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:31.890] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:03.619] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:02:47.745] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:23:56.366] Server  LOG     ✓ Compiled in 1908ms
-[00:27:48.304] Server  LOG     ✓ Compiled in 552ms
-[00:58:36.358] Server  ERROR   ⨯ Error: The default export is not a React Component in "/wishlist/page"
-[00:58:36.640] Server  ERROR   ⨯ Error: The default export is not a React Component in "/wishlist/page"
-[00:58:40.397] Server  ERROR   ⨯ Error: The default export is not a React Component in "/wishlist/page"
-[00:58:40.658] Server  ERROR   ⨯ Error: The default export is not a React Component in "/wishlist/page"
-[00:58:43.110] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/wishlist/page"
-[01:00:41.171] Server  ERROR   ⨯ Error: The default export is not a React Component in "/wishlist/page"
-[01:00:41.425] Server  ERROR   ⨯ Error: The default export is not a React Component in "/wishlist/page"
-[01:00:45.075] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/wishlist/page"
-[01:06:46.475] Server  ERROR   ⨯ Error: The default export is not a React Component in "/wishlist/page"
-[01:06:46.754] Server  ERROR   ⨯ Error: The default export is not a React Component in "/wishlist/page"
-[01:06:49.929] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/wishlist/page"
-[01:07:51.719] Server  LOG     ✓ Compiled in 710ms
-[01:07:53.386] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:08:29.970] Server  LOG     ✓ Compiled in 132ms
-[01:32:49.363] Server  LOG     ✓ Compiled in 1802ms
-[01:32:49.670] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./next-community-connect/app/wishlist/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[01:32:56.333] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:44:49.505] Server  LOG     ✓ Compiled in 4s
-[01:59:41.453] Server  LOG     ✓ Compiled in 346ms
+[00:00:00.967] Server  LOG     ✓ Ready in 612ms
+[00:00:01.599] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:01.860] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:32.085] Server  LOG     ✓ Compiled in 568ms
+[00:05:36.388] Server  LOG     ✓ Compiled in 121ms
+[00:05:36.543] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:43.527] Server  LOG     ✓ Compiled in 87ms
+[00:05:49.062] Server  LOG     ✓ Compiled in 51ms
+[00:05:55.378] Server  LOG     ✓ Compiled in 110ms
+[00:06:03.660] Server  LOG     ✓ Compiled in 78ms
+[00:06:05.983] Server  LOG     ✓ Compiled in 42ms
+[00:06:08.272] Server  LOG     ✓ Compiled in 37ms
+[00:06:11.445] Server  LOG     ✓ Compiled in 47ms
+[00:06:13.330] Server  LOG     ✓ Compiled in 60ms
+[00:06:17.864] Server  LOG     ✓ Compiled in 47ms
+[00:06:18.781] Server  LOG     ✓ Compiled in 41ms
+[00:06:22.079] Server  LOG     ✓ Compiled in 41ms
+[00:06:25.058] Server  LOG     ✓ Compiled in 38ms
+[00:06:26.043] Server  LOG     ✓ Compiled in 38ms
+[00:06:29.658] Server  LOG     ✓ Compiled in 56ms
+[00:06:33.274] Server  LOG     ✓ Compiled in 42ms
+[00:06:33.427] Server  LOG     ✓ Compiled in 39ms
+[00:06:35.059] Server  LOG     ✓ Compiled in 37ms
+[00:06:39.892] Server  LOG     ✓ Compiled in 36ms
+[00:06:40.332] Server  LOG     ✓ Compiled in 47ms
+[00:06:44.138] Server  LOG     ✓ Compiled in 41ms
+[00:06:46.761] Server  LOG     ✓ Compiled in 31ms
+[00:06:50.702] Server  LOG     ✓ Compiled in 38ms
+[00:07:27.283] Server  LOG     ✓ Compiled in 24ms
+[00:07:38.813] Server  LOG     ✓ Compiled in 230ms
+[00:07:45.543] Server  LOG     ✓ Compiled in 36ms
+[00:09:46.942] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:18.879] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:19:49.881] Server  LOG     ✓ Compiled in 1190ms
+[00:19:50.184] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:50.293] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:54.154] Server  LOG     ✓ Compiled in 55ms
+[00:20:12.580] Server  LOG     ✓ Compiled in 146ms
+[00:20:21.126] Server  LOG     ✓ Compiled in 39ms
+[00:21:09.852] Server  LOG     ✓ Compiled in 95ms
+[00:26:26.604] Server  LOG     ✓ Compiled in 221ms
+[00:26:58.945] Server  LOG     ✓ Compiled in 53ms
+[00:27:33.496] Server  LOG     ✓ Compiled in 30ms
+[00:27:41.094] Server  ERROR   ⨯ Error: Objects are not valid as a React child (found: object with keys {$$typeof, render}). If you meant to render a collection of children, use an array instead.
+[00:27:41.339] Server  ERROR   ⨯ Error: Objects are not valid as a React child (found: object with keys {$$typeof, render}). If you meant to render a collection of children, use an array instead.
+[00:27:41.344] Server  LOG     ✓ Compiled in 0ms
+[00:27:41.449] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:41.503] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:41.646] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {$$typeof, render}). If you meant to render a collection of children, use an array instead.
+[00:27:42.381] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {$$typeof, render}). If you meant to render a collection of children, use an array instead.
+[00:27:46.181] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:27:46.182] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:27:46.256] Server  LOG     ✓ Compiled in 28ms
+[00:27:46.772] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:46.806] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:50.279] Server  LOG     ✓ Compiled in 53ms
+[00:31:52.149] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:55.069] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:32:19.734] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.

@@ -31,9 +31,9 @@ const services = [
   },
   {
     icon: BarChart3,
-    title: 'Impact Tracking',
-    description: "See volunteer hours, families helped, events — real difference visualized.",
-    href: '/impact',
+    title: 'Accessibility',
+    description: "Customize your experience with font size, contrast, dark mode, and more.",
+    href: '/settings',
   },
   {
     icon: MapPin,
@@ -53,8 +53,8 @@ function ServiceCard({ service }: { service: typeof services[0] }) {
       >
         {/* Default state — icon + title */}
         <div className="flex items-center gap-4 transition-all duration-300 group-hover:opacity-0 group-hover:-translate-y-2">
-            <div className="w-12 h-12 flex-shrink-0 rounded-2xl bg-sky-400/30 border border-sky-300/40 flex items-center justify-center shadow-md">
-              <service.icon className="w-6 h-6 text-sky-100" strokeWidth={1.5} />
+            <div className="w-12 h-12 flex-shrink-0 rounded-2xl bg-sky-500/40 border border-sky-400/60 flex items-center justify-center shadow-md">
+              <service.icon className="w-6 h-6 text-white" strokeWidth={1.5} />
           </div>
           <h3 className="font-syne text-xl lg:text-2xl font-bold text-gray-900 tracking-tight">{service.title}</h3>
         </div>
@@ -77,7 +77,7 @@ function ServiceCard({ service }: { service: typeof services[0] }) {
 
 export function Services() {
   return (
-    <section className="py-24 lg:py-32" id="services">
+    <section className="py-24 lg:py-32 bg-sky-900" id="services">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
@@ -88,7 +88,7 @@ export function Services() {
           transition={{ duration: 0.5 }}
           className="mb-16"
         >
-          <span className="inline-flex items-center gap-2 bg-sky-400/10 border border-sky-400/20 px-4 py-1.5 rounded-full text-sky-300 font-syne font-semibold tracking-widest text-xs uppercase mb-6">
+          <span className="inline-flex items-center gap-2 bg-sky-400/20 border border-sky-400/40 px-4 py-1.5 rounded-full text-sky-200 font-syne font-semibold tracking-widest text-xs uppercase mb-6">
             What We Offer
           </span>
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">

@@ -82,7 +82,7 @@ export function ImpactStats() {
               <div className="font-syne text-5xl font-bold text-white mb-2" style={{ background: 'linear-gradient(135deg, #fff 0%, #90D4F7 50%, #56BBF0 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 {isVisible && <AnimatedCounter target={item.value} />}
               </div>
-              <div className="font-dm-sans text-sm font-medium text-white/75">{item.label}</div>
+              <div className="font-dm-sans text-sm font-medium text-white/90">{item.label}</div>
             </motion.div>
           ))}
         </div>

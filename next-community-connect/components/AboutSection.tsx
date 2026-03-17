@@ -92,7 +92,6 @@ export function AboutSection() {
                 {stat.plus && <span className="text-sky-300 text-2xl">+</span>}
               </div>
               <div className="font-dm-sans text-[11px] font-medium text-white/80 uppercase tracking-wider text-center">{stat.label}</div>
-              {i < missionStats.length - 1 && <div className="hidden md:block w-px h-[60px] bg-white/20 ml-12" />}
             </div>
           ))}
         </motion.div>
