@@ -41,10 +41,8 @@ const config: Config = {
         'dm-sans': ['DM Sans', 'sans-serif'],
         space: ['Space Grotesk', 'sans-serif'],
         outfit: ['Outfit', 'sans-serif'],
-        playfair: ['Playfair Display', 'serif'],
-        cormorant: ['Cormorant Garamond', 'serif'],
-        crimson: ['Crimson Pro', 'serif'],
       },
+      // Removed unused fonts for consistency (Playfair/Cormorant/Crimson)
       borderRadius: {
         sm: '8px',
         md: '14px',
@@ -73,6 +71,8 @@ const config: Config = {
         'card-hover': '0 24px 56px rgba(4,64,105,0.18)',
         'glass-inner': 'inset 0 1px 0 rgba(255,255,255,0.3), 0 8px 32px rgba(0,0,0,0.1)',
         'light-gradient': '0 1px 0 rgba(255,255,255,0.5), 0 4px 12px rgba(0,0,0,0.1)',
+        bento: '0 20px 40px -10px rgba(4,64,105,0.2)',
+        'bento-hover': '0 35px 60px -15px rgba(4,64,105,0.3)',
       },
       animation: {
         'fade-up': 'fadeUp 0.8s ease both',

@@ -4,6 +4,17 @@ import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { Search, ChevronDown, ArrowUp, MapPin, Phone, Clock, Mail, ExternalLink } from 'lucide-react'
 import { HeroDemo } from '@/components/ui/animated-hero-demo'
+import { ZoomParallax } from '@/components/ZoomParallax'
+
+const communityImages = [
+  { src: '/img/optimized/heartwithhands6.jpg', alt: 'Hands forming heart community symbol' },
+  { src: '/img/optimized/garden2.jpg', alt: 'Neighborhood garden space' },
+  { src: '/img/optimized/library3.jpg', alt: 'Local library community area' },
+  { src: '/img/optimized/cleanup4.jpg', alt: 'Neighborhood cleanup volunteers' },
+  { src: '/img/optimized/foodpantry5.jpg', alt: 'Community food pantry shelves' },
+  { src: '/img/optimized/playground1.jpg', alt: 'Community playground gathering' },
+  { src: '/img/optimized/community7.jpg', alt: 'General community gathering' },
+]
 
 const resources = [
   { title: 'Scholarship Discovery Program', category: 'Education', icon: 'fa-graduation-cap', description: 'Find and apply for local and national scholarships. Free guidance on application essays, financial aid, and deadline tracking for college-bound students.', phone: '(555) 234-5678', email: 'scholarships@communityconnect.org', hours: 'Mon–Fri 9AM–6PM, Sat 10AM–2PM', location: 'Bothell Community Center, 9919 NE 180th St' },
@@ -34,12 +45,12 @@ const categories = [
 ]
 
 const categoryColors: Record<string, string> = {
-  Education: 'from-[#1a3d6b] to-[#2d6b9a]',
-  Career: 'from-[#4a1a6b] to-[#7a2d9a]',
-  Health: 'from-[#1a4d3a] to-[#2d8c60]',
-  Volunteering: 'from-[#4a6741] to-[#91b08a]',
-  'Community Projects': 'from-[#6b3a1a] to-[#9a6b2d]',
-  Events: 'from-[#1a4a6b] to-[#2d7a9a]',
+  Education: 'from-sky-500 to-sky-400',
+  Career: 'from-sky-500 to-sky-400',
+  Health: 'from-sky-500 to-sky-400',
+  Volunteering: 'from-sky-500 to-sky-400',
+  'Community Projects': 'from-sky-500 to-sky-400',
+  Events: 'from-sky-500 to-sky-400',
 }
 
 export default function ResourcesPage() {
@@ -65,7 +76,7 @@ export default function ResourcesPage() {
     })
     .sort((a, b) => {
       if (sortBy === 'az') return a.title.localeCompare(b.title)
-      if (sortBy === 'za') return b.title.localeCompare(a.title)
+      if (sortBy === 'za') return b.title.localeCompare(b.title)
       if (sortBy === 'category') return a.category.localeCompare(b.category) || a.title.localeCompare(b.title)
       return 0
     })
@@ -78,28 +89,30 @@ export default function ResourcesPage() {
         subtitle="Find non-profits, support services, health programs, and opportunities — all verified, all free to access."
       /> 
 
+      <ZoomParallax images={communityImages} />
+
       {/* Directory Section */}
-      <section className="py-24 bg-white" id="directory">
+      <section className="py-24 glass-bg backdrop-blur" id="directory">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Controls */}
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-white border border-green-wash rounded-[var(--radius-lg)] p-7 mb-10 shadow-card">
-            <div className="flex flex-col md:flex-row gap-4 mb-5">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="glass-bg-md rounded-3xl p-8 lg:p-10 mb-12 border border-sky-200/50 shadow-xl">
+            <div className="flex flex-col md:flex-row gap-4 mb-6">
               <div className="flex-1 relative">
                 <input
                   type="text"
                   placeholder="Search by name, description, or category…"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full px-5 py-3 rounded-full bg-green-mist border-2 border-green-wash font-outfit text-sm outline-none focus:border-green-light transition-colors"
+                  className="w-full px-5 py-4 rounded-2xl bg-white/70 backdrop-blur-sm border border-sky-200 font-dm-sans text-sm outline-none focus:border-sky-400 transition-all shadow-sm focus:shadow-md"
                 />
-                <Search className="absolute right-4 top-1/2 -translate-y-1/2 text-green-light" size={16} />
+                <Search className="absolute right-4 top-1/2 -translate-y-1/2 text-sky-500" size={18} />
               </div>
-              <div className="flex items-center gap-2.5">
-                <label className="font-outfit text-sm font-medium text-[var(--text-muted)]">Sort:</label>
+              <div className="flex items-center gap-3">
+                <label className="font-dm-sans text-sm font-semibold text-sky-700">Sort:</label>
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
-                  className="px-4 py-2.5 rounded-full border-2 border-green-wash font-outfit text-sm cursor-pointer focus:border-green-light outline-none"
+                  className="px-4 py-3 rounded-xl border border-sky-200 bg-white/70 backdrop-blur-sm font-dm-sans text-sm cursor-pointer focus:border-sky-400 outline-none shadow-sm"
                 >
                   <option value="default">Default</option>
                   <option value="az">A → Z</option>
@@ -110,15 +123,15 @@ export default function ResourcesPage() {
             </div>
 
             {/* Categories */}
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-3">
               {categories.map((cat) => (
                 <button
                   key={cat.id}
                   onClick={() => setActiveCategory(cat.id)}
-                  className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${
+                  className={`px-6 py-3 rounded-2xl text-sm font-semibold transition-all backdrop-blur-sm shadow-md ${
                     activeCategory === cat.id
-                      ? 'bg-gradient-to-r from-accent-gold to-accent-gold-light text-[var(--text-dark)] shadow-lg'
-                      : 'bg-white border border-green-wash text-[var(--text-muted)] hover:border-green-light hover:text-green-mid'
+                      ? 'bg-sky-500 text-white shadow-sky-500/25 border border-sky-400'
+                      : 'bg-white/70 border border-sky-200 text-sky-700 hover:bg-sky-50 hover:border-sky-300 hover:shadow-lg'
                   }`}
                 >
                   {cat.label}
@@ -128,50 +141,76 @@ export default function ResourcesPage() {
           </motion.div>
 
           {/* Results count */}
-          <div className="flex justify-between items-center mb-6">
-            <p className="font-outfit text-sm text-[var(--text-muted)]">Showing <strong className="text-green-mid">{filtered.length}</strong> of {resources.length} resources</p>
+          <div className="flex justify-between items-center mb-8">
+            <p className="font-dm-sans text-base font-semibold text-sky-800">Showing <strong>{filtered.length}</strong> of {resources.length} resources</p>
           </div>
 
           {/* Grid */}
           {filtered.length === 0 ? (
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center py-20">
-              <Search size={56} className="text-green-wash mx-auto mb-5" />
-              <h3 className="font-space text-2xl font-bold text-[var(--text-dark)] mb-2">No resources found</h3>
-              <p className="font-outfit text-[var(--text-muted)]">Try a different keyword or category filter.</p>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center py-32">
+              <Search size={64} className="text-sky-300 mx-auto mb-6" />
+              <h3 className="font-syne text-3xl font-bold text-sky-900 mb-3">No resources found</h3>
+              <p className="font-dm-sans text-lg text-sky-600 max-w-md mx-auto">Try a different keyword or category filter.</p>
             </motion.div>
           ) : (
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filtered.map((resource, i) => (
                 <motion.div
                   key={i}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: (i % 6) * 0.1 }}
-                  className="bg-white rounded-[var(--radius-md)] border border-green-wash overflow-hidden transition-all hover:-translate-y-1.5 hover:shadow-[0_20px_48px_rgba(74,103,65,0.12)] relative group"
+                  transition={{ duration: 0.6, delay: (i % 6) * 0.1 }}
+                  className="group glass-bg-md rounded-3xl border border-sky-200/50 overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:border-sky-300 bg-white/60 backdrop-blur-xl"
                 >
-                  {/* Top accent line */}
-                  <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${categoryColors[resource.category]} scale-x-0 origin-left transition-transform duration-350 group-hover:scale-x-100`} />
-
+                  {/* Category accent */}
+                  <div className="h-2 bg-gradient-to-r from-sky-400 to-sky-500 group-hover:opacity-100 opacity-80 transition-opacity" />
+                  
                   {/* Header */}
-                  <div className={`h-36 bg-gradient-to-br ${categoryColors[resource.category]} flex items-center justify-center relative`}>
-                    <span className="text-white/25 text-7xl">●</span>
-                    <span className="absolute bottom-3 left-3 bg-white/90 text-green-mid text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">{resource.category}</span>
+                  <div className="h-48 bg-gradient-to-br from-sky-50 to-sky-100 flex items-center justify-center relative p-6">
+                    <span className="text-sky-300/30 text-8xl">●</span>
+                    <span className="absolute top-4 left-4 bg-sky-500/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-xl backdrop-blur-sm shadow-lg">
+                      {resource.category}
+                    </span>
                   </div>
 
                   {/* Body */}
-                  <div className="p-5">
-                    <h3 className="font-space text-lg font-bold text-[var(--text-dark)] mb-2 leading-tight">{resource.title}</h3>
-                    <p className="font-outfit text-sm text-[var(--text-muted)] leading-relaxed mb-4 line-clamp-2">{resource.description}</p>
+                  <div className="p-8">
+                    <h3 className="font-syne text-2xl font-bold text-sky-900 mb-3 leading-tight group-hover:text-sky-800 transition-colors">{resource.title}</h3>
+                    <p className="font-dm-sans text-base text-sky-700 leading-relaxed mb-6 line-clamp-3">{resource.description}</p>
 
                     {/* Expandable details */}
-                    <div className={`overflow-hidden transition-all duration-400 ${expandedCard === i ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
-                      <div className="bg-green-mist border border-green-wash rounded-lg p-3.5 mb-3">
-                        <div className="flex flex-col gap-2.5 text-xs">
-                          <span className="flex items-start gap-2"><MapPin size={12} className="text-green-light mt-0.5 flex-shrink-0" /><span><strong>Location:</strong> {resource.location}</span></span>
-                          <span className="flex items-start gap-2"><Phone size={12} className="text-green-light mt-0.5 flex-shrink-0" /><span><strong>Phone:</strong> {resource.phone}</span></span>
-                          <span className="flex items-start gap-2"><Clock size={12} className="text-green-light mt-0.5 flex-shrink-0" /><span><strong>Hours:</strong> {resource.hours}</span></span>
-                          <span className="flex items-start gap-2"><Mail size={12} className="text-green-light mt-0.5 flex-shrink-0" /><span><strong>Email:</strong> {resource.email}</span></span>
+                    <div className={`overflow-hidden transition-all duration-500 ${expandedCard === i ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'}`}>
+                      <div className="bg-sky-50/50 border border-sky-200/50 rounded-2xl p-6 mb-4 backdrop-blur-sm">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                          <div className="flex items-start gap-3">
+                            <MapPin size={16} className="text-sky-500 mt-1 flex-shrink-0" />
+                            <div>
+                              <div className="font-semibold text-sky-800 mb-1">Location</div>
+                              <div className="text-sky-700">{resource.location}</div>
+                            </div>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <Phone size={16} className="text-sky-500 mt-1 flex-shrink-0" />
+                            <div>
+                              <div className="font-semibold text-sky-800 mb-1">Phone</div>
+                              <div className="text-sky-700">{resource.phone}</div>
+                            </div>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <Clock size={16} className="text-sky-500 mt-1 flex-shrink-0" />
+                            <div>
+                              <div className="font-semibold text-sky-800 mb-1">Hours</div>
+                              <div className="text-sky-700">{resource.hours}</div>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-3">
+                            <Mail size={16} className="text-sky-500 flex-shrink-0" />
+                            <div>
+                              <div className="font-semibold text-sky-800 mb-1">Email</div>
+                              <div className="text-sky-700 break-all">{resource.email}</div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -179,12 +218,10 @@ export default function ResourcesPage() {
                     {/* Toggle */}
                     <button
                       onClick={() => setExpandedCard(expandedCard === i ? null : i)}
-                      className="flex items-center justify-between w-full pt-3 border-t border-green-wash bg-none border-l-0 border-r-0 border-b-0 cursor-pointer font-outfit text-sm font-semibold text-green-mid hover:text-green-deep transition-colors"
+                      className="flex items-center justify-between w-full pt-4 border-t border-sky-200/50 bg-none cursor-pointer font-dm-sans text-base font-semibold text-sky-700 hover:text-sky-900 transition-all group-hover:scale-[1.02]"
                     >
-                      <span>{expandedCard === i ? 'Hide Details' : 'View Details'}</span>
-                      <span className={`w-6 h-6 rounded-full bg-green-mist border border-green-wash flex items-center justify-center transition-transform ${expandedCard === i ? 'rotate-180' : ''}`}>
-                        <ChevronDown size={12} />
-                      </span>
+                      <span>{expandedCard === i ? 'Hide Details' : 'View Full Details'}</span>
+                      <ChevronDown size={20} className={`transition-transform duration-300 ${expandedCard === i ? 'rotate-180' : ''}`} />
                     </button>
                   </div>
                 </motion.div>
@@ -195,9 +232,14 @@ export default function ResourcesPage() {
       </section>
 
       {/* Back to Top */}
-      <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className={`fixed bottom-8 right-8 w-12 h-12 rounded-full bg-gradient-to-br from-accent-teal to-accent-teal-light text-white flex items-center justify-center shadow-lg transition-all hover:-translate-y-1 z-50 ${showBackToTop ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-        <ArrowUp size={18} />
-      </button>
+      <motion.button 
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={showBackToTop ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
+        className="fixed bottom-8 right-8 w-14 h-14 rounded-3xl bg-sky-500 hover:bg-sky-600 text-white flex items-center justify-center shadow-2xl hover:shadow-sky-500/50 transition-all duration-300 z-50 hover:-translate-y-1 active:scale-95"
+      >
+        <ArrowUp size={20} />
+      </motion.button>
     </>
   )
 }

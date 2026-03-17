@@ -1,151 +1,122 @@
 'use client'
 
 import Link from 'next/link'
-import { motion, useAnimate } from 'framer-motion'
-import { FiSearch, FiCalendar, FiHeart, FiPlusCircle, FiBarChart, FiMapPin, FiArrowRight } from 'react-icons/fi'
+import { motion } from 'framer-motion'
+import { Search, Calendar, Heart, Plus, BarChart3, MapPin } from 'lucide-react'
 
 const services = [
   {
-    icon: <FiSearch size={24} />,
+    icon: Search,
     title: "Resource Directory",
-    description: "Search and filter hundreds of verified local resources by category, location, and availability. Find exactly what you or someone you know needs.",
+    description: "Search and filter hundreds of verified local resources by category, location, and availability.",
     href: '/resources',
   },
   {
-    icon: <FiCalendar size={24} />,
+    icon: Calendar,
     title: 'Community Events',
-    description: "Discover upcoming cleanups, food drives, workshops, and neighborhood events. Join in person or find out how to organize your own.",
+    description: "Discover upcoming cleanups, food drives, workshops, and neighborhood events near you.",
     href: '/events',
   },
   {
-    icon: <FiHeart size={24} />,
+    icon: Heart,
     title: 'Volunteer Matching',
-    description: "Tell us your skills and availability, and we'll connect you with organizations that need exactly what you can offer.",
+    description: "Tell us your skills — we'll connect you with organizations that need what you offer.",
     href: '/resources',
   },
   {
-    icon: <FiPlusCircle size={24} />,
+    icon: Plus,
     title: 'Submit a Resource',
-    description: "Know of a program that helped you or someone in your community? Add it so others can benefit too. All submissions reviewed by our team.",
+    description: "Know a great program? Add it so others can benefit. All submissions reviewed.",
     href: '/submit',
   },
   {
-    icon: <FiBarChart size={24} />,
+    icon: BarChart3,
     title: 'Impact Tracking',
-    description: "See the real-world difference our community is making — volunteer hours logged, families helped, and events organized, all visualized.",
+    description: "See volunteer hours, families helped, events — real difference visualized.",
     href: '/impact',
   },
   {
-    icon: <FiMapPin size={24} />,
+    icon: MapPin,
     title: 'Interactive Map',
-    description: "Find resources near you using our integrated Google Maps feature. Get directions, hours, and contact info at a glance.",
+    description: "Find resources near you with directions and contact info built in.",
     href: '/resources',
   },
 ]
 
-const NO_CLIP = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)"
-const BOTTOM_RIGHT_CLIP = "polygon(0 0, 100% 0, 0 0, 0% 100%)"
-const TOP_RIGHT_CLIP = "polygon(0 0, 0 100%, 100% 100%, 0% 100%)"
-const BOTTOM_LEFT_CLIP = "polygon(100% 100%, 100% 0, 100% 100%, 0% 100%)"
-const TOP_LEFT_CLIP = "polygon(0 0, 100% 0, 100% 100%, 100% 0)"
-
-const ENTRANCE_KEYFRAMES = {
-  left: [BOTTOM_RIGHT_CLIP, NO_CLIP],
-  bottom: [BOTTOM_RIGHT_CLIP, NO_CLIP],
-  top: [BOTTOM_RIGHT_CLIP, NO_CLIP],
-  right: [TOP_LEFT_CLIP, NO_CLIP],
-}
-
-const EXIT_KEYFRAMES = {
-  left: [NO_CLIP, TOP_RIGHT_CLIP],
-  bottom: [NO_CLIP, TOP_RIGHT_CLIP],
-  top: [NO_CLIP, TOP_RIGHT_CLIP],
-  right: [NO_CLIP, BOTTOM_LEFT_CLIP],
-}
-
 function ServiceCard({ service }: { service: typeof services[0] }) {
-  const [scope, animate] = useAnimate()
-
-  const getNearestSide = (e: React.MouseEvent) => {
-    const box = (e.target as HTMLElement).getBoundingClientRect()
-    const proximityToLeft = { proximity: Math.abs(box.left - e.clientX), side: "left" as const }
-    const proximityToRight = { proximity: Math.abs(box.right - e.clientX), side: "right" as const }
-    const proximityToTop = { proximity: Math.abs(box.top - e.clientY), side: "top" as const }
-    const proximityToBottom = { proximity: Math.abs(box.bottom - e.clientY), side: "bottom" as const }
-    const sortedProximity = [proximityToLeft, proximityToRight, proximityToTop, proximityToBottom].sort((a, b) => a.proximity - b.proximity)
-    return sortedProximity[0].side
-  }
-
-  const handleMouseEnter = (e: React.MouseEvent) => {
-    const side = getNearestSide(e)
-    animate(scope.current, { clipPath: ENTRANCE_KEYFRAMES[side] })
-  }
-
-  const handleMouseLeave = (e: React.MouseEvent) => {
-    const side = getNearestSide(e)
-    animate(scope.current, { clipPath: EXIT_KEYFRAMES[side] })
-  }
-
   return (
-    <Link
-      href={service.href}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      className="relative block h-48 p-6 border-b border-r border-sky-200 dark:border-sky-700 bg-glass-bg-md dark:bg-glass-bg-dark hover:bg-sky-50/50 dark:hover:bg-sky-900/50 transition-all backdrop-blur"
-    >
-      <div className="flex flex-col h-full justify-between relative z-10">
-        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-400 to-sky-300 flex items-center justify-center text-white">
-          {service.icon}
-        </div>
-        <div>
-          <h3 className="font-syne text-lg font-semibold text-sky-900 dark:text-white mb-1">{service.title}</h3>
-          <p className="font-dm-sans text-xs text-sky-600 dark:text-sky-300 line-clamp-2">{service.description}</p>
-        </div>
-      </div>
-      
-      {/* Hover overlay with flip effect */}
-      <div
-        ref={scope}
-        style={{ clipPath: BOTTOM_RIGHT_CLIP }}
-        className="absolute inset-0 bg-gradient-to-br from-sky-500 to-sky-600 flex flex-col items-center justify-center p-6 text-white backdrop-blur-sm"
+    <Link href={service.href}>
+        <motion.div
+          className="group relative rounded-3xl border border-white/95 bg-white/80 backdrop-blur-xl p-8 lg:p-10 overflow-hidden cursor-pointer min-h-48 lg:min-h-56 shadow-lg hover:shadow-2xl"
+        whileHover={{ scale: 1.02, backgroundColor: 'rgba(255,255,255,0.18)' }}
+        transition={{ duration: 0.25, ease: [0.4, 0, 0.2, 1] }}
       >
-        <div className="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center text-white mb-3">
-          {service.icon}
+        {/* Default state — icon + title */}
+        <div className="flex items-center gap-4 transition-all duration-300 group-hover:opacity-0 group-hover:-translate-y-2">
+            <div className="w-12 h-12 flex-shrink-0 rounded-2xl bg-sky-400/30 border border-sky-300/40 flex items-center justify-center shadow-md">
+              <service.icon className="w-6 h-6 text-sky-100" strokeWidth={1.5} />
+          </div>
+          <h3 className="font-syne text-xl lg:text-2xl font-bold text-gray-900 tracking-tight">{service.title}</h3>
         </div>
-        <h3 className="font-syne text-lg font-semibold text-white text-center mb-2">{service.title}</h3>
-        <span className="inline-flex items-center gap-1 font-dm-sans text-sm font-medium text-white/90">
-          Learn More <FiArrowRight size={14} />
-        </span>
-      </div>
+
+        {/* Hover state — description */}
+        <div className="absolute inset-0 p-6 flex flex-col justify-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+          <div className="flex items-center gap-3 mb-3">
+            <service.icon className="w-4 h-4 text-sky-600 flex-shrink-0" strokeWidth={1.5} />
+            <h3 className="font-syne text-sm font-bold text-gray-800 uppercase tracking-wider">{service.title}</h3>
+          </div>
+          <p className="font-dm-sans text-sm text-gray-700 leading-relaxed">{service.description}</p>
+        </div>
+
+        {/* Bottom border glow on hover */}
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-sky-400/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      </motion.div>
     </Link>
   )
 }
 
 export function Services() {
   return (
-    <section className="py-24" id="services">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 lg:py-32" id="services">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-14"
+          transition={{ duration: 0.5 }}
+          className="mb-16"
         >
-          <span className="section-eyebrow">What We Offer</span>
-          <h2 className="section-heading">Everything your community needs, in one place.</h2>
-          <p className="section-subtext mx-auto">From finding volunteers to discovering local programs, our platform simplifies community engagement for everyone.</p>
+          <span className="inline-flex items-center gap-2 bg-sky-400/10 border border-sky-400/20 px-4 py-1.5 rounded-full text-sky-300 font-syne font-semibold tracking-widest text-xs uppercase mb-6">
+            What We Offer
+          </span>
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+            <h2 className="font-syne text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight max-w-xl">
+              Everything your<br />community needs
+            </h2>
+            <p className="font-dm-sans text-base text-white/60 max-w-sm leading-relaxed lg:text-right">
+              From finding volunteers to discovering local programs — all in one place.
+            </p>
+          </div>
         </motion.div>
 
-        {/* ClipPath Links Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border border-sky-200 dark:border-sky-700 rounded-3xl overflow-hidden backdrop-blur-sm shadow-glass">
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {services.map((service, i) => (
-            <ServiceCard key={i} service={service} />
+            <motion.div
+              key={service.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: i * 0.07 }}
+            >
+              <ServiceCard service={service} />
+            </motion.div>
           ))}
         </div>
+
       </div>
     </section>
   )
 }
-
