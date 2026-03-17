@@ -404,32 +404,30 @@ function Navbar() {
                                     lineNumber: 126,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                    whileHover: {
-                                        scale: 1.05
-                                    },
-                                    whileTap: {
-                                        scale: 0.98
-                                    },
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "/submit",
-                                        className: "hidden sm:flex items-center gap-1.5 bg-white/10 border border-white/20 backdrop-blur-xl text-white font-semibold px-6 py-3 rounded-2xl hover:bg-white/20 transition-all text-sm",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                children: "+"
-                                            }, void 0, false, {
-                                                fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                                lineNumber: 150,
-                                                columnNumber: 17
-                                            }, this),
-                                            " Add Resource"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                        lineNumber: 146,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "hidden sm:flex items-center gap-1",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                            href: "/copyright",
+                                            className: "text-white/75 hover:text-white font-medium text-sm px-3 py-2 rounded-lg hover:bg-white/10 transition-all",
+                                            children: "Copyright"
+                                        }, void 0, false, {
+                                            fileName: "[project]/next-community-connect/components/Navbar.tsx",
+                                            lineNumber: 146,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                            href: "/work-log.pdf",
+                                            target: "_blank",
+                                            className: "text-white/75 hover:text-white font-medium text-sm px-3 py-2 rounded-lg hover:bg-white/10 transition-all",
+                                            children: "Work Log"
+                                        }, void 0, false, {
+                                            fileName: "[project]/next-community-connect/components/Navbar.tsx",
+                                            lineNumber: 152,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/next-community-connect/components/Navbar.tsx",
                                     lineNumber: 145,
                                     columnNumber: 13
@@ -446,27 +444,27 @@ function Navbar() {
                                             className: `w-5 h-0.5 bg-white rounded-full transition-all duration-300 origin-center block ${isMobileOpen ? 'rotate-45 translate-y-1.5' : ''}`
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                            lineNumber: 161,
+                                            lineNumber: 168,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: `w-5 h-0.5 bg-white rounded-full transition-all duration-300 block ${isMobileOpen ? 'opacity-0' : ''}`
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                            lineNumber: 162,
+                                            lineNumber: 169,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: `w-5 h-0.5 bg-white rounded-full transition-all duration-300 origin-center block ${isMobileOpen ? '-rotate-45 -translate-y-1.5' : ''}`
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                            lineNumber: 163,
+                                            lineNumber: 170,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                    lineNumber: 155,
+                                    lineNumber: 162,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -506,42 +504,53 @@ function Navbar() {
                                         children: link.label
                                     }, link.href, false, {
                                         fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                        lineNumber: 179,
+                                        lineNumber: 186,
                                         columnNumber: 19
                                     }, this)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                    href: "/submit",
-                                    onClick: ()=>setIsMobileOpen(false),
-                                    className: "flex items-center justify-center gap-1.5 bg-white/10 border border-white/20 text-white font-semibold px-6 py-3 rounded-2xl hover:bg-white/20 transition-all text-sm mt-3",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex gap-2 mt-3",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            children: "+"
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                            href: "/copyright",
+                                            onClick: ()=>setIsMobileOpen(false),
+                                            className: "flex-1 flex items-center justify-center bg-white/10 border border-white/20 text-white font-semibold px-4 py-3 rounded-2xl hover:bg-white/20 transition-all text-sm",
+                                            children: "Copyright"
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                            lineNumber: 195,
+                                            lineNumber: 198,
                                             columnNumber: 19
                                         }, this),
-                                        " Add Resource"
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                            href: "/work-log.pdf",
+                                            target: "_blank",
+                                            onClick: ()=>setIsMobileOpen(false),
+                                            className: "flex-1 flex items-center justify-center bg-white/10 border border-white/20 text-white font-semibold px-4 py-3 rounded-2xl hover:bg-white/20 transition-all text-sm",
+                                            children: "Work Log"
+                                        }, void 0, false, {
+                                            fileName: "[project]/next-community-connect/components/Navbar.tsx",
+                                            lineNumber: 205,
+                                            columnNumber: 19
+                                        }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                                    lineNumber: 190,
+                                    lineNumber: 197,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                            lineNumber: 177,
+                            lineNumber: 184,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                        lineNumber: 171,
+                        lineNumber: 178,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/next-community-connect/components/Navbar.tsx",
-                    lineNumber: 169,
+                    lineNumber: 176,
                     columnNumber: 9
                 }, this)
             ]
@@ -1419,13 +1428,18 @@ function SettingsProvider({ children }) {
         if (settings.invertColors) filters.push('invert(1)');
         if (settings.sepia) filters.push('sepia(1)');
         html.style.filter = filters.length ? filters.join(' ') : 'none';
-        // Scale (zoom)
-        html.style.transform = `scale(${settings.zoom / 100})`;
-        html.style.transformOrigin = 'top left';
-        html.style.width = settings.zoom !== 100 ? 'calc(100% / ' + settings.zoom / 100 + ')' : '100%';
-        html.style.height = settings.zoom !== 100 ? 'calc(100% / ' + settings.zoom / 100 + ')' : 'auto';
-        // Cursor
-        html.style.cursor = settings.largeCursor ? 'crosshair' : 'default'; // Simple large cursor simulation
+        // Scale (zoom) — only apply transform when not 100%, otherwise fixed positioning breaks
+        if (settings.zoom !== 100) {
+            html.style.transform = `scale(${settings.zoom / 100})`;
+            html.style.transformOrigin = 'top left';
+            html.style.width = `calc(100% / ${settings.zoom / 100})`;
+            html.style.height = `calc(100% / ${settings.zoom / 100})`;
+        } else {
+            html.style.transform = '';
+            html.style.transformOrigin = '';
+            html.style.width = '';
+            html.style.height = '';
+        }
         // Reading guide (simple line overlay via attr)
         if (settings.readingGuide) {
             html.setAttribute('data-reading-guide', 'true');
@@ -1443,7 +1457,7 @@ function SettingsProvider({ children }) {
         children: children
     }, void 0, false, {
         fileName: "[project]/next-community-connect/context/SettingsContext.tsx",
-        lineNumber: 166,
+        lineNumber: 170,
         columnNumber: 5
     }, this);
 }

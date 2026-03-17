@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence, useMotionValue, useTransform, animate } from 'framer-motion'
 import { HeroDemo } from '@/components/ui/animated-hero-demo'
-import { Heart, Users, TrendingUp, X, Check, ChevronRight, Sparkles } from 'lucide-react'
+import { Heart, Users, TrendingUp, X, Check, ChevronRight, Sparkles, ImagePlus } from 'lucide-react'
 
 type Cause = {
   id: string
@@ -321,6 +321,19 @@ function DonationModal({ cause, onClose, onDonate }: {
 export default function DonatePage() {
   const [donations, setDonations] = useState<Record<string, number>>({})
   const [selected, setSelected] = useState<Cause | null>(null)
+  const [cardImages, setCardImages] = useState<Record<string, string>>({})
+  const imageInputRefs = useRef<Record<string, HTMLInputElement | null>>({})
+
+  const handleCardImage = (causeId: string, e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+    const reader = new FileReader()
+    reader.onload = (ev) => {
+      if (ev.target?.result) setCardImages(prev => ({ ...prev, [causeId]: ev.target!.result as string }))
+    }
+    reader.readAsDataURL(file)
+    e.target.value = ''
+  }
 
   const totalRaised = causes.reduce((sum, c) => sum + c.raised + (donations[c.id] || 0), 0)
   const totalSupporters = causes.reduce((sum, c) => sum + c.supporters, 0)
@@ -477,9 +490,28 @@ export default function DonatePage() {
 
                   <div className="p-6">
                     <div className="flex items-start justify-between mb-5">
-                      <div className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl"
-                        style={{ backgroundColor: cause.colorLight }}>
-                        {cause.emoji}
+                      <div className="relative group/img">
+                        <div className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl overflow-hidden"
+                          style={{ backgroundColor: cause.colorLight }}>
+                          {cardImages[cause.id]
+                            ? <img src={cardImages[cause.id]} alt={cause.title} className="w-full h-full object-cover" />
+                            : cause.emoji}
+                        </div>
+                        <input
+                          ref={el => { imageInputRefs.current[cause.id] = el }}
+                          type="file"
+                          accept="image/*"
+                          className="hidden"
+                          onChange={(e) => handleCardImage(cause.id, e)}
+                        />
+                        <button
+                          type="button"
+                          onClick={(e) => { e.stopPropagation(); imageInputRefs.current[cause.id]?.click() }}
+                          className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity"
+                          style={{ backgroundColor: cause.color }}
+                        >
+                          <ImagePlus size={10} color="white" />
+                        </button>
                       </div>
                       <span style={{
                         fontFamily: 'var(--font-dm-sans)',

@@ -134,7 +134,7 @@ function Hero({
             <Link href={primaryHref}>
               <button
                 className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-syne font-bold text-base transition-all hover:-translate-y-0.5 hover:shadow-lg"
-                style={{ backgroundColor: 'rgba(255,255,255,0.18)', color: 'white', border: '2px solid rgba(255,255,255,0.45)' }}
+                style={{ backgroundColor: 'rgba(255,255,255,0.15)', color: 'white', border: '2px solid rgba(255,255,255,0.35)' }}
               >
                 {primaryText} <MoveRight className="w-4 h-4" />
               </button>
@@ -142,7 +142,7 @@ function Hero({
             <Link href={secondaryHref}>
               <button
                 className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-syne font-bold text-base transition-all hover:-translate-y-0.5 hover:shadow-lg"
-                style={{ backgroundColor: 'rgba(255,255,255,0.08)', color: 'white', border: '2px solid rgba(255,255,255,0.25)' }}
+                style={{ backgroundColor: 'rgba(255,255,255,0.15)', color: 'white', border: '2px solid rgba(255,255,255,0.35)' }}
               >
                 {secondaryText} <MoveRight className="w-4 h-4" />
               </button>

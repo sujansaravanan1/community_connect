@@ -1,8 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { CheckCircle, AlertCircle, Mail, Phone, MapPin, Send } from 'lucide-react'
+import { CheckCircle, AlertCircle, Mail, Phone, MapPin, Send, ImagePlus, X } from 'lucide-react'
 import { HeroDemo } from '@/components/ui/animated-hero-demo'
 import Link from 'next/link'
 
@@ -132,6 +132,22 @@ export default function SubmitPage() {
   })
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+  const [images, setImages] = useState<string[]>([])
+  const fileInputRef = useRef<HTMLInputElement>(null)
+
+  const handleImages = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!e.target.files) return
+    Array.from(e.target.files).forEach(file => {
+      const reader = new FileReader()
+      reader.onload = (ev) => {
+        if (ev.target?.result) setImages(prev => [...prev, ev.target!.result as string])
+      }
+      reader.readAsDataURL(file)
+    })
+    e.target.value = ''
+  }
+
+  const removeImage = (idx: number) => setImages(prev => prev.filter((_, i) => i !== idx))
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -249,6 +265,45 @@ export default function SubmitPage() {
                   <input type="url" id="website" name="website" value={formData.website}
                     onChange={handleChange} placeholder="https://organization.org" className={field} />
                 </div>
+              </div>
+
+              {/* Image Upload */}
+              <div>
+                <label className="block font-outfit text-sm font-semibold text-sky-900 mb-2">
+                  Photos <span className="font-normal text-sky-400">(optional)</span>
+                </label>
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/*"
+                  multiple
+                  onChange={handleImages}
+                  className="hidden"
+                />
+                {images.length > 0 && (
+                  <div className="flex flex-wrap gap-3 mb-3">
+                    {images.map((src, idx) => (
+                      <div key={idx} className="relative w-20 h-20 rounded-xl overflow-hidden border-2 border-sky-200">
+                        <img src={src} alt={`upload-${idx}`} className="w-full h-full object-cover" />
+                        <button
+                          type="button"
+                          onClick={() => removeImage(idx)}
+                          className="absolute top-1 right-1 w-5 h-5 bg-black/50 rounded-full flex items-center justify-center"
+                        >
+                          <X className="w-3 h-3 text-white" />
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                )}
+                <button
+                  type="button"
+                  onClick={() => fileInputRef.current?.click()}
+                  className="flex items-center gap-2 px-4 py-2.5 rounded-[var(--radius-md)] border-2 border-dashed border-sky-200 text-sky-500 font-outfit text-sm hover:border-sky-400 hover:bg-sky-50 transition-all"
+                >
+                  <ImagePlus className="w-4 h-4" />
+                  {images.length === 0 ? 'Add Photos' : 'Add More'}
+                </button>
               </div>
 
               <button

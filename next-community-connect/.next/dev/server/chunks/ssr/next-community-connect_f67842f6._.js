@@ -261,9 +261,9 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         className: "inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-syne font-bold text-base transition-all hover:-translate-y-0.5 hover:shadow-lg",
                                         style: {
-                                            backgroundColor: 'rgba(255,255,255,0.18)',
+                                            backgroundColor: 'rgba(255,255,255,0.15)',
                                             color: 'white',
-                                            border: '2px solid rgba(255,255,255,0.45)'
+                                            border: '2px solid rgba(255,255,255,0.35)'
                                         },
                                         children: [
                                             primaryText,
@@ -291,9 +291,9 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         className: "inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-syne font-bold text-base transition-all hover:-translate-y-0.5 hover:shadow-lg",
                                         style: {
-                                            backgroundColor: 'rgba(255,255,255,0.08)',
+                                            backgroundColor: 'rgba(255,255,255,0.15)',
                                             color: 'white',
-                                            border: '2px solid rgba(255,255,255,0.25)'
+                                            border: '2px solid rgba(255,255,255,0.35)'
                                         },
                                         children: [
                                             secondaryText,
@@ -843,6 +843,23 @@ function SubmitPage() {
     });
     const [isSubmitted, setIsSubmitted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [images, setImages] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
+    const fileInputRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const handleImages = (e)=>{
+        if (!e.target.files) return;
+        Array.from(e.target.files).forEach((file)=>{
+            const reader = new FileReader();
+            reader.onload = (ev)=>{
+                if (ev.target?.result) setImages((prev)=>[
+                        ...prev,
+                        ev.target.result
+                    ]);
+            };
+            reader.readAsDataURL(file);
+        });
+        e.target.value = '';
+    };
+    const removeImage = (idx)=>setImages((prev)=>prev.filter((_, i)=>i !== idx));
     const handleSubmit = async (e)=>{
         e.preventDefault();
         setIsLoading(true);
@@ -858,7 +875,7 @@ function SubmitPage() {
     };
     if (isSubmitted) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(PlaneSuccess, {}, void 0, false, {
         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-        lineNumber: 148,
+        lineNumber: 164,
         columnNumber: 27
     }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -869,7 +886,7 @@ function SubmitPage() {
                 subtitle: "Know of a program that helped you or someone you know? Share it with our community so others can benefit too."
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                lineNumber: 152,
+                lineNumber: 168,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -897,7 +914,7 @@ function SubmitPage() {
                                         className: "w-5 h-5 text-sky-500 flex-shrink-0 mt-0.5"
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                        lineNumber: 168,
+                                        lineNumber: 184,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -908,20 +925,20 @@ function SubmitPage() {
                                                 children: "All submissions are reviewed"
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                lineNumber: 170,
+                                                lineNumber: 186,
                                                 columnNumber: 17
                                             }, this),
                                             " by our team within 2-3 business days to ensure quality and accuracy before being added to the directory."
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                        lineNumber: 169,
+                                        lineNumber: 185,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                lineNumber: 167,
+                                lineNumber: 183,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -940,13 +957,13 @@ function SubmitPage() {
                                                         children: "*"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                        lineNumber: 177,
+                                                        lineNumber: 193,
                                                         columnNumber: 33
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                lineNumber: 176,
+                                                lineNumber: 192,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -960,13 +977,13 @@ function SubmitPage() {
                                                 className: field
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                lineNumber: 179,
+                                                lineNumber: 195,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                        lineNumber: 175,
+                                        lineNumber: 191,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -977,7 +994,7 @@ function SubmitPage() {
                                                 children: "Organization / Provider Name"
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                lineNumber: 184,
+                                                lineNumber: 200,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -990,13 +1007,13 @@ function SubmitPage() {
                                                 className: field
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                lineNumber: 187,
+                                                lineNumber: 203,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                        lineNumber: 183,
+                                        lineNumber: 199,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1011,13 +1028,13 @@ function SubmitPage() {
                                                         children: "*"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                        lineNumber: 193,
+                                                        lineNumber: 209,
                                                         columnNumber: 28
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                lineNumber: 192,
+                                                lineNumber: 208,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -1033,7 +1050,7 @@ function SubmitPage() {
                                                         children: "Select a category"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                        lineNumber: 197,
+                                                        lineNumber: 213,
                                                         columnNumber: 19
                                                     }, this),
                                                     categories.map((cat)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1041,19 +1058,19 @@ function SubmitPage() {
                                                             children: cat
                                                         }, cat, false, {
                                                             fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                            lineNumber: 198,
+                                                            lineNumber: 214,
                                                             columnNumber: 42
                                                         }, this))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                lineNumber: 195,
+                                                lineNumber: 211,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                        lineNumber: 191,
+                                        lineNumber: 207,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1068,13 +1085,13 @@ function SubmitPage() {
                                                         children: "*"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                        lineNumber: 204,
+                                                        lineNumber: 220,
                                                         columnNumber: 31
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                lineNumber: 203,
+                                                lineNumber: 219,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -1088,13 +1105,13 @@ function SubmitPage() {
                                                 className: `${field} resize-none`
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                lineNumber: 206,
+                                                lineNumber: 222,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                        lineNumber: 202,
+                                        lineNumber: 218,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1112,13 +1129,13 @@ function SubmitPage() {
                                                                 children: "*"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                                lineNumber: 214,
+                                                                lineNumber: 230,
                                                                 columnNumber: 27
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                        lineNumber: 213,
+                                                        lineNumber: 229,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1128,7 +1145,7 @@ function SubmitPage() {
                                                                 className: "absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-sky-400"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                                lineNumber: 217,
+                                                                lineNumber: 233,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1142,19 +1159,19 @@ function SubmitPage() {
                                                                 className: iconField
                                                             }, void 0, false, {
                                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                                lineNumber: 218,
+                                                                lineNumber: 234,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                        lineNumber: 216,
+                                                        lineNumber: 232,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                lineNumber: 212,
+                                                lineNumber: 228,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1165,7 +1182,7 @@ function SubmitPage() {
                                                         children: "Phone"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                        lineNumber: 223,
+                                                        lineNumber: 239,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1175,7 +1192,7 @@ function SubmitPage() {
                                                                 className: "absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-sky-400"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                                lineNumber: 225,
+                                                                lineNumber: 241,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1188,25 +1205,25 @@ function SubmitPage() {
                                                                 className: iconField
                                                             }, void 0, false, {
                                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                                lineNumber: 226,
+                                                                lineNumber: 242,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                        lineNumber: 224,
+                                                        lineNumber: 240,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                lineNumber: 222,
+                                                lineNumber: 238,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                        lineNumber: 211,
+                                        lineNumber: 227,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1217,7 +1234,7 @@ function SubmitPage() {
                                                 children: "Address"
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                lineNumber: 233,
+                                                lineNumber: 249,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1227,7 +1244,7 @@ function SubmitPage() {
                                                         className: "absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-sky-400"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                        lineNumber: 235,
+                                                        lineNumber: 251,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1240,19 +1257,19 @@ function SubmitPage() {
                                                         className: iconField
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                        lineNumber: 236,
+                                                        lineNumber: 252,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                lineNumber: 234,
+                                                lineNumber: 250,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                        lineNumber: 232,
+                                        lineNumber: 248,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1266,7 +1283,7 @@ function SubmitPage() {
                                                         children: "Hours of Operation"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                        lineNumber: 243,
+                                                        lineNumber: 259,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1279,13 +1296,13 @@ function SubmitPage() {
                                                         className: field
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                        lineNumber: 244,
+                                                        lineNumber: 260,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                lineNumber: 242,
+                                                lineNumber: 258,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1296,7 +1313,7 @@ function SubmitPage() {
                                                         children: "Website"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                        lineNumber: 248,
+                                                        lineNumber: 264,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1309,19 +1326,19 @@ function SubmitPage() {
                                                         className: field
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                        lineNumber: 249,
+                                                        lineNumber: 265,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                lineNumber: 247,
+                                                lineNumber: 263,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                        lineNumber: 241,
+                                        lineNumber: 257,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1351,12 +1368,12 @@ function SubmitPage() {
                                                         className: "w-5 h-5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                        lineNumber: 265,
+                                                        lineNumber: 281,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                    lineNumber: 261,
+                                                    lineNumber: 277,
                                                     columnNumber: 21
                                                 }, this),
                                                 "Sending..."
@@ -1367,7 +1384,7 @@ function SubmitPage() {
                                                     size: 18
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                                    lineNumber: 271,
+                                                    lineNumber: 287,
                                                     columnNumber: 21
                                                 }, this),
                                                 "Submit Resource"
@@ -1375,29 +1392,29 @@ function SubmitPage() {
                                         }, void 0, true)
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                        lineNumber: 254,
+                                        lineNumber: 270,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                                lineNumber: 174,
+                                lineNumber: 190,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                        lineNumber: 160,
+                        lineNumber: 176,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                    lineNumber: 159,
+                    lineNumber: 175,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/app/submit/page.tsx",
-                lineNumber: 158,
+                lineNumber: 174,
                 columnNumber: 7
             }, this)
         ]

@@ -145,14 +145,18 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     if (settings.sepia) filters.push('sepia(1)')
     html.style.filter = filters.length ? filters.join(' ') : 'none'
 
-    // Scale (zoom)
-    html.style.transform = `scale(${settings.zoom / 100})`
-    html.style.transformOrigin = 'top left'
-    html.style.width = settings.zoom !== 100 ? 'calc(100% / ' + (settings.zoom / 100) + ')' : '100%'
-    html.style.height = settings.zoom !== 100 ? 'calc(100% / ' + (settings.zoom / 100) + ')' : 'auto'
-
-    // Cursor
-    html.style.cursor = settings.largeCursor ? 'crosshair' : 'default' // Simple large cursor simulation
+    // Scale (zoom) — only apply transform when not 100%, otherwise fixed positioning breaks
+    if (settings.zoom !== 100) {
+      html.style.transform = `scale(${settings.zoom / 100})`
+      html.style.transformOrigin = 'top left'
+      html.style.width = `calc(100% / ${settings.zoom / 100})`
+      html.style.height = `calc(100% / ${settings.zoom / 100})`
+    } else {
+      html.style.transform = ''
+      html.style.transformOrigin = ''
+      html.style.width = ''
+      html.style.height = ''
+    }
 
     // Reading guide (simple line overlay via attr)
     if (settings.readingGuide) {

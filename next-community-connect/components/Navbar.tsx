@@ -141,15 +141,22 @@ export function Navbar() {
               )}
             </motion.button>
 
-            {/* CTA Button */}
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
+            {/* CTA Links */}
+            <div className="hidden sm:flex items-center gap-1">
               <Link
-                href="/submit"
-                className="hidden sm:flex items-center gap-1.5 bg-white/10 border border-white/20 backdrop-blur-xl text-white font-semibold px-6 py-3 rounded-2xl hover:bg-white/20 transition-all text-sm"
+                href="/copyright"
+                className="text-white/75 hover:text-white font-medium text-sm px-3 py-2 rounded-lg hover:bg-white/10 transition-all"
               >
-                <span>+</span> Add Resource
+                Copyright
               </Link>
-            </motion.div>
+              <Link
+                href="/work-log.pdf"
+                target="_blank"
+                className="text-white/75 hover:text-white font-medium text-sm px-3 py-2 rounded-lg hover:bg-white/10 transition-all"
+              >
+                Work Log
+              </Link>
+            </div>
 
             {/* Mobile Menu Button */}
             <motion.button
@@ -187,13 +194,23 @@ export function Navbar() {
                     {link.label}
                   </Link>
                 ))}
-                <Link
-                  href="/submit"
-                  onClick={() => setIsMobileOpen(false)}
-                  className="flex items-center justify-center gap-1.5 bg-white/10 border border-white/20 text-white font-semibold px-6 py-3 rounded-2xl hover:bg-white/20 transition-all text-sm mt-3"
-                >
-                  <span>+</span> Add Resource
-                </Link>
+                <div className="flex gap-2 mt-3">
+                  <Link
+                    href="/copyright"
+                    onClick={() => setIsMobileOpen(false)}
+                    className="flex-1 flex items-center justify-center bg-white/10 border border-white/20 text-white font-semibold px-4 py-3 rounded-2xl hover:bg-white/20 transition-all text-sm"
+                  >
+                    Copyright
+                  </Link>
+                  <Link
+                    href="/work-log.pdf"
+                    target="_blank"
+                    onClick={() => setIsMobileOpen(false)}
+                    className="flex-1 flex items-center justify-center bg-white/10 border border-white/20 text-white font-semibold px-4 py-3 rounded-2xl hover:bg-white/20 transition-all text-sm"
+                  >
+                    Work Log
+                  </Link>
+                </div>
               </div>
             </motion.div>
           )}

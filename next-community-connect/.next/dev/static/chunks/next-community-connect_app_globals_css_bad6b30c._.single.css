@@ -463,6 +463,18 @@ img, video {
   top: 100%;
 }
 
+.right-1 {
+  right: .25rem;
+}
+
+.top-1 {
+  top: .25rem;
+}
+
+.-right-1 {
+  right: -.25rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -610,6 +622,10 @@ img, video {
 
 .-mt-7 {
   margin-top: -1.75rem;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 .line-clamp-3 {
@@ -1264,6 +1280,12 @@ img, video {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
 .divide-x > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-x-reverse: 0;
   border-right-width: calc(1px * var(--tw-divide-x-reverse));
@@ -1381,6 +1403,10 @@ img, video {
 
 .border-t {
   border-top-width: 1px;
+}
+
+.border-dashed {
+  border-style: dashed;
 }
 
 .border-\[\#6C6C6C\] {
@@ -1505,6 +1531,11 @@ img, video {
 
 .border-zinc-950\/10 {
   border-color: #09090b1a;
+}
+
+.border-sky-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(13 123 181 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#222222\] {
@@ -1662,6 +1693,10 @@ img, video {
 .bg-zinc-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity, 1));
+}
+
+.bg-black\/50 {
+  background-color: #00000080;
 }
 
 .bg-\[radial-gradient\(ellipse_at_20\%_20\%\,rgba\(36\,153\,214\,0\.4\)_0\%\,transparent_50\%\)\,radial-gradient\(ellipse_at_80\%_80\%\,rgba\(4\,64\,105\,0\.5\)_0\%\,transparent_50\%\)\,radial-gradient\(ellipse_at_60\%_10\%\,rgba\(198\,235\,255\,0\.2\)_0\%\,transparent_40\%\)\] {
@@ -2063,6 +2098,21 @@ img, video {
   padding-bottom: 2rem;
 }
 
+.py-0\.5 {
+  padding-top: .125rem;
+  padding-bottom: .125rem;
+}
+
+.py-3\.5 {
+  padding-top: .875rem;
+  padding-bottom: .875rem;
+}
+
+.py-2\.5 {
+  padding-top: .625rem;
+  padding-bottom: .625rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -2109,6 +2159,10 @@ img, video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .text-left {
@@ -2559,6 +2613,11 @@ img, video {
 
 .shadow-sky-500\/25 {
   --tw-shadow-color: #0d7bb540;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-sky-500\/20 {
+  --tw-shadow-color: #0d7bb533;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -3559,7 +3618,7 @@ html {
   opacity: 0;
 }
 
-.group:hover .group-hover\:opacity-100 {
+.group:hover .group-hover\:opacity-100, .group\/img:hover .group-hover\/img\:opacity-100 {
   opacity: 1;
 }
 

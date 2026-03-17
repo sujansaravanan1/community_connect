@@ -70,3 +70,18 @@
 [00:46:52.939] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:47:57.857] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
 [00:48:31.281] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:55:28.954] Server  LOG     ✓ Compiled in 199ms
+[00:55:40.599] Server  LOG     ✓ Compiled in 94ms
+[00:56:04.536] Server  LOG     ✓ Compiled in 147ms
+[00:56:12.382] Server  LOG     ✓ Compiled in 58ms
+[00:56:21.033] Server  LOG     ✓ Compiled in 53ms
+[00:56:52.079] Server  LOG     ✓ Compiled in 119ms
+[00:57:05.028] Server  LOG     ✓ Compiled in 46ms
+[00:57:29.612] Server  LOG     ✓ Compiled in 90ms
+[00:57:43.720] Server  LOG     ✓ Compiled in 74ms
+[00:57:52.970] Server  LOG     ✓ Compiled in 92ms
+[01:00:22.685] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:41.341] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:00:59.609] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[01:02:06.856] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:02:18.385] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
