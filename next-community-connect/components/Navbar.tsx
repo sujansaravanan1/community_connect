@@ -149,13 +149,6 @@ export function Navbar() {
               >
                 Copyright
               </Link>
-              <Link
-                href="/work-log.pdf"
-                target="_blank"
-                className="text-white/75 hover:text-white font-medium text-sm px-3 py-2 rounded-lg hover:bg-white/10 transition-all"
-              >
-                Work Log
-              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -201,14 +194,6 @@ export function Navbar() {
                     className="flex-1 flex items-center justify-center bg-white/10 border border-white/20 text-white font-semibold px-4 py-3 rounded-2xl hover:bg-white/20 transition-all text-sm"
                   >
                     Copyright
-                  </Link>
-                  <Link
-                    href="/work-log.pdf"
-                    target="_blank"
-                    onClick={() => setIsMobileOpen(false)}
-                    className="flex-1 flex items-center justify-center bg-white/10 border border-white/20 text-white font-semibold px-4 py-3 rounded-2xl hover:bg-white/20 transition-all text-sm"
-                  >
-                    Work Log
                   </Link>
                 </div>
               </div>

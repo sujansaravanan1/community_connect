@@ -22,7 +22,7 @@ export function CTA() {
           <div className="relative z-10">
             <h2 className="font-syne text-4xl font-bold text-white mb-4">Ready to connect with your community?</h2>
             <p className="font-dm-sans text-lg text-white/90 max-w-lg mx-auto mb-8 font-light">
-              Whether you're looking for help, want to give back, or know of a resource others should know about — start here.
+              Whether you are looking for help, want to give back, or know of a resource others should know about, start here.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <Link href="/resources" className="bg-white text-sky-800 px-6 py-3 rounded-2xl font-dm-sans font-semibold flex items-center gap-2 shadow-2xl hover:shadow-sky-500/30 hover:-translate-y-1 transition-all">

@@ -20,7 +20,7 @@ const services = [
   {
     icon: Heart,
     title: 'Volunteer Matching',
-    description: "Tell us your skills — we'll connect you with organizations that need what you offer.",
+    description: "Share your skills and we will connect you with organizations that need what you offer.",
     href: '/resources',
   },
   {
@@ -51,7 +51,7 @@ function ServiceCard({ service }: { service: typeof services[0] }) {
         whileHover={{ scale: 1.02, backgroundColor: 'rgba(255,255,255,0.18)' }}
         transition={{ duration: 0.25, ease: [0.4, 0, 0.2, 1] }}
       >
-        {/* Default state — icon + title */}
+        {/* Default state - icon + title */}
         <div className="flex items-center gap-4 transition-all duration-300 group-hover:opacity-0 group-hover:-translate-y-2">
             <div className="w-12 h-12 flex-shrink-0 rounded-2xl bg-sky-500/40 border border-sky-400/60 flex items-center justify-center shadow-md">
               <service.icon className="w-6 h-6 text-white" strokeWidth={1.5} />
@@ -59,7 +59,7 @@ function ServiceCard({ service }: { service: typeof services[0] }) {
           <h3 className="font-syne text-xl lg:text-2xl font-bold text-gray-900 tracking-tight">{service.title}</h3>
         </div>
 
-        {/* Hover state — description */}
+        {/* Hover state - description */}
         <div className="absolute inset-0 p-6 flex flex-col justify-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
           <div className="flex items-center gap-3 mb-3">
             <service.icon className="w-4 h-4 text-sky-600 flex-shrink-0" strokeWidth={1.5} />
@@ -96,7 +96,7 @@ export function Services() {
               Everything your<br />community needs
             </h2>
             <p className="font-dm-sans text-base text-white/60 max-w-sm leading-relaxed lg:text-right">
-              From finding volunteers to discovering local programs — all in one place.
+              From finding volunteers to discovering local programs, all in one place.
             </p>
           </div>
         </motion.div>

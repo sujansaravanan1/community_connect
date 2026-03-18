@@ -12,8 +12,7 @@ const footerLinks = {
     { href: '/resources', label: 'Resource Hub' },
     { href: '/submit', label: 'Submit a Resource' },
     { href: '/about', label: 'About Us' },
-    { href: '/copyright', label: 'Copyright Checklist' },
-    { href: '/work-log', label: 'Work Log' },
+    { href: '/copyright', label: 'Copyright & References' },
   ],
   categories: [
     { href: '/resources?cat=Education', label: 'Education' },
@@ -129,7 +128,7 @@ export function Footer() {
                 { icon: Mail, label: 'Email', content: 'communityconnect@gmail.com', href: 'mailto:communityconnect@gmail.com' },
                 { icon: Phone, label: 'Phone', content: '(123) 456-7890', href: 'tel:+11234567890' },
                 { icon: MapPin, label: 'Location', content: 'Bothell, Washington 98011', href: 'https://www.google.com/maps/search/?api=1&query=Bothell+Washington+98011' },
-                { icon: Clock, label: 'Hours', content: 'Mon–Fri, 9am – 5pm', href: undefined },
+                { icon: Clock, label: 'Hours', content: 'Mon-Fri, 9am - 5pm', href: undefined },
               ].map(({ icon: Icon, label, content, href }) => (
                 <div key={label} className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style={{ backgroundColor: 'rgba(36,153,214,0.2)', border: '1px solid rgba(86,187,240,0.4)' }}>
@@ -177,15 +176,11 @@ export function Footer() {
         {/* Bottom */}
         <div className="pt-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="font-dm-sans text-sm" style={{ color: 'rgba(144,212,247,0.7)' }}>
-            © 2025 CommunityConnect — Bothell, WA
+            © 2025 CommunityConnect | Bothell, WA
           </p>
           <div className="flex items-center gap-4">
             <Link href="/copyright" className="font-dm-sans text-xs hover:text-white transition-colors" style={{ color: 'rgba(198,235,255,0.75)' }}>
-              Copyright Checklist
-            </Link>
-            <span style={{ color: 'rgba(86,187,240,0.3)' }}>|</span>
-            <Link href="/work-log" className="font-dm-sans text-xs hover:text-white transition-colors" style={{ color: 'rgba(198,235,255,0.75)' }}>
-              Work Log
+              Copyright
             </Link>
             <span style={{ color: 'rgba(86,187,240,0.3)' }}>|</span>
             <Link href="/settings" className="font-dm-sans text-xs hover:text-white transition-colors" style={{ color: 'rgba(198,235,255,0.75)' }}>

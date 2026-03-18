@@ -5,15 +5,15 @@ import { motion } from 'framer-motion'
 import { Heart, Shield, Users, Zap } from 'lucide-react'
 
 const pillars = [
-  { icon: <Heart size={20} />, title: 'Inclusive', description: 'Resources for every age, background, and need — no one in Bothell left behind.' },
+  { icon: <Heart size={20} />, title: 'Inclusive', description: 'Resources for every age, background, and need. No one in Bothell gets left behind.' },
   { icon: <Shield size={20} />, title: 'Trusted', description: 'Every resource is reviewed and verified by our team before it goes live.' },
-  { icon: <Users size={20} />, title: 'Community-Led', description: 'Built by Bothell residents, for Bothell residents — you shape the hub.' },
+  { icon: <Users size={20} />, title: 'Community-Led', description: 'Built by Bothell residents, for Bothell residents. You shape the hub.' },
   { icon: <Zap size={20} />, title: 'Impactful', description: 'We track real-world difference and celebrate every connection made.' },
 ]
 
 const missionStats = [
-  { value: '1,200+', label: 'Bothell Volunteers', plus: true },
-  { value: '50+', label: 'Local Resources Listed', plus: true },
+  { value: '150+', label: 'Bothell Volunteers', plus: false },
+  { value: '30+', label: 'Local Resources Listed', plus: false },
   { value: '6', label: 'Years Serving Bothell', plus: false },
   { value: '4', label: 'Community Events / Year', plus: false },
 ]
@@ -73,7 +73,7 @@ export function AboutSection() {
           <span className="section-eyebrow">Our Mission</span>
           <h2 className="section-heading">Connecting Bothell neighbors<br />with the help they need.</h2>
           <p className="font-dm-sans text-sky-700 leading-relaxed mt-4">
-            Community Connect is a volunteer-driven platform that breaks down barriers between Bothell residents and the resources around them — from food pantries and job training to after-school programs and health clinics.
+            Community Connect is a volunteer-driven platform that connects Bothell residents with the resources around them, including food pantries, job training, after-school programs, and health clinics.
           </p>
         </motion.div>
 

@@ -15,7 +15,12 @@ import { CTA } from '@/components/CTA'
 export default function HomePage() {
   return (
     <>
-<HeroDemo />
+<HeroDemo
+  primaryHref="/resources"
+  primaryText="Explore Resources"
+  secondaryHref="/events"
+  secondaryText="Upcoming Events"
+/>
       <AudienceBadges />
       <MissionTicker />
       <AboutSection />

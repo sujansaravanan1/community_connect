@@ -8,11 +8,11 @@ import { Lightbulb, Laptop, Handshake, Star, Users, Rocket, Heart, Shield, Zap, 
 
 const timeline = [
   { year: '2019', title: 'The Idea Takes Root', description: 'Two Bothell residents meet at a local hackathon and sketch out the first version of Community Connect. The goal is simple: one searchable list of every resource in town.', icon: 'lightbulb' },
-  { year: '2020', title: 'Launch & First 50 Resources', description: 'The platform goes live with 50 hand-researched Bothell-area resources. During the pandemic, traffic spikes as residents search for food assistance and health support.', icon: 'laptop' },
+  { year: '2020', title: 'Launch & First Resources', description: 'The platform goes live with an initial set of hand-researched Bothell-area resources. During the pandemic, residents search for food assistance and health support.', icon: 'laptop' },
   { year: '2021', title: 'First Nonprofit Partnerships', description: 'The first formal nonprofit partnerships are established. Community Connect begins representing Bothell residents at community meetings and city events.', icon: 'handshake' },
-  { year: '2022', title: '100+ Resources & First Events', description: 'The directory grows past 100 verified resources. The first Community Resource Fair brings together 30+ organizations and 800+ attendees.', icon: 'star' },
-  { year: '2023', title: 'Volunteer Network Expands', description: 'Over 400 community volunteers sign up to help verify listings, run workshops, and support events. The platform becomes genuinely community-run.', icon: 'users' },
-  { year: '2024', title: '500+ Resources & 48 Partners', description: 'We hit 500 verified resources and 48 organizational partners. The platform now sees 12,000+ monthly visitors.', icon: 'rocket' },
+  { year: '2022', title: 'Growing Directory & First Events', description: 'The directory grows steadily. The first Community Resource Fair brings together local organizations and community members.', icon: 'star' },
+  { year: '2023', title: 'Volunteer Network Expands', description: 'Community volunteers sign up to help verify listings, run workshops, and support events. The platform becomes genuinely community-run.', icon: 'users' },
+  { year: '2024', title: '30+ Resources & 10 Partners', description: 'We reach 30+ verified resources and 10 organizational partners, with a growing base of Bothell residents using the platform monthly.', icon: 'rocket' },
 ]
 
 const partners = [
@@ -62,8 +62,8 @@ export default function AboutPage() {
         subtitle="Community Connect started with one simple belief: everyone deserves to know what support exists in the Bothell area. We built that place."
         stats={[
           { value: '2019', label: 'Founded' },
-          { value: '500+', label: 'Resources' },
-          { value: '48', label: 'Partners' },
+          { value: '30+', label: 'Resources' },
+          { value: '10', label: 'Partners' },
         ]}
         backgroundImage="/img/page-2.jpg"
       />
@@ -87,7 +87,7 @@ export default function AboutPage() {
                   <Users className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <div className="font-space font-bold text-lg text-[var(--text-dark)]">1,200+</div>
+                  <div className="font-space font-bold text-lg text-[var(--text-dark)]">150+</div>
                   <div className="font-outfit text-xs text-[var(--text-muted)]">Bothell Volunteers</div>
                 </div>
               </div>
@@ -113,7 +113,7 @@ export default function AboutPage() {
                 Community Connect is a free, volunteer-powered platform that makes it easy to find, share, and promote local services, programs, and organizations that uplift residents of all backgrounds.
               </p>
               <p className="font-outfit text-base text-[var(--text-body)] leading-relaxed mb-6">
-                We saw firsthand how many people didn't know about the resources right here in Bothell — food banks, free tutoring, mental health support, and volunteer programs — simply because there was no single place to look. We built that place.
+                We saw firsthand how many people had no idea about the resources right here in Bothell: food banks, free tutoring, mental health support, and volunteer programs. The reason was simple. There was no single place to look. We built that place.
               </p>
               <div className="border-l-4 border-sky-400 bg-sky-50 rounded-r-[var(--radius-md)] p-5 mb-6">
                 <p className="font-dm-sans text-base text-sky-800 leading-relaxed italic m-0">
@@ -156,10 +156,10 @@ export default function AboutPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-white/10">
             {[
-              { value: 500, label: 'Resources Listed' },
-              { value: 1200, label: 'Active Volunteers' },
-              { value: 320, label: 'Events Organized' },
-              { value: 48, label: 'Partner Organizations' },
+              { value: 30, label: 'Resources Listed' },
+              { value: 150, label: 'Active Volunteers' },
+              { value: 25, label: 'Events Organized' },
+              { value: 10, label: 'Partner Organizations' },
             ].map((item, i) => (
               <motion.div
                 key={i}
@@ -186,7 +186,7 @@ export default function AboutPage() {
           >
             <span className="section-eyebrow">Our Journey</span>
             <h2 className="section-heading">How We Got Here</h2>
-            <p className="section-subtext mx-auto">From a weekend project to a Bothell institution — here's the story of Community Connect.</p>
+            <p className="section-subtext mx-auto">From a weekend project to a Bothell institution, here is the story of Community Connect.</p>
           </motion.div>
           <div className="relative">
             <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-sky-200 via-sky-400 to-sky-200 -translate-x-1/2 hidden lg:block" />

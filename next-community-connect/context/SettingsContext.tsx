@@ -145,7 +145,7 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     if (settings.sepia) filters.push('sepia(1)')
     html.style.filter = filters.length ? filters.join(' ') : 'none'
 
-    // Scale (zoom) — only apply transform when not 100%, otherwise fixed positioning breaks
+    // Scale (zoom) - only apply transform when not 100%, otherwise fixed positioning breaks
     if (settings.zoom !== 100) {
       html.style.transform = `scale(${settings.zoom / 100})`
       html.style.transformOrigin = 'top left'

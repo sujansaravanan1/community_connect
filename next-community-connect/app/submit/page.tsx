@@ -101,7 +101,7 @@ function PlaneSuccess() {
           </motion.div>
           <h1 className="font-syne text-3xl font-bold text-white mb-3">Submission Sent!</h1>
           <p className="font-dm-sans text-base mb-8" style={{ color: 'rgba(198,235,255,0.75)' }}>
-            Our team will review your resource within 2–3 business days and add it to the directory.
+            Our team will review your resource within 2-3 business days and add it to the directory.
           </p>
           <div className="flex gap-3 justify-center flex-wrap">
             <Link
@@ -169,6 +169,7 @@ export default function SubmitPage() {
         badge="Community Driven"
         staticTitle="Submit a Resource"
         subtitle="Know of a program that helped you or someone you know? Share it with our community so others can benefit too."
+        backgroundImage="/img/page-6.jpg"
       />
 
       <section className="py-24 bg-[var(--section-bg)]">

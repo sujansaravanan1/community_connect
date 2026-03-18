@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  distDir: '/tmp/next-community-connect-build',
   images: {
     remotePatterns: [
       {

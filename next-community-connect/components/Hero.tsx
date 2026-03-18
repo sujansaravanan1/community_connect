@@ -176,7 +176,7 @@ export function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Find non-profits, support services, events, and volunteers — all in one place, built for every resident.
+          Find nonprofits, support services, events, and volunteers. All in one place, built for every resident.
         </motion.p>
 
         <div className="flex gap-4 justify-center flex-wrap mb-20">

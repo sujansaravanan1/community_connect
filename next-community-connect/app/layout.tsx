@@ -28,7 +28,7 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Community Connect – Bothell, WA Resource Hub",
+  title: "Community Connect - Bothell, WA Resource Hub",
   description: "Community Connect is your local hub for finding volunteers, community events, support services, and non-profits in your area.",
 }
 

@@ -144,7 +144,7 @@ export function Hero() {
         </h1>
 
         <p className="font-dm-sans text-lg sm:text-xl text-white max-w-xl mx-auto mb-10 font-light">
-          Find non-profits, support services, events, and volunteers — all in one place, built for every resident.
+          Find nonprofits, support services, events, and volunteers. All in one place, built for every resident.
         </p>
 
         <div className="flex gap-3 justify-center flex-wrap mb-16">

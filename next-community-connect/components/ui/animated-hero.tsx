@@ -23,15 +23,15 @@ function Hero({
   badge = 'Serving Our Community Since 2020',
   staticTitle,
   rotatingTitles = ["amazing", "wonderful", "strong", "united", "connected"],
-  subtitle = 'Find non-profits, support services, events, and volunteers — all in one place, built for every resident.',
-  primaryHref = '/resources',
-  primaryText = 'Explore Resources',
-  secondaryHref = '/events',
-  secondaryText = 'Upcoming Events',
+  subtitle = 'Find nonprofits, support services, events, and volunteers. All in one place, built for every resident.',
+  primaryHref,
+  primaryText,
+  secondaryHref,
+  secondaryText,
   stats = [
-    {value: '500+', label: 'Resources Listed'},
-    {value: '1,200+', label: 'Volunteers'},
-    {value: '48', label: 'Partner Orgs'}
+    {value: '30+', label: 'Resources Listed'},
+    {value: '150+', label: 'Volunteers'},
+    {value: '10', label: 'Partner Orgs'}
   ],
   backgroundImage,
 }: HeroProps) {
@@ -85,14 +85,14 @@ function Hero({
               <span className="text-xs font-semibold text-white/90 tracking-widest uppercase">{badge}</span>
             </motion.div>
 
-          <div className="flex gap-4 flex-col">
+          <div className="flex gap-4 flex-col w-full items-center">
             {staticTitle ? (
               <h1
-                className="text-5xl md:text-7xl lg:text-8xl max-w-4xl tracking-tighter text-center font-bold font-space text-white"
+                className="text-5xl md:text-7xl lg:text-8xl max-w-4xl w-full tracking-tighter text-center font-bold font-space text-white mx-auto"
                 dangerouslySetInnerHTML={{ __html: staticTitle }}
               />
             ) : (
-              <h1 className="text-5xl md:text-7xl lg:text-8xl max-w-4xl tracking-tighter text-center font-bold font-space text-white">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl max-w-4xl w-full tracking-tighter text-center font-bold font-space text-white mx-auto">
                 <span className="text-white">Your Community is</span>
                 <span className="relative flex w-full justify-center overflow-hidden text-center md:pb-4 md:pt-2">
                   &nbsp;
@@ -119,35 +119,41 @@ function Hero({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg md:text-xl leading-relaxed tracking-tight text-white/75 max-w-2xl text-center font-outfit"
+              className="text-lg md:text-xl leading-relaxed tracking-tight text-white/75 max-w-2xl w-full text-center font-outfit mx-auto"
             >
               {subtitle}
             </motion.p>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-row gap-4 mt-4"
-          >
-            <Link href={primaryHref}>
-              <button
-                className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-syne font-bold text-base transition-all hover:-translate-y-0.5 hover:shadow-lg"
-                style={{ backgroundColor: 'rgba(255,255,255,0.15)', color: 'white', border: '2px solid rgba(255,255,255,0.35)' }}
-              >
-                {primaryText} <MoveRight className="w-4 h-4" />
-              </button>
-            </Link>
-            <Link href={secondaryHref}>
-              <button
-                className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-syne font-bold text-base transition-all hover:-translate-y-0.5 hover:shadow-lg"
-                style={{ backgroundColor: 'rgba(255,255,255,0.15)', color: 'white', border: '2px solid rgba(255,255,255,0.35)' }}
-              >
-                {secondaryText} <MoveRight className="w-4 h-4" />
-              </button>
-            </Link>
-          </motion.div>
+          {(primaryText || secondaryText) && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="flex flex-row gap-4 mt-4"
+            >
+              {primaryText && primaryHref && (
+                <Link href={primaryHref}>
+                  <button
+                    className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-syne font-bold text-base transition-all hover:-translate-y-0.5 hover:shadow-lg"
+                    style={{ backgroundColor: 'rgba(255,255,255,0.15)', color: 'white', border: '2px solid rgba(255,255,255,0.35)' }}
+                  >
+                    {primaryText} <MoveRight className="w-4 h-4" />
+                  </button>
+                </Link>
+              )}
+              {secondaryText && secondaryHref && (
+                <Link href={secondaryHref}>
+                  <button
+                    className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-syne font-bold text-base transition-all hover:-translate-y-0.5 hover:shadow-lg"
+                    style={{ backgroundColor: 'rgba(255,255,255,0.15)', color: 'white', border: '2px solid rgba(255,255,255,0.35)' }}
+                  >
+                    {secondaryText} <MoveRight className="w-4 h-4" />
+                  </button>
+                </Link>
+              )}
+            </motion.div>
+          )}
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}

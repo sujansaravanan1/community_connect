@@ -1,17 +1,16 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Leaf, Laptop, ShoppingBag, Package, Sprout, HeartPulse, Sparkles, BookOpen, Clock, MapPin as MapPinIcon } from 'lucide-react'
 import { HeroDemo } from '@/components/ui/animated-hero-demo'
-import EventMap from '@/components/EventMap'
 
 const events = [
   {
     id: 'cleanup',
     title: 'Community Cleanup Drive',
     date: 'April 25, 2026',
-    time: '10:00 AM — 1:00 PM',
+    time: '10:00 AM - 1:00 PM',
     location: 'Bothell Landing Park, 9919 NE 180th St, Bothell WA',
     audience: 'All ages welcome',
     category: 'Volunteer',
@@ -29,7 +28,7 @@ const events = [
     id: 'stem',
     title: 'STEM Mentorship Workshop',
     date: 'May 2, 2026',
-    time: '4:00 PM — 6:30 PM',
+    time: '4:00 PM - 6:30 PM',
     location: 'Bothell Regional Library, 18215 98th Ave NE, Bothell WA',
     audience: 'Students 12+',
     category: 'Education',
@@ -47,11 +46,11 @@ const events = [
     id: 'food',
     title: 'Northshore Food Drive',
     date: 'May 16, 2026',
-    time: '9:00 AM — 4:00 PM',
+    time: '9:00 AM - 4:00 PM',
     location: 'Hopelink Bothell, 23640 Bothell Everett Hwy, Bothell WA',
     audience: 'All community members',
     category: 'Donation',
-    description: 'Help stock the Hopelink Bothell food bank. Drop off non-perishable items — canned goods, rice, pasta, and baby supplies most needed.',
+    description: 'Help stock the Hopelink Bothell food bank. Drop off non-perishable items: canned goods, rice, pasta, and baby supplies most needed.',
     day: '16',
     month: 'MAY',
     emoji: '🥫',
@@ -65,7 +64,7 @@ const events = [
     id: 'clothing',
     title: 'Clothing & Essentials Drive',
     date: 'May 30, 2026',
-    time: '10:00 AM — 3:00 PM',
+    time: '10:00 AM - 3:00 PM',
     location: 'Bothell City Hall, 18415 101st Ave NE, Bothell WA',
     audience: 'All ages',
     category: 'Donation',
@@ -83,7 +82,7 @@ const events = [
     id: 'garden',
     title: 'Community Garden Workshop',
     date: 'June 6, 2026',
-    time: '9:00 AM — 12:00 PM',
+    time: '9:00 AM - 12:00 PM',
     location: 'Bothell Community Garden, 5th & Maple, Bothell WA',
     audience: 'All ages',
     category: 'Community',
@@ -101,7 +100,7 @@ const events = [
     id: 'health',
     title: 'Senior Health & Wellness Fair',
     date: 'June 20, 2026',
-    time: '10:00 AM — 2:00 PM',
+    time: '10:00 AM - 2:00 PM',
     location: 'Northshore Senior Center, 10201 E Riverside Dr, Bothell WA',
     audience: 'Seniors 60+',
     category: 'Health',
@@ -119,7 +118,7 @@ const events = [
     id: 'block',
     title: 'Bothell Independence Day Celebration',
     date: 'July 4, 2026',
-    time: '12:00 PM — 9:00 PM',
+    time: '12:00 PM - 9:00 PM',
     location: 'Bothell Landing Park, 9919 NE 180th St, Bothell WA',
     audience: 'All families',
     category: 'Community',
@@ -137,9 +136,9 @@ const events = [
     id: 'school',
     title: 'Back-to-School Supply Drive',
     date: 'August 8, 2026',
-    time: '10:00 AM — 3:00 PM',
+    time: '10:00 AM - 3:00 PM',
     location: 'Northshore Volunteer Services, 6809 228th St SW, Mountlake Terrace WA',
-    audience: 'Students K–12',
+    audience: 'Students K-12',
     category: 'Donation',
     description: 'Donate backpacks, notebooks, pencils, and school supplies for Northshore students in need. Organized by Northshore Volunteer Services.',
     day: '08',
@@ -211,13 +210,7 @@ function EventIconDisplay({ id, dark = true, size = 'lg' }: { id: string; dark?:
   )
 }
 
-function PinnedCalendar({ events, onSelect }: { events: EventType[]; onSelect: (event: EventType) => void }) {
-  const [currentDay, setCurrentDay] = useState<number | null>(null)
-
-  useEffect(() => {
-    setCurrentDay(new Date().getDate())
-  }, [])
-
+function PinnedCalendar({ events, selected, onSelect }: { events: EventType[]; selected: EventType | null; onSelect: (event: EventType | null) => void }) {
   const pinnedDates = events.map(e => parseInt(e.day))
   // April 2026: 30 days, starts on Wednesday (offset = 3)
   const daysInMonth = 30
@@ -230,56 +223,45 @@ function PinnedCalendar({ events, onSelect }: { events: EventType[]; onSelect: (
     <div>
       <div className="text-center mb-3 font-bold text-sky-800 text-sm" style={{ fontFamily: 'var(--font-syne)' }}>April 2026</div>
       <div className="grid grid-cols-7 gap-1.5 text-center">
-      {dayLabels.map(day => (
-        <div key={day} className="py-2 text-xs font-bold uppercase text-slate-500 tracking-wider" style={{ fontFamily: 'var(--font-space)' }}>
-          {day}
-        </div>
-      ))}
-      {Array.from({ length: startOffset }).map((_, i) => (
-        <div key={`empty-${i}`} />
-      ))}
-      {days.map(day => {
-        const isPinned = pinnedDates.includes(day)
-        const event = getEventForDay(day)
-        const isToday = currentDay !== null && day === currentDay
+        {dayLabels.map(day => (
+          <div key={day} className="py-2 text-xs font-bold uppercase text-slate-500 tracking-wider" style={{ fontFamily: 'var(--font-space)' }}>
+            {day}
+          </div>
+        ))}
+        {Array.from({ length: startOffset }).map((_, i) => (
+          <div key={`empty-${i}`} />
+        ))}
+        {days.map(day => {
+          const isPinned = pinnedDates.includes(day)
+          const event = getEventForDay(day)
+          const isSelected = selected && event && selected.id === event.id
 
-        return (
-          <motion.div
-            key={day}
-            className={`relative group p-2 rounded-xl cursor-pointer transition-all duration-300 h-14 flex items-center justify-center font-semibold text-sm ${
-              isToday ? 'bg-gradient-to-br from-orange-400/20 to-orange-500/20 border-2 border-orange-300 shadow-md' :
-              isPinned ? 'bg-gradient-to-br from-sky-400/30 to-sky-500/30 border-2 border-sky-300 shadow-lg hover:shadow-xl hover:scale-110' :
-              'hover:bg-sky-50/50 border border-sky-100 hover:border-sky-200 hover:shadow-md'
-            }`}
-            style={{ fontFamily: 'var(--font-space)' }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-            onClick={() => event && onSelect(event)}
-          >
-            <span className={`font-bold ${isToday ? 'text-orange-600' : isPinned ? 'text-sky-700' : 'text-slate-600'}`}>
-              {day}
-            </span>
-            {isPinned && event && (
-              <>
+          return (
+            <motion.div
+              key={day}
+              className={`relative p-2 rounded-xl cursor-pointer transition-all duration-300 h-14 flex items-center justify-center font-semibold text-sm ${
+                isSelected ? 'border-2 shadow-lg' :
+                isPinned ? 'bg-gradient-to-br from-sky-400/30 to-sky-500/30 border-2 border-sky-300 shadow-lg hover:shadow-xl' :
+                'hover:bg-sky-50/50 border border-sky-100 hover:border-sky-200 hover:shadow-md'
+              }`}
+              style={{
+                fontFamily: 'var(--font-space)',
+                ...(isSelected ? { backgroundColor: event!.color, borderColor: event!.color } : {}),
+              }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={() => event ? onSelect(isSelected ? null : event) : undefined}
+            >
+              <span className={`font-bold ${isSelected ? 'text-white' : isPinned ? 'text-sky-700' : 'text-slate-600'}`}>
+                {day}
+              </span>
+              {isPinned && !isSelected && (
                 <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-2 h-2 rounded-full bg-sky-400 border-2 border-white shadow-sm" />
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-64 bg-white border border-sky-200 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible z-10 overflow-hidden">
-                  <div className="p-4 border-b border-sky-100 bg-sky-50">
-                    <span className="inline-block text-xs font-bold uppercase tracking-wide text-sky-700 px-2 py-1 rounded-full bg-sky-100 mb-1">
-                      {event.emoji} {event.category}
-                    </span>
-                    <h4 className="font-bold text-sky-900 text-sm leading-tight" style={{ fontFamily: 'var(--font-syne)' }}>{event.title}</h4>
-                  </div>
-                  <div className="p-3 grid grid-cols-2 gap-2 text-xs text-slate-800 bg-white" style={{ fontFamily: 'var(--font-space)' }}>
-                    <div><span className="font-bold text-slate-600">Time:</span> {event.time}</div>
-                    <div><span className="font-bold text-slate-600">📍</span> {event.location.split(',')[0]}</div>
-                  </div>
-                </div>
-              </>
-            )}
-          </motion.div>
-        )
-      })}
-    </div>
+              )}
+            </motion.div>
+          )
+        })}
+      </div>
     </div>
   )
 }
@@ -387,6 +369,7 @@ function EventModal({ event, onClose }: { event: EventType; onClose: () => void 
 
 export default function EventsPage() {
   const [selected, setSelected] = useState<EventType | null>(null)
+  const [calendarSelected, setCalendarSelected] = useState<EventType | null>(null)
   const [showAll, setShowAll] = useState(false)
 
   const visibleEvents = showAll ? events : events.slice(0, 4)
@@ -396,7 +379,7 @@ export default function EventsPage() {
       <HeroDemo
         badge="Always Something Happening"
         staticTitle="Upcoming Events"
-        subtitle="Stay connected with what's happening in our community. From cleanups to workshops — there's a place for everyone."
+        subtitle="Stay connected with what is happening in our community. From cleanups to workshops, there is a place for everyone."
         backgroundImage="/img/page-3.jpg"
       />
 
@@ -411,21 +394,110 @@ export default function EventsPage() {
             className="text-center mb-12"
           >
             <span style={{ fontFamily: 'var(--font-space)', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.15em', color: '#085D8A', display: 'inline-block', marginBottom: '8px' }}>
-              April–August 2026
+              April through August 2026
             </span>
             <h3 style={{ fontFamily: 'var(--font-syne)', fontSize: 'clamp(28px, 4vw, 40px)', fontWeight: 800, color: '#022747', lineHeight: 1.1 }}>
               Next Events Pinned
             </h3>
           </motion.div>
 
-          <div className="grid grid-cols-1 xl:grid-cols-5 gap-8 mb-8">
-            <div className="xl:col-span-3 backdrop-blur-xl bg-white rounded-3xl border border-sky-100 p-6 lg:p-8 shadow-card">
-              <PinnedCalendar events={events.slice(0, 4)} onSelect={setSelected} />
-            </div>
-            <div className="xl:col-span-2 backdrop-blur-xl bg-white rounded-3xl border border-sky-100 shadow-card min-h-[500px] relative overflow-hidden">
-              <EventMap events={events} />
-            </div>
+          <div className="max-w-3xl mx-auto backdrop-blur-xl bg-white rounded-3xl border border-sky-100 p-6 lg:p-8 shadow-card">
+            <PinnedCalendar events={events.slice(0, 4)} selected={calendarSelected} onSelect={setCalendarSelected} />
           </div>
+
+          {/* Calendar event detail panel */}
+          <AnimatePresence>
+            {calendarSelected && (
+              <motion.div
+                key={calendarSelected.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 12 }}
+                transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
+                className="mt-6 rounded-3xl overflow-hidden border border-sky-100 shadow-card"
+                style={{ backgroundColor: 'white' }}
+              >
+                <div className="flex flex-col lg:flex-row">
+                  {/* Color sidebar */}
+                  <div className="lg:w-72 flex-shrink-0 p-8 flex flex-col justify-between" style={{ backgroundColor: calendarSelected.color }}>
+                    <div>
+                      <span className="inline-block text-xs font-bold uppercase tracking-widest mb-4 px-3 py-1 rounded-full"
+                        style={{ color: calendarSelected.colorMid, backgroundColor: 'rgba(255,255,255,0.15)', fontFamily: 'var(--font-space)' }}>
+                        {calendarSelected.category}
+                      </span>
+                      <h3 style={{ fontFamily: 'var(--font-syne)', fontSize: 'clamp(22px, 2.5vw, 30px)', fontWeight: 800, color: 'white', lineHeight: 1.15, letterSpacing: '-0.5px', marginBottom: '16px' }}>
+                        {calendarSelected.title}
+                      </h3>
+                      <div className="w-16 h-16 rounded-2xl flex items-center justify-center" style={{ backgroundColor: 'rgba(255,255,255,0.2)' }}>
+                        {(() => { const Icon = eventIcons[calendarSelected.id] ?? Sparkles; return <Icon className="w-8 h-8 text-white" strokeWidth={1.5} /> })()}
+                      </div>
+                    </div>
+                    <div className="mt-8">
+                      <span style={{ fontFamily: 'var(--font-syne)', fontSize: '36px', fontWeight: 800, color: 'white', display: 'block', lineHeight: 1 }}>
+                        {calendarSelected.day}
+                      </span>
+                      <span style={{ fontFamily: 'var(--font-space)', fontSize: '13px', fontWeight: 600, color: 'rgba(255,255,255,0.6)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+                        {calendarSelected.month} 2026
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Details */}
+                  <div className="flex-1 p-8">
+                    <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#64748b', lineHeight: 1.8, marginBottom: '28px' }}>
+                      {calendarSelected.description}
+                    </p>
+
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+                      {[
+                        { label: 'Date', value: calendarSelected.date },
+                        { label: 'Time', value: calendarSelected.time },
+                        { label: 'Location', value: calendarSelected.location.split(',')[0] },
+                        { label: 'Audience', value: calendarSelected.audience },
+                      ].map(item => (
+                        <div key={item.label} className="rounded-xl p-3 border border-slate-100 bg-slate-50">
+                          <div style={{ fontFamily: 'var(--font-space)', fontSize: '10px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#94a3b8', marginBottom: '4px' }}>
+                            {item.label}
+                          </div>
+                          <div style={{ fontFamily: 'var(--font-space)', fontSize: '12px', fontWeight: 600, color: '#1e293b' }}>
+                            {item.value}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="flex flex-wrap gap-3">
+                      <a
+                        href={getMapsUrl(calendarSelected.location)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-6 py-3 rounded-xl text-white text-sm font-semibold transition-all hover:opacity-90"
+                        style={{ backgroundColor: calendarSelected.color, fontFamily: 'var(--font-space)' }}
+                      >
+                        Get Directions
+                      </a>
+                      <a
+                        href={getGCalUrl(calendarSelected)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-6 py-3 rounded-xl border border-slate-200 text-sm font-semibold hover:bg-slate-50 transition-all"
+                        style={{ fontFamily: 'var(--font-space)', color: '#64748b' }}
+                      >
+                        Add to Calendar
+                      </a>
+                      <button
+                        onClick={() => setCalendarSelected(null)}
+                        className="px-6 py-3 rounded-xl border border-slate-200 text-sm font-semibold hover:bg-slate-50 transition-all"
+                        style={{ fontFamily: 'var(--font-space)', color: '#94a3b8' }}
+                      >
+                        Dismiss
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </section>
 
@@ -444,19 +516,19 @@ export default function EventsPage() {
               What's Coming Up
             </span>
             <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mt-1">
-              <h2 style={{ fontFamily: 'var(--font-syne)', fontSize: 'clamp(40px, 6vw, 64px)', fontWeight: 800, color: '#022747', lineHeight: 1, letterSpacing: '-1px' }}>
+              <h2 style={{ fontFamily: 'var(--font-syne)', fontSize: 'clamp(40px, 6vw, 64px)', fontWeight: 800, color: '#ffffff', lineHeight: 1, letterSpacing: '-1px' }}>
                 Mark Your<br />Calendar.
               </h2>
-              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', fontWeight: 300, color: '#085D8A', maxWidth: '280px', lineHeight: 1.7 }} className="lg:text-right">
+              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', fontWeight: 300, color: '#ffffff', maxWidth: '280px', lineHeight: 1.7 }} className="lg:text-right">
                 All events are free and open to the public. Click any card for full details.
               </p>
             </div>
           </motion.div>
 
-          {/* First 4 — bento */}
+          {/* First 4 -bento */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-3">
 
-            {/* Card 1 — tall dark hero */}
+            {/* Card 1 -tall dark hero */}
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
