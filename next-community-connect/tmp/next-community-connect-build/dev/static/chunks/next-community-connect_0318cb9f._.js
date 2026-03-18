@@ -69,12 +69,12 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
             backgroundRepeat: 'no-repeat'
         },
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            backgroundImage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 bg-sky-950/60"
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
                 lineNumber: 63,
-                columnNumber: 7
+                columnNumber: 27
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 opacity-30",
@@ -513,10 +513,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect
 var __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__ = __turbopack_context__.i("[project]/next-community-connect/node_modules/lucide-react/dist/esm/icons/chevron-right.js [app-client] (ecmascript) <export default as ChevronRight>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/next-community-connect/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript) <export default as Sparkles>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$image$2d$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ImagePlus$3e$__ = __turbopack_context__.i("[project]/next-community-connect/node_modules/lucide-react/dist/esm/icons/image-plus.js [app-client] (ecmascript) <export default as ImagePlus>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$in$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogIn$3e$__ = __turbopack_context__.i("[project]/next-community-connect/node_modules/lucide-react/dist/esm/icons/log-in.js [app-client] (ecmascript) <export default as LogIn>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$context$2f$SettingsContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/next-community-connect/context/SettingsContext.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/next-community-connect/context/AuthContext.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/next-community-connect/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature();
 'use client';
+;
+;
 ;
 ;
 ;
@@ -649,7 +654,7 @@ function AnimatedNumber({ value }) {
         children: display
     }, void 0, false, {
         fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-        lineNumber: 124,
+        lineNumber: 126,
         columnNumber: 10
     }, this);
 }
@@ -692,12 +697,12 @@ function ProgressBar({ percent, color }) {
             }
         }, void 0, false, {
             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-            lineNumber: 130,
+            lineNumber: 132,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-        lineNumber: 129,
+        lineNumber: 131,
         columnNumber: 5
     }, this);
 }
@@ -802,12 +807,12 @@ function DonationModal({ cause, onClose, onDonate }) {
                                         size: 16
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                        lineNumber: 198,
+                                        lineNumber: 200,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                    lineNumber: 193,
+                                    lineNumber: 195,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -821,7 +826,7 @@ function DonationModal({ cause, onClose, onDonate }) {
                                             children: cause.emoji
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                            lineNumber: 201,
+                                            lineNumber: 203,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -839,7 +844,7 @@ function DonationModal({ cause, onClose, onDonate }) {
                                                     children: cause.category
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                    lineNumber: 206,
+                                                    lineNumber: 208,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -854,25 +859,25 @@ function DonationModal({ cause, onClose, onDonate }) {
                                                     children: cause.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                    lineNumber: 209,
+                                                    lineNumber: 211,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                            lineNumber: 205,
+                                            lineNumber: 207,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                    lineNumber: 200,
+                                    lineNumber: 202,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                            lineNumber: 192,
+                            lineNumber: 194,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -889,7 +894,7 @@ function DonationModal({ cause, onClose, onDonate }) {
                                     children: cause.description
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                    lineNumber: 217,
+                                    lineNumber: 219,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -905,7 +910,7 @@ function DonationModal({ cause, onClose, onDonate }) {
                                     children: "Select Amount"
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                    lineNumber: 221,
+                                    lineNumber: 223,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -931,12 +936,12 @@ function DonationModal({ cause, onClose, onDonate }) {
                                             ]
                                         }, a, true, {
                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                            lineNumber: 226,
+                                            lineNumber: 228,
                                             columnNumber: 21
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                    lineNumber: 224,
+                                    lineNumber: 226,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -951,7 +956,7 @@ function DonationModal({ cause, onClose, onDonate }) {
                                             children: "$"
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                            lineNumber: 246,
+                                            lineNumber: 248,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -973,13 +978,13 @@ function DonationModal({ cause, onClose, onDonate }) {
                                             min: 1
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                            lineNumber: 248,
+                                            lineNumber: 250,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                    lineNumber: 245,
+                                    lineNumber: 247,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -998,12 +1003,12 @@ function DonationModal({ cause, onClose, onDonate }) {
                                         children: cause.tagline
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                        lineNumber: 266,
+                                        lineNumber: 268,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                    lineNumber: 265,
+                                    lineNumber: 267,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1025,7 +1030,7 @@ function DonationModal({ cause, onClose, onDonate }) {
                                             fill: "white"
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                            lineNumber: 285,
+                                            lineNumber: 287,
                                             columnNumber: 19
                                         }, this),
                                         "Donate $",
@@ -1034,13 +1039,13 @@ function DonationModal({ cause, onClose, onDonate }) {
                                             size: 16
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                            lineNumber: 287,
+                                            lineNumber: 289,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                    lineNumber: 271,
+                                    lineNumber: 273,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1054,19 +1059,19 @@ function DonationModal({ cause, onClose, onDonate }) {
                                     children: "Secure checkout · Stripe integration coming soon"
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                    lineNumber: 290,
+                                    lineNumber: 292,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                            lineNumber: 216,
+                            lineNumber: 218,
                             columnNumber: 15
                         }, this)
                     ]
                 }, "amount", true, {
                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                    lineNumber: 191,
+                    lineNumber: 193,
                     columnNumber: 13
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                     initial: {
@@ -1104,12 +1109,12 @@ function DonationModal({ cause, onClose, onDonate }) {
                                 strokeWidth: 2.5
                             }, void 0, false, {
                                 fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                lineNumber: 309,
+                                lineNumber: 311,
                                 columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                            lineNumber: 302,
+                            lineNumber: 304,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1124,7 +1129,7 @@ function DonationModal({ cause, onClose, onDonate }) {
                             children: "Thank you!"
                         }, void 0, false, {
                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                            lineNumber: 311,
+                            lineNumber: 313,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1147,7 +1152,7 @@ function DonationModal({ cause, onClose, onDonate }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                    lineNumber: 315,
+                                    lineNumber: 317,
                                     columnNumber: 22
                                 }, this),
                                 " donation to ",
@@ -1155,14 +1160,14 @@ function DonationModal({ cause, onClose, onDonate }) {
                                     children: cause.title
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                    lineNumber: 315,
+                                    lineNumber: 317,
                                     columnNumber: 97
                                 }, this),
                                 " makes a real difference."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                            lineNumber: 314,
+                            lineNumber: 316,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1175,7 +1180,7 @@ function DonationModal({ cause, onClose, onDonate }) {
                             children: cause.tagline
                         }, void 0, false, {
                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                            lineNumber: 317,
+                            lineNumber: 319,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1191,28 +1196,28 @@ function DonationModal({ cause, onClose, onDonate }) {
                             children: "Close"
                         }, void 0, false, {
                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                            lineNumber: 320,
+                            lineNumber: 322,
                             columnNumber: 15
                         }, this)
                     ]
                 }, "success", true, {
                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                    lineNumber: 296,
+                    lineNumber: 298,
                     columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                lineNumber: 189,
+                lineNumber: 191,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-            lineNumber: 180,
+            lineNumber: 182,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-        lineNumber: 172,
+        lineNumber: 174,
         columnNumber: 5
     }, this);
 }
@@ -1222,8 +1227,170 @@ _s1(DonationModal, "z95KOums0vv7vR6FEDYZCV2sBcM=", false, function() {
     ];
 });
 _c2 = DonationModal;
+function DonateSignInModal({ onClose }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+        initial: {
+            opacity: 0
+        },
+        animate: {
+            opacity: 1
+        },
+        exit: {
+            opacity: 0
+        },
+        className: "fixed inset-0 z-50 flex items-center justify-center p-4",
+        style: {
+            backgroundColor: 'rgba(1,22,41,0.75)',
+            backdropFilter: 'blur(16px)'
+        },
+        onClick: onClose,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+            initial: {
+                opacity: 0,
+                y: 32,
+                scale: 0.95
+            },
+            animate: {
+                opacity: 1,
+                y: 0,
+                scale: 1
+            },
+            exit: {
+                opacity: 0,
+                y: 16,
+                scale: 0.96
+            },
+            transition: {
+                duration: 0.3,
+                ease: [
+                    0.16,
+                    1,
+                    0.3,
+                    1
+                ]
+            },
+            className: "relative w-full max-w-sm rounded-3xl p-8 text-center",
+            style: {
+                backgroundColor: '#033460',
+                border: '1px solid rgba(86,187,240,0.35)',
+                boxShadow: '0 40px 80px rgba(1,22,41,0.5)'
+            },
+            onClick: (e)=>e.stopPropagation(),
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    onClick: onClose,
+                    className: "absolute top-4 right-4 w-8 h-8 rounded-full flex items-center justify-center",
+                    style: {
+                        color: 'rgba(198,235,255,0.5)'
+                    },
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                        size: 16
+                    }, void 0, false, {
+                        fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
+                        lineNumber: 357,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
+                    lineNumber: 356,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-5",
+                    style: {
+                        background: 'linear-gradient(135deg, #085D8A 0%, #2499D6 100%)'
+                    },
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$in$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogIn$3e$__["LogIn"], {
+                        className: "w-7 h-7 text-white"
+                    }, void 0, false, {
+                        fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
+                        lineNumber: 360,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
+                    lineNumber: 359,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                    className: "font-syne text-2xl font-bold text-white mb-3",
+                    children: "Sign in to donate"
+                }, void 0, false, {
+                    fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
+                    lineNumber: 362,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    className: "font-outfit text-sm mb-7 leading-relaxed",
+                    style: {
+                        color: 'rgba(198,235,255,0.7)'
+                    },
+                    children: "You need to be signed in to make a donation. It only takes a moment."
+                }, void 0, false, {
+                    fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
+                    lineNumber: 363,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex flex-col gap-3",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: "/signin?redirect=/wishlist",
+                            className: "w-full py-3.5 rounded-xl font-outfit font-semibold text-white flex items-center justify-center gap-2 transition-all hover:-translate-y-0.5",
+                            style: {
+                                background: 'linear-gradient(135deg, #085D8A 0%, #2499D6 100%)'
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$in$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogIn$3e$__["LogIn"], {
+                                    className: "w-4 h-4"
+                                }, void 0, false, {
+                                    fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
+                                    lineNumber: 372,
+                                    columnNumber: 13
+                                }, this),
+                                " Sign In"
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
+                            lineNumber: 367,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: "/signin?redirect=/wishlist",
+                            className: "w-full py-3.5 rounded-xl font-outfit font-semibold transition-all hover:opacity-80",
+                            style: {
+                                backgroundColor: 'rgba(255,255,255,0.08)',
+                                color: 'rgba(198,235,255,0.85)',
+                                border: '1px solid rgba(86,187,240,0.3)'
+                            },
+                            children: "Create Account"
+                        }, void 0, false, {
+                            fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
+                            lineNumber: 374,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
+                    lineNumber: 366,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
+            lineNumber: 347,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
+        lineNumber: 339,
+        columnNumber: 5
+    }, this);
+}
+_c3 = DonateSignInModal;
 function DonatePage() {
     _s2();
+    const { isSignedIn } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAuth"])();
     const { settings } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$context$2f$SettingsContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSettings"])();
     const dark = settings.dark;
     const tc = {
@@ -1234,6 +1401,7 @@ function DonatePage() {
     };
     const [donations, setDonations] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({});
     const [selected, setSelected] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [showAuthModal, setShowAuthModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [cardImages, setCardImages] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({});
     const imageInputRefs = (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])({});
     const handleCardImage = (causeId, e)=>{
@@ -1269,7 +1437,7 @@ function DonatePage() {
                 backgroundImage: "/img/page-5.jpg"
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                lineNumber: 372,
+                lineNumber: 426,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1288,7 +1456,7 @@ function DonatePage() {
                                     size: 18
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                    lineNumber: 389,
+                                    lineNumber: 443,
                                     columnNumber: 23
                                 }, this),
                                 color: '#085D8A'
@@ -1302,7 +1470,7 @@ function DonatePage() {
                                     size: 18
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                    lineNumber: 397,
+                                    lineNumber: 451,
                                     columnNumber: 23
                                 }, this),
                                 color: '#1A7A4A'
@@ -1317,7 +1485,7 @@ function DonatePage() {
                                     size: 18
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                    lineNumber: 406,
+                                    lineNumber: 460,
                                     columnNumber: 23
                                 }, this),
                                 color: '#B83A6A'
@@ -1349,7 +1517,7 @@ function DonatePage() {
                                         children: stat.icon
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                        lineNumber: 418,
+                                        lineNumber: 472,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1369,14 +1537,14 @@ function DonatePage() {
                                                         value: stat.value
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                        lineNumber: 424,
+                                                        lineNumber: 478,
                                                         columnNumber: 34
                                                     }, this),
                                                     stat.suffix ?? ''
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                lineNumber: 423,
+                                                lineNumber: 477,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1391,7 +1559,7 @@ function DonatePage() {
                                                 children: stat.label
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                lineNumber: 426,
+                                                lineNumber: 480,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1404,34 +1572,34 @@ function DonatePage() {
                                                 children: stat.sub
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                lineNumber: 429,
+                                                lineNumber: 483,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                        lineNumber: 422,
+                                        lineNumber: 476,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, stat.label, true, {
                                 fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                lineNumber: 410,
+                                lineNumber: 464,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                        lineNumber: 382,
+                        lineNumber: 436,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                    lineNumber: 381,
+                    lineNumber: 435,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                lineNumber: 380,
+                lineNumber: 434,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1466,7 +1634,7 @@ function DonatePage() {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                            lineNumber: 451,
+                                            lineNumber: 505,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1481,13 +1649,13 @@ function DonatePage() {
                                             children: "Active Causes"
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                            lineNumber: 452,
+                                            lineNumber: 506,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                    lineNumber: 450,
+                                    lineNumber: 504,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1506,14 +1674,14 @@ function DonatePage() {
                                                 "Choose Where",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                    lineNumber: 458,
+                                                    lineNumber: 512,
                                                     columnNumber: 29
                                                 }, this),
                                                 "to Give."
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                            lineNumber: 457,
+                                            lineNumber: 511,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1529,19 +1697,19 @@ function DonatePage() {
                                             children: "100% of donations go directly to local organizations. No platform fees."
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                            lineNumber: 460,
+                                            lineNumber: 514,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                    lineNumber: 456,
+                                    lineNumber: 510,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                            lineNumber: 443,
+                            lineNumber: 497,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1566,7 +1734,7 @@ function DonatePage() {
                                         duration: 0.45,
                                         delay: i * 0.07
                                     },
-                                    onClick: ()=>setSelected(cause),
+                                    onClick: ()=>isSignedIn ? setSelected(cause) : setShowAuthModal(true),
                                     className: "group relative rounded-2xl overflow-hidden cursor-pointer",
                                     style: {
                                         backgroundColor: dark ? '#011629' : 'white',
@@ -1592,7 +1760,7 @@ function DonatePage() {
                                                     strokeWidth: 3
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                    lineNumber: 496,
+                                                    lineNumber: 550,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1605,13 +1773,13 @@ function DonatePage() {
                                                     children: "Donated"
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                    lineNumber: 497,
+                                                    lineNumber: 551,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                            lineNumber: 494,
+                                            lineNumber: 548,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1645,12 +1813,12 @@ function DonatePage() {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                lineNumber: 505,
+                                                lineNumber: 559,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                            lineNumber: 504,
+                                            lineNumber: 558,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1673,12 +1841,12 @@ function DonatePage() {
                                                                         className: "w-full h-full object-cover"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                                        lineNumber: 521,
+                                                                        lineNumber: 575,
                                                                         columnNumber: 31
                                                                     }, this) : cause.emoji
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                                    lineNumber: 518,
+                                                                    lineNumber: 572,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1691,7 +1859,7 @@ function DonatePage() {
                                                                     onChange: (e)=>handleCardImage(cause.id, e)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                                    lineNumber: 524,
+                                                                    lineNumber: 578,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1709,18 +1877,18 @@ function DonatePage() {
                                                                         color: "white"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                                        lineNumber: 537,
+                                                                        lineNumber: 591,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                                    lineNumber: 531,
+                                                                    lineNumber: 585,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                            lineNumber: 517,
+                                                            lineNumber: 571,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1738,13 +1906,13 @@ function DonatePage() {
                                                             children: cause.category
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                            lineNumber: 540,
+                                                            lineNumber: 594,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                    lineNumber: 516,
+                                                    lineNumber: 570,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1760,7 +1928,7 @@ function DonatePage() {
                                                     children: cause.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                    lineNumber: 555,
+                                                    lineNumber: 609,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1775,7 +1943,7 @@ function DonatePage() {
                                                     children: cause.tagline
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                    lineNumber: 559,
+                                                    lineNumber: 613,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1790,7 +1958,7 @@ function DonatePage() {
                                                     children: cause.description
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                    lineNumber: 563,
+                                                    lineNumber: 617,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1813,7 +1981,7 @@ function DonatePage() {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                                    lineNumber: 569,
+                                                                    lineNumber: 623,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1828,13 +1996,13 @@ function DonatePage() {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                                    lineNumber: 572,
+                                                                    lineNumber: 626,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                            lineNumber: 568,
+                                                            lineNumber: 622,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ProgressBar, {
@@ -1842,7 +2010,7 @@ function DonatePage() {
                                                             color: cause.color
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                            lineNumber: 576,
+                                                            lineNumber: 630,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1860,7 +2028,7 @@ function DonatePage() {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                                    lineNumber: 578,
+                                                                    lineNumber: 632,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1876,19 +2044,19 @@ function DonatePage() {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                                    lineNumber: 581,
+                                                                    lineNumber: 635,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                            lineNumber: 577,
+                                                            lineNumber: 631,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                    lineNumber: 567,
+                                                    lineNumber: 621,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1907,7 +2075,7 @@ function DonatePage() {
                                                             size: 13
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                            lineNumber: 599,
+                                                            lineNumber: 653,
                                                             columnNumber: 23
                                                         }, this),
                                                         "Donate to ",
@@ -1916,31 +2084,31 @@ function DonatePage() {
                                                             size: 13
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                            lineNumber: 601,
+                                                            lineNumber: 655,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                                    lineNumber: 587,
+                                                    lineNumber: 641,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                            lineNumber: 515,
+                                            lineNumber: 569,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, cause.id, true, {
                                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                                    lineNumber: 473,
+                                    lineNumber: 527,
                                     columnNumber: 17
                                 }, this);
                             })
                         }, void 0, false, {
                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                            lineNumber: 466,
+                            lineNumber: 520,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -1964,18 +2132,18 @@ function DonatePage() {
                             }
                         }, void 0, false, {
                             fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                            lineNumber: 609,
+                            lineNumber: 663,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                    lineNumber: 441,
+                    lineNumber: 495,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                lineNumber: 440,
+                lineNumber: 494,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -1985,28 +2153,43 @@ function DonatePage() {
                     onDonate: handleDonate
                 }, void 0, false, {
                     fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                    lineNumber: 623,
+                    lineNumber: 677,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
-                lineNumber: 621,
+                lineNumber: 675,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                children: showAuthModal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DonateSignInModal, {
+                    onClose: ()=>setShowAuthModal(false)
+                }, void 0, false, {
+                    fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
+                    lineNumber: 686,
+                    columnNumber: 27
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/next-community-connect/app/wishlist/page.tsx",
+                lineNumber: 685,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s2(DonatePage, "5s1P6W6G+rt3FstdPCu9yK0HdX0=", false, function() {
+_s2(DonatePage, "FHFGQgAeL7nPx3SqSwLXY3LNMhk=", false, function() {
     return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAuth"],
         __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$context$2f$SettingsContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSettings"]
     ];
 });
-_c3 = DonatePage;
-var _c, _c1, _c2, _c3;
+_c4 = DonatePage;
+var _c, _c1, _c2, _c3, _c4;
 __turbopack_context__.k.register(_c, "AnimatedNumber");
 __turbopack_context__.k.register(_c1, "ProgressBar");
 __turbopack_context__.k.register(_c2, "DonationModal");
-__turbopack_context__.k.register(_c3, "DonatePage");
+__turbopack_context__.k.register(_c3, "DonateSignInModal");
+__turbopack_context__.k.register(_c4, "DonatePage");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }

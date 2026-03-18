@@ -102,10 +102,10 @@ export default function ResourcesPage() {
       <ZoomParallax images={communityImages} />
 
       {/* Directory Section */}
-      <section className="py-24 resources-section" id="directory" style={{ backgroundColor: '#F8FAFC' }}>
+      <section className="py-24 resources-section" id="directory" style={{ background: 'linear-gradient(160deg, #EBF7FF 0%, #F0F9FF 50%, #E0F2FE 100%)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Controls */}
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="glass-bg-md rounded-3xl p-8 lg:p-10 mb-12 border shadow-xl" style={{ borderColor: '#BFDBFE' }}>
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="rounded-3xl p-8 lg:p-10 mb-12 border shadow-xl" style={{ backgroundColor: 'rgba(255,255,255,0.75)', backdropFilter: 'blur(16px)', borderColor: '#BFDBFE' }}>
             <div className="flex flex-col md:flex-row gap-4 mb-6">
               <div className="flex-1 relative">
                 <input
@@ -174,8 +174,8 @@ export default function ResourcesPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: (i % 6) * 0.1 }}
-                  className="group glass-bg-md rounded-3xl border overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl backdrop-blur-xl"
-                  style={{ borderColor: '#BFDBFE' }}
+                  className="group rounded-3xl border overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl"
+                  style={{ backgroundColor: 'rgba(255,255,255,0.82)', backdropFilter: 'blur(12px)', borderColor: '#BFDBFE' }}
                 >
                   {/* Category accent */}
                   <div className="h-2 bg-gradient-to-r from-sky-400 to-sky-500 group-hover:opacity-100 opacity-80 transition-opacity" />

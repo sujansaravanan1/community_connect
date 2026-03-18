@@ -69,12 +69,12 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
             backgroundRepeat: 'no-repeat'
         },
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            backgroundImage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 bg-sky-950/60"
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
                 lineNumber: 63,
-                columnNumber: 7
+                columnNumber: 27
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 opacity-30",
@@ -1566,7 +1566,7 @@ function EventsPage() {
                                                 fontFamily: 'var(--font-syne)',
                                                 fontSize: 'clamp(40px, 6vw, 64px)',
                                                 fontWeight: 800,
-                                                color: '#ffffff',
+                                                color: '#19619f',
                                                 lineHeight: 1,
                                                 letterSpacing: '-1px'
                                             },
@@ -1589,7 +1589,7 @@ function EventsPage() {
                                                 fontFamily: 'var(--font-dm-sans)',
                                                 fontSize: '15px',
                                                 fontWeight: 300,
-                                                color: '#ffffff',
+                                                color: '#19619f',
                                                 maxWidth: '280px',
                                                 lineHeight: 1.7
                                             },

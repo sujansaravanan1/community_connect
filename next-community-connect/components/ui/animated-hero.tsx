@@ -59,8 +59,8 @@ function Hero({
         backgroundRepeat: 'no-repeat',
       }}
     >
-      {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-sky-950/60" />
+      {/* Dark overlay for readability - skip on homepage (no backgroundImage) */}
+      {backgroundImage && <div className="absolute inset-0 bg-sky-950/60" />}
       {/* Background Effects */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,rgba(36,153,214,0.4)_0%,transparent_50%),radial-gradient(ellipse_at_80%_80%,rgba(4,64,105,0.5)_0%,transparent_50%),radial-gradient(ellipse_at_60%_10%,rgba(198,235,255,0.2)_0%,transparent_40%)]" />

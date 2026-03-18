@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useAuth } from '@/context/AuthContext'
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -19,6 +20,7 @@ export function Navbar() {
   const [isDark, setIsDark] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const pathname = usePathname()
+  const { isSignedIn, user, signOut } = useAuth()
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 80)
@@ -45,18 +47,18 @@ export function Navbar() {
     >
       <motion.nav
         animate={{
-          borderRadius: isScrolled ? '0px' : '24px',
-          maxWidth: isScrolled ? '100vw' : '64rem',
+          borderRadius: isScrolled ? '0px' : '20px',
+          maxWidth: isScrolled ? '100vw' : '90vw',
           backgroundColor: isScrolled ? 'rgba(2,39,71,0.97)' : 'rgba(255,255,255,0.10)',
           borderColor: isScrolled ? 'rgba(36,153,214,0.3)' : 'rgba(255,255,255,0.20)',
           boxShadow: isScrolled
             ? '0 4px 32px rgba(2,39,71,0.5), 0 1px 0 rgba(36,153,214,0.25)'
             : '0 8px 32px rgba(4,64,105,0.18)',
-          paddingLeft: isScrolled ? '2rem' : '1.5rem',
-          paddingRight: isScrolled ? '2rem' : '1.5rem',
+          paddingLeft: isScrolled ? '2.5rem' : '2rem',
+          paddingRight: isScrolled ? '2.5rem' : '2rem',
         }}
         transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
-        className="w-full py-4 border backdrop-blur-xl pointer-events-auto overflow-hidden"
+        className={`w-full border backdrop-blur-xl pointer-events-auto overflow-hidden ${isSignedIn ? 'py-5' : 'py-4'}`}
       >
         <div className="flex items-center justify-between w-full">
 
@@ -87,7 +89,7 @@ export function Navbar() {
               >
                 <Link
                   href={link.href}
-                  className={`px-3.5 py-2 rounded-lg text-sm font-medium transition-all duration-200 relative ${
+                  className={`px-3.5 py-2 rounded-lg text-sm font-medium transition-all duration-200 relative block ${
                     pathname === link.href
                       ? 'text-white bg-white/20'
                       : 'text-white/80 hover:text-white hover:bg-white/10'
@@ -95,10 +97,7 @@ export function Navbar() {
                 >
                   {link.label}
                   {pathname === link.href && (
-                    <motion.span
-                      className="absolute bottom-1 left-1/2 -translate-x-1/2 w-4 h-0.5 bg-sky-300 rounded-full"
-                      layoutId="activeIndicator"
-                    />
+                    <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-4 h-0.5 bg-sky-300 rounded-full" />
                   )}
                 </Link>
               </motion.div>
@@ -140,6 +139,28 @@ export function Navbar() {
                 </svg>
               )}
             </motion.button>
+
+            {/* Auth */}
+            <div className="hidden sm:flex items-center gap-1">
+              {isSignedIn ? (
+                <>
+                  <span className="font-outfit text-xs text-white/60 px-2">{user?.name}</span>
+                  <button
+                    onClick={signOut}
+                    className="text-white/75 hover:text-white font-medium text-sm px-3 py-2 rounded-lg hover:bg-white/10 transition-all"
+                  >
+                    Sign Out
+                  </button>
+                </>
+              ) : (
+                <Link
+                  href="/signin"
+                  className="bg-sky-500 hover:bg-sky-400 text-white font-semibold text-sm px-4 py-2 rounded-xl transition-all hover:-translate-y-0.5"
+                >
+                  Sign In
+                </Link>
+              )}
+            </div>
 
             {/* CTA Links */}
             <div className="hidden sm:flex items-center gap-1">
@@ -195,6 +216,22 @@ export function Navbar() {
                   >
                     Copyright
                   </Link>
+                  {isSignedIn ? (
+                    <button
+                      onClick={() => { signOut(); setIsMobileOpen(false) }}
+                      className="flex-1 flex items-center justify-center bg-white/10 border border-white/20 text-white font-semibold px-4 py-3 rounded-2xl hover:bg-white/20 transition-all text-sm"
+                    >
+                      Sign Out
+                    </button>
+                  ) : (
+                    <Link
+                      href="/signin"
+                      onClick={() => setIsMobileOpen(false)}
+                      className="flex-1 flex items-center justify-center bg-sky-500 text-white font-semibold px-4 py-3 rounded-2xl hover:bg-sky-400 transition-all text-sm"
+                    >
+                      Sign In
+                    </Link>
+                  )}
                 </div>
               </div>
             </motion.div>

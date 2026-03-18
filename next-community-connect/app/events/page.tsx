@@ -516,10 +516,10 @@ export default function EventsPage() {
               What's Coming Up
             </span>
             <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mt-1">
-              <h2 style={{ fontFamily: 'var(--font-syne)', fontSize: 'clamp(40px, 6vw, 64px)', fontWeight: 800, color: '#ffffff', lineHeight: 1, letterSpacing: '-1px' }}>
+              <h2 style={{ fontFamily: 'var(--font-syne)', fontSize: 'clamp(40px, 6vw, 64px)', fontWeight: 800, color: '#19619f', lineHeight: 1, letterSpacing: '-1px' }}>
                 Mark Your<br />Calendar.
               </h2>
-              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', fontWeight: 300, color: '#ffffff', maxWidth: '280px', lineHeight: 1.7 }} className="lg:text-right">
+              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', fontWeight: 300, color: '#19619f', maxWidth: '280px', lineHeight: 1.7 }} className="lg:text-right">
                 All events are free and open to the public. Click any card for full details.
               </p>
             </div>

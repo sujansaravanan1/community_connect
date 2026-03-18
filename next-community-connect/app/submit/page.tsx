@@ -1,9 +1,10 @@
 'use client'
 
 import { useState, useRef } from 'react'
-import { motion } from 'framer-motion'
-import { CheckCircle, AlertCircle, Mail, Phone, MapPin, Send, ImagePlus, X } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { CheckCircle, AlertCircle, Mail, Phone, MapPin, Send, ImagePlus, X, LogIn } from 'lucide-react'
 import { HeroDemo } from '@/components/ui/animated-hero-demo'
+import { useAuth } from '@/context/AuthContext'
 import Link from 'next/link'
 
 const categories = [
@@ -125,7 +126,61 @@ function PlaneSuccess() {
   )
 }
 
+function SignInModal({ onClose }: { onClose: () => void }) {
+  return (
+    <AnimatePresence>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="fixed inset-0 z-50 flex items-center justify-center p-4"
+        style={{ backgroundColor: 'rgba(1,22,41,0.75)', backdropFilter: 'blur(16px)' }}
+        onClick={onClose}
+      >
+        <motion.div
+          initial={{ opacity: 0, y: 32, scale: 0.95 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: 16, scale: 0.96 }}
+          transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+          className="w-full max-w-sm rounded-3xl p-8 text-center"
+          style={{ backgroundColor: '#033460', border: '1px solid rgba(86,187,240,0.35)', boxShadow: '0 40px 80px rgba(1,22,41,0.5)' }}
+          onClick={e => e.stopPropagation()}
+        >
+          <button onClick={onClose} className="absolute top-4 right-4 w-8 h-8 rounded-full flex items-center justify-center" style={{ color: 'rgba(198,235,255,0.5)' }}>
+            <X size={16} />
+          </button>
+          <div className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-5" style={{ background: 'linear-gradient(135deg, #085D8A 0%, #2499D6 100%)' }}>
+            <LogIn className="w-7 h-7 text-white" />
+          </div>
+          <h2 className="font-syne text-2xl font-bold text-white mb-3">Sign in to submit</h2>
+          <p className="font-outfit text-sm mb-7 leading-relaxed" style={{ color: 'rgba(198,235,255,0.7)' }}>
+            You need to be signed in to submit a resource. It only takes a moment.
+          </p>
+          <div className="flex flex-col gap-3">
+            <Link
+              href="/signin?redirect=/submit"
+              className="w-full py-3.5 rounded-xl font-outfit font-semibold text-white flex items-center justify-center gap-2 transition-all hover:-translate-y-0.5"
+              style={{ background: 'linear-gradient(135deg, #085D8A 0%, #2499D6 100%)' }}
+            >
+              <LogIn className="w-4 h-4" /> Sign In
+            </Link>
+            <Link
+              href="/signin?redirect=/submit"
+              className="w-full py-3.5 rounded-xl font-outfit font-semibold transition-all hover:opacity-80"
+              style={{ backgroundColor: 'rgba(255,255,255,0.08)', color: 'rgba(198,235,255,0.85)', border: '1px solid rgba(86,187,240,0.3)' }}
+            >
+              Create Account
+            </Link>
+          </div>
+        </motion.div>
+      </motion.div>
+    </AnimatePresence>
+  )
+}
+
 export default function SubmitPage() {
+  const { isSignedIn } = useAuth()
+  const [showAuthModal, setShowAuthModal] = useState(false)
   const [formData, setFormData] = useState({
     name: '', organization: '', email: '', phone: '',
     category: '', website: '', description: '', address: '', hours: '',
@@ -151,6 +206,7 @@ export default function SubmitPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    if (!isSignedIn) { setShowAuthModal(true); return }
     setIsLoading(true)
     await new Promise(resolve => setTimeout(resolve, 2000))
     setIsLoading(false)
@@ -165,6 +221,7 @@ export default function SubmitPage() {
 
   return (
     <>
+      {showAuthModal && <SignInModal onClose={() => setShowAuthModal(false)} />}
       <HeroDemo
         badge="Community Driven"
         staticTitle="Submit a Resource"

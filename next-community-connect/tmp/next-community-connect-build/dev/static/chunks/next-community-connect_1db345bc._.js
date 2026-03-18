@@ -69,12 +69,12 @@ function Hero({ badge = 'Serving Our Community Since 2020', staticTitle, rotatin
             backgroundRepeat: 'no-repeat'
         },
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            backgroundImage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 bg-sky-950/60"
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/components/ui/animated-hero.tsx",
                 lineNumber: 63,
-                columnNumber: 7
+                columnNumber: 27
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 opacity-30",
@@ -896,16 +896,6 @@ const categoryColors = {
 };
 function ResourcesPage() {
     _s();
-    const tc = {
-        cardBg: undefined,
-        panelBg: undefined,
-        controlBg: undefined,
-        inputBg: undefined,
-        h: undefined,
-        b: undefined,
-        muted: undefined,
-        border: undefined
-    };
     const [activeCategory, setActiveCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('all');
     const [searchQuery, setSearchQuery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [sortBy, setSortBy] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('default');
@@ -944,21 +934,21 @@ function ResourcesPage() {
                 backgroundImage: "/img/page-4.jpg"
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                lineNumber: 106,
+                lineNumber: 95,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$components$2f$ZoomParallax$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ZoomParallax"], {
                 images: communityImages
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                lineNumber: 113,
+                lineNumber: 102,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 className: "py-24 resources-section",
                 id: "directory",
                 style: {
-                    backgroundColor: '#F8FAFC'
+                    background: 'linear-gradient(160deg, #EBF7FF 0%, #F0F9FF 50%, #E0F2FE 100%)'
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
@@ -975,7 +965,12 @@ function ResourcesPage() {
                             viewport: {
                                 once: true
                             },
-                            className: "glass-bg-md rounded-3xl p-8 lg:p-10 mb-12 border shadow-xl",
+                            className: "rounded-3xl p-8 lg:p-10 mb-12 border shadow-xl",
+                            style: {
+                                backgroundColor: 'rgba(255,255,255,0.75)',
+                                backdropFilter: 'blur(16px)',
+                                borderColor: '#BFDBFE'
+                            },
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex flex-col md:flex-row gap-4 mb-6",
@@ -990,13 +985,13 @@ function ResourcesPage() {
                                                     onChange: (e)=>setSearchQuery(e.target.value),
                                                     className: "w-full px-5 py-4 rounded-2xl border font-dm-sans text-sm outline-none focus:border-sky-400 transition-all shadow-sm focus:shadow-md",
                                                     style: {
-                                                        backgroundColor: tc.inputBg,
-                                                        color: tc.h,
-                                                        borderColor: tc.border
+                                                        backgroundColor: '#ffffff',
+                                                        color: '#022747',
+                                                        borderColor: '#BFDBFE'
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                    lineNumber: 122,
+                                                    lineNumber: 111,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
@@ -1004,13 +999,13 @@ function ResourcesPage() {
                                                     size: 18
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                    lineNumber: 130,
+                                                    lineNumber: 119,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                            lineNumber: 121,
+                                            lineNumber: 110,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1019,12 +1014,12 @@ function ResourcesPage() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                     className: "font-dm-sans text-sm font-semibold",
                                                     style: {
-                                                        color: tc.b
+                                                        color: '#044069'
                                                     },
                                                     children: "Sort:"
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                    lineNumber: 133,
+                                                    lineNumber: 122,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -1032,9 +1027,9 @@ function ResourcesPage() {
                                                     onChange: (e)=>setSortBy(e.target.value),
                                                     className: "px-4 py-3 rounded-xl border font-dm-sans text-sm cursor-pointer focus:border-sky-400 outline-none shadow-sm",
                                                     style: {
-                                                        backgroundColor: tc.inputBg,
-                                                        color: tc.h,
-                                                        borderColor: tc.border
+                                                        backgroundColor: '#ffffff',
+                                                        color: '#022747',
+                                                        borderColor: '#BFDBFE'
                                                     },
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1042,7 +1037,7 @@ function ResourcesPage() {
                                                             children: "Default"
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                            lineNumber: 140,
+                                                            lineNumber: 129,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1050,7 +1045,7 @@ function ResourcesPage() {
                                                             children: "A to Z"
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                            lineNumber: 141,
+                                                            lineNumber: 130,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1058,7 +1053,7 @@ function ResourcesPage() {
                                                             children: "Z to A"
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                            lineNumber: 142,
+                                                            lineNumber: 131,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1066,25 +1061,25 @@ function ResourcesPage() {
                                                             children: "By Category"
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                            lineNumber: 143,
+                                                            lineNumber: 132,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                    lineNumber: 134,
+                                                    lineNumber: 123,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                            lineNumber: 132,
+                                            lineNumber: 121,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                    lineNumber: 120,
+                                    lineNumber: 109,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1093,25 +1088,25 @@ function ResourcesPage() {
                                             onClick: ()=>setActiveCategory(cat.id),
                                             className: `px-6 py-3 rounded-2xl text-sm font-semibold transition-all shadow-md ${activeCategory === cat.id ? 'bg-sky-500 text-white shadow-sky-500/25 border border-sky-400' : 'border hover:border-sky-300 hover:shadow-lg'}`,
                                             style: activeCategory !== cat.id ? {
-                                                backgroundColor: tc.inputBg,
-                                                color: tc.b,
-                                                borderColor: tc.border
+                                                backgroundColor: '#ffffff',
+                                                color: '#044069',
+                                                borderColor: '#BFDBFE'
                                             } : {},
                                             children: cat.label
                                         }, cat.id, false, {
                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                            lineNumber: 151,
+                                            lineNumber: 140,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                    lineNumber: 149,
+                                    lineNumber: 138,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                            lineNumber: 119,
+                            lineNumber: 108,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1119,7 +1114,7 @@ function ResourcesPage() {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "font-dm-sans text-base font-semibold",
                                 style: {
-                                    color: tc.h
+                                    color: '#022747'
                                 },
                                 children: [
                                     "Showing ",
@@ -1127,8 +1122,8 @@ function ResourcesPage() {
                                         children: filtered.length
                                     }, void 0, false, {
                                         fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                        lineNumber: 169,
-                                        columnNumber: 97
+                                        lineNumber: 158,
+                                        columnNumber: 102
                                     }, this),
                                     " of ",
                                     resources.length,
@@ -1136,12 +1131,12 @@ function ResourcesPage() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                lineNumber: 169,
+                                lineNumber: 158,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                            lineNumber: 168,
+                            lineNumber: 157,
                             columnNumber: 11
                         }, this),
                         filtered.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1158,35 +1153,35 @@ function ResourcesPage() {
                                     className: "text-sky-300 mx-auto mb-6"
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                    lineNumber: 175,
+                                    lineNumber: 164,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                     className: "font-syne text-3xl font-bold mb-3",
                                     style: {
-                                        color: tc.h
+                                        color: '#022747'
                                     },
                                     children: "No resources found"
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                    lineNumber: 176,
+                                    lineNumber: 165,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "font-dm-sans text-lg max-w-md mx-auto",
                                     style: {
-                                        color: tc.b
+                                        color: '#044069'
                                     },
                                     children: "Try a different keyword or category filter."
                                 }, void 0, false, {
                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                    lineNumber: 177,
+                                    lineNumber: 166,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                            lineNumber: 174,
+                            lineNumber: 163,
                             columnNumber: 13
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "grid md:grid-cols-2 lg:grid-cols-3 gap-8",
@@ -1206,17 +1201,18 @@ function ResourcesPage() {
                                         duration: 0.6,
                                         delay: i % 6 * 0.1
                                     },
-                                    className: "group glass-bg-md rounded-3xl border overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl backdrop-blur-xl",
+                                    className: "group rounded-3xl border overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl",
                                     style: {
-                                        backgroundColor: tc.cardBg,
-                                        borderColor: tc.border
+                                        backgroundColor: 'rgba(255,255,255,0.82)',
+                                        backdropFilter: 'blur(12px)',
+                                        borderColor: '#BFDBFE'
                                     },
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "h-2 bg-gradient-to-r from-sky-400 to-sky-500 group-hover:opacity-100 opacity-80 transition-opacity"
                                         }, void 0, false, {
                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                            lineNumber: 192,
+                                            lineNumber: 181,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1229,7 +1225,7 @@ function ResourcesPage() {
                                                         strokeWidth: 1
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                        lineNumber: 198,
+                                                        lineNumber: 187,
                                                         columnNumber: 30
                                                     }, this);
                                                 })(),
@@ -1238,7 +1234,7 @@ function ResourcesPage() {
                                                     children: resource.category
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                    lineNumber: 200,
+                                                    lineNumber: 189,
                                                     columnNumber: 21
                                                 }, this),
                                                 (()=>{
@@ -1250,19 +1246,19 @@ function ResourcesPage() {
                                                             strokeWidth: 1.5
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                            lineNumber: 207,
+                                                            lineNumber: 196,
                                                             columnNumber: 27
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                        lineNumber: 206,
+                                                        lineNumber: 195,
                                                         columnNumber: 25
                                                     }, this);
                                                 })()
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                            lineNumber: 195,
+                                            lineNumber: 184,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1275,34 +1271,34 @@ function ResourcesPage() {
                                                         strokeWidth: 1.5
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                        lineNumber: 216,
+                                                        lineNumber: 205,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                    lineNumber: 215,
+                                                    lineNumber: 204,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                     className: "font-syne text-2xl font-bold mb-3 leading-tight transition-colors",
                                                     style: {
-                                                        color: tc.h
+                                                        color: '#022747'
                                                     },
                                                     children: resource.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                    lineNumber: 218,
+                                                    lineNumber: 207,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "font-dm-sans text-base leading-relaxed mb-6 line-clamp-3",
                                                     style: {
-                                                        color: tc.b
+                                                        color: '#044069'
                                                     },
                                                     children: resource.description
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                    lineNumber: 219,
+                                                    lineNumber: 208,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1310,8 +1306,8 @@ function ResourcesPage() {
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "rounded-2xl p-6 mb-4 backdrop-blur-sm border",
                                                         style: {
-                                                            backgroundColor: tc.panelBg,
-                                                            borderColor: tc.border
+                                                            backgroundColor: '#EBF7FF',
+                                                            borderColor: '#BFDBFE'
                                                         },
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "grid grid-cols-1 md:grid-cols-2 gap-4 text-sm",
@@ -1324,7 +1320,7 @@ function ResourcesPage() {
                                                                             className: "text-sky-400 mt-1 flex-shrink-0"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                            lineNumber: 226,
+                                                                            lineNumber: 215,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1332,12 +1328,12 @@ function ResourcesPage() {
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                     className: "font-semibold mb-1",
                                                                                     style: {
-                                                                                        color: tc.h
+                                                                                        color: '#022747'
                                                                                     },
                                                                                     children: "Location"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                                    lineNumber: 228,
+                                                                                    lineNumber: 217,
                                                                                     columnNumber: 31
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1346,24 +1342,24 @@ function ResourcesPage() {
                                                                                     rel: "noopener noreferrer",
                                                                                     className: "hover:underline transition-colors",
                                                                                     style: {
-                                                                                        color: tc.muted
+                                                                                        color: '#085D8A'
                                                                                     },
                                                                                     children: resource.location
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                                    lineNumber: 229,
+                                                                                    lineNumber: 218,
                                                                                     columnNumber: 31
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                            lineNumber: 227,
+                                                                            lineNumber: 216,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                    lineNumber: 225,
+                                                                    lineNumber: 214,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1374,7 +1370,7 @@ function ResourcesPage() {
                                                                             className: "text-sky-400 mt-1 flex-shrink-0"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                            lineNumber: 233,
+                                                                            lineNumber: 222,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1382,36 +1378,36 @@ function ResourcesPage() {
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                     className: "font-semibold mb-1",
                                                                                     style: {
-                                                                                        color: tc.h
+                                                                                        color: '#022747'
                                                                                     },
                                                                                     children: "Phone"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                                    lineNumber: 235,
+                                                                                    lineNumber: 224,
                                                                                     columnNumber: 31
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                                                     href: `tel:${resource.phone.replace(/\D/g, '')}`,
                                                                                     className: "hover:underline transition-colors",
                                                                                     style: {
-                                                                                        color: tc.muted
+                                                                                        color: '#085D8A'
                                                                                     },
                                                                                     children: resource.phone
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                                    lineNumber: 236,
+                                                                                    lineNumber: 225,
                                                                                     columnNumber: 31
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                            lineNumber: 234,
+                                                                            lineNumber: 223,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                    lineNumber: 232,
+                                                                    lineNumber: 221,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1422,7 +1418,7 @@ function ResourcesPage() {
                                                                             className: "text-sky-400 mt-1 flex-shrink-0"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                            lineNumber: 240,
+                                                                            lineNumber: 229,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1430,34 +1426,34 @@ function ResourcesPage() {
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                     className: "font-semibold mb-1",
                                                                                     style: {
-                                                                                        color: tc.h
+                                                                                        color: '#022747'
                                                                                     },
                                                                                     children: "Hours"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                                    lineNumber: 242,
+                                                                                    lineNumber: 231,
                                                                                     columnNumber: 31
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                     style: {
-                                                                                        color: tc.b
+                                                                                        color: '#044069'
                                                                                     },
                                                                                     children: resource.hours
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                                    lineNumber: 243,
+                                                                                    lineNumber: 232,
                                                                                     columnNumber: 31
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                            lineNumber: 241,
+                                                                            lineNumber: 230,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                    lineNumber: 239,
+                                                                    lineNumber: 228,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1468,7 +1464,7 @@ function ResourcesPage() {
                                                                             className: "text-sky-400 flex-shrink-0"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                            lineNumber: 247,
+                                                                            lineNumber: 236,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1476,67 +1472,67 @@ function ResourcesPage() {
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                     className: "font-semibold mb-1",
                                                                                     style: {
-                                                                                        color: tc.h
+                                                                                        color: '#022747'
                                                                                     },
                                                                                     children: "Email"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                                    lineNumber: 249,
+                                                                                    lineNumber: 238,
                                                                                     columnNumber: 31
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                                                     href: `mailto:${resource.email}`,
                                                                                     className: "hover:underline transition-colors break-all",
                                                                                     style: {
-                                                                                        color: tc.muted
+                                                                                        color: '#085D8A'
                                                                                     },
                                                                                     children: resource.email
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                                    lineNumber: 250,
+                                                                                    lineNumber: 239,
                                                                                     columnNumber: 31
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                            lineNumber: 248,
+                                                                            lineNumber: 237,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                                    lineNumber: 246,
+                                                                    lineNumber: 235,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                            lineNumber: 224,
+                                                            lineNumber: 213,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                        lineNumber: 223,
+                                                        lineNumber: 212,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                    lineNumber: 222,
+                                                    lineNumber: 211,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>setExpandedCard(expandedCard === i ? null : i),
                                                     className: "flex items-center justify-between w-full pt-4 border-t bg-none cursor-pointer font-dm-sans text-base font-semibold transition-all group-hover:scale-[1.02]",
                                                     style: {
-                                                        borderColor: tc.border,
-                                                        color: tc.b
+                                                        borderColor: '#BFDBFE',
+                                                        color: '#044069'
                                                     },
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: expandedCard === i ? 'Hide Details' : 'View Full Details'
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                            lineNumber: 263,
+                                                            lineNumber: 252,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
@@ -1544,41 +1540,41 @@ function ResourcesPage() {
                                                             className: `transition-transform duration-300 ${expandedCard === i ? 'rotate-180' : ''}`
                                                         }, void 0, false, {
                                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                            lineNumber: 264,
+                                                            lineNumber: 253,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                                    lineNumber: 258,
+                                                    lineNumber: 247,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                            lineNumber: 214,
+                                            lineNumber: 203,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, i, true, {
                                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                                    lineNumber: 182,
+                                    lineNumber: 171,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                            lineNumber: 180,
+                            lineNumber: 169,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                    lineNumber: 117,
+                    lineNumber: 106,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                lineNumber: 116,
+                lineNumber: 105,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$next$2d$community$2d$connect$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -1602,12 +1598,12 @@ function ResourcesPage() {
                     size: 20
                 }, void 0, false, {
                     fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                    lineNumber: 281,
+                    lineNumber: 270,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/next-community-connect/app/resources/page.tsx",
-                lineNumber: 275,
+                lineNumber: 264,
                 columnNumber: 7
             }, this)
         ]
